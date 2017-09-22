@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="09/14/17||09:31:32" using="Simscape Multibody Link Version 4.9" from="SolidWorks 24.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assemblage2" uid="Assemblage2" version="127">
+<AssemblyFile name="Assemblage2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="balancier-complet-1" uid="balancier-complet-1" entityUid="balancier-complet" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.0075757813621678965 0.074861457761381991 0.37512751277248874</Translation>
+</Transform>
+<Instance name="Balancier-1" uid="Balancier-1" grounded="true" entityUid="Balancier*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.16558259352124821 0.0098191685202391188 -2.7755575615628914e-014</Translation>
+</Transform>
+</Instance>
+<Instance name="moteur-1300-2" uid="moteur-1300-2" entityUid="moteur-1300*:*Défaut">
+<Transform>
+<Rotation>-1.0000000000000002 0 2.0983215165415459e-014 -2.0872192862952943e-014 0 -1.0000000000000002 0 -1 0</Rotation>
+<Translation>-0.1555825935212482 0.009819168520239327 0.030499999999972272</Translation>
+</Transform>
+</Instance>
+<Instance name="entretoise-2" uid="entretoise-2" entityUid="entretoise*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 3.4694469519536146e-015 -1 0 1 3.4694469519536146e-015</Rotation>
+<Translation>0.021917406478751816 0.061319168520239095 0.0099999999999722533</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-10-1" uid="rondelle-10-1" entityUid="rondelle-10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.03941740647875179 0.008319168520238937 -0.046800000000027653</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-10-2" uid="rondelle-10-2" entityUid="rondelle-10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.03941740647875179 0.008319168520238937 -0.04000000000002768</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-10-3" uid="rondelle-10-3" entityUid="rondelle-10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 -3.5850951836854019e-015 -1 0 1 -3.5850951836854019e-015</Rotation>
+<Translation>0.1244174064787518 -0.0066808314797610346 0.041999999999972226</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-10-4" uid="rondelle-10-4" entityUid="rondelle-10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.07058259352124821 0.008319168520238937 -0.046800000000027597</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-10-5" uid="rondelle-10-5" entityUid="rondelle-10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.070582593521248224 0.008319168520238937 -0.040000000000027625</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-10-6" uid="rondelle-10-6" entityUid="rondelle-10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 3.5850951836854019e-015 1 0 -1 3.5850951836854019e-015</Rotation>
+<Translation>-0.15558259352124815 -0.0084808314797610307 0.041999999999972282</Translation>
+</Transform>
+</Instance>
+<Instance name="moteur-1300-3" uid="moteur-1300-3" entityUid="moteur-1300*:*Défaut">
+<Transform>
+<Rotation>-1.0000000000000002 0 1.404432126150823e-014 -1.3933298959045715e-014 0 -1.0000000000000002 0 -1 0</Rotation>
+<Translation>0.12441740647875182 0.0098191685202390633 0.030499999999972272</Translation>
+</Transform>
+</Instance>
+<Instance name="Contre-poids-1" uid="Contre-poids-1" entityUid="Contre-poids*:*Défaut">
+<Transform>
+<Rotation>1.0000000000000002 -4.4408920985006262e-016 0 0 -3.4694469519535325e-015 1 -4.4408920985006262e-016 -1.0000000000000002 -3.4694469519535318e-015</Rotation>
+<Translation>-0.015582593521248193 0.026319168520239286 0.0099999999999723643</Translation>
+</Transform>
+</Instance>
+<Instance name="Capteur IR-1" uid="Capteur IR-1" entityUid="Capteur IR*:*Défaut">
+<Transform>
+<Rotation>-1 0 0 0 0.34202014332567249 0.93969262078590687 0 0.9396926207859071 -0.34202014332567254</Rotation>
+<Translation>-0.18258259352124817 0.021007015713678065 0.0014535856091063559</Translation>
+</Transform>
+</Instance>
+<Instance name="Capteur IR-2" uid="Capteur IR-2" entityUid="Capteur IR*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 -0.34202014332567254 -0.93969262078590698 0 0.93969262078590698 -0.34202014332567254</Rotation>
+<Translation>0.15141740647875185 -0.001368678673199869 0.0014535856091063559</Translation>
+</Transform>
+</Instance>
+<Instance name="socket head cap screw_iso-1" uid="socket head cap screw_iso-1" entityUid="socket head cap screw_iso*:*ISO 4762 M10 x 20 --- 20C">
+<Transform>
+<Rotation>0 -0.99900026658226349 -0.044704220925616975 1 1.8467718593291404e-016 -3.5804187982876829e-015 3.585095183685409e-015 -0.044704220925616975 0.99900026658226349</Rotation>
+<Translation>0.12441740647875177 -0.01848083147976104 0.041999999999972171</Translation>
+</Transform>
+</Instance>
+<Instance name="socket head cap screw_iso-2" uid="socket head cap screw_iso-2" entityUid="socket head cap screw_iso*:*ISO 4762 M10 x 20 --- 20C">
+<Transform>
+<Rotation>-1.1963610179150484e-016 -0.99857565375826574 0.053354134996762115 1 -3.1074535096613552e-016 -3.5736056861087962e-015 3.5850951836854097e-015 0.053354134996762115 0.99857565375826574</Rotation>
+<Translation>-0.15558259352124815 -0.018480831479761033 0.041999999999972226</Translation>
+</Transform>
+</Instance>
+<Instance name="socket head cap screw_iso-3" uid="socket head cap screw_iso-3" entityUid="socket head cap screw_iso*:*ISO 4762 M10 x 20 --- 20C">
+<Transform>
+<Rotation>-3.3306690738754775e-016 -0.99999682717236937 -0.0025190564096396672 0 -0.0025190564096396672 0.99999682717236937 -1 3.3306585062366068e-016 0</Rotation>
+<Translation>-0.070582593521248224 0.008319168520238937 -0.028200000000027592</Translation>
+</Transform>
+</Instance>
+<Instance name="socket head cap screw_iso-4" uid="socket head cap screw_iso-4" entityUid="socket head cap screw_iso*:*ISO 4762 M10 x 20 --- 20C">
+<Transform>
+<Rotation>-3.330669073875476e-016 -0.99999568722626442 -0.0029369250708056005 0 -0.0029369250708056005 0.99999568722626442 -1 3.3306547094533687e-016 0</Rotation>
+<Translation>0.03941740647875179 0.008319168520238937 -0.028200000000027647</Translation>
+</Transform>
+</Instance>
+<Instance name="hex nut gradec_iso-1" uid="hex nut gradec_iso-1" entityUid="hex nut gradec_iso*:*Hexagon Nut ISO - 4034 - M10 - N">
+<Transform>
+<Rotation>1 0 0 0 3.5850951836854019e-015 1 0 -1 3.5850951836854019e-015</Rotation>
+<Translation>0.12441740647875177 0.0038191685202389608 0.041999999999972282</Translation>
+</Transform>
+</Instance>
+<Instance name="hex nut gradec_iso-2" uid="hex nut gradec_iso-2" entityUid="hex nut gradec_iso*:*Hexagon Nut ISO - 4034 - M10 - N">
+<Transform>
+<Rotation>1 1.1963610179150471e-016 1.1963610179150392e-016 1.1963610179150434e-016 -3.5850951836854019e-015 -1 -1.1963610179150429e-016 1 -3.5850951836854019e-015</Rotation>
+<Translation>-0.15558259352124815 -0.0056808314797610199 0.041999999999972226</Translation>
+</Transform>
+</Instance>
+<Instance name="hex nut gradec_iso-3" uid="hex nut gradec_iso-3" entityUid="hex nut gradec_iso*:*Hexagon Nut ISO - 4034 - M10 - N">
+<Transform>
+<Rotation>0.76091965874907874 0.6488461088187133 -1.824378780968849e-016 0.6488461088187133 -0.76091965874907874 0 -1.3877787807814454e-016 -1.1842417088334677e-016 -1</Rotation>
+<Translation>-0.070582593521248238 0.008319168520238937 -0.056300000000027606</Translation>
+</Transform>
+</Instance>
+<Instance name="hex nut gradec_iso-4" uid="hex nut gradec_iso-4" entityUid="hex nut gradec_iso*:*Hexagon Nut ISO - 4034 - M10 - N">
+<Transform>
+<Rotation>0.99833840028867615 -0.057623246255717755 -2.2204460492503069e-016 -0.057623246255717755 -0.99833840028867615 0 -2.2167565567359102e-016 0 -0.99999999999999989</Rotation>
+<Translation>0.039417406478751783 0.008319168520238937 -0.056300000000027661</Translation>
+</Transform>
+</Instance>
+<Instance name="entretoise-1" uid="entretoise-1" entityUid="entretoise*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 3.4694469519536146e-015 -1 0 1 3.4694469519536146e-015</Rotation>
+<Translation>-0.053082593521248195 0.061319168520239095 0.0099999999999722533</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="axe_pivot-1" uid="axe_pivot-1" grounded="true" entityUid="axe_pivot*:*Défaut">
+<Transform>
+<Rotation>1 1.0141390007752237e-016 1.0141390007752217e-016 1.0141390007752253e-016 -3.4914833611093817e-015 -1 -1.0141390007752201e-016 1 -3.4914833611093817e-015</Rotation>
+<Translation>-0.023158374883416086 0.10118062628162106 0.3851275127724611</Translation>
+</Transform>
+</Instance>
+<Instance name="Assemblagehelice-1" uid="Assemblagehelice-1" entityUid="Assemblagehelice" rigid="true">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>0.090841625116583904 0.084137254251045568 0.35958488537249944</Translation>
+</Transform>
+<Instance name="porte-helice-1" uid="porte-helice-1" grounded="true" entityUid="porte-helice*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.011942627399961547 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice nouveau pas-1" uid="Helice nouveau pas-1" entityUid="Helice nouveau pas*:*Défaut">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>5.7372600038463339e-005 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-d_helice-1" uid="rondelle-d_helice-1" entityUid="rondelle-d_helice*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0045573726000384118 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="hex thin nut gradeb_iso-1" uid="hex thin nut gradeb_iso-1" entityUid="hex thin nut gradeb_iso*:*Hexagon Nut ISO - 4036 - M5 - N">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>0.0092573726000384493 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Assemblagehelice-2" uid="Assemblagehelice-2" entityUid="Assemblagehelice" rigid="true">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>-0.18915837488341614 0.084137254251045832 0.35958488537249944</Translation>
+</Transform>
+<Instance name="porte-helice-1" uid="porte-helice-1" grounded="true" entityUid="porte-helice*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.011942627399961547 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice nouveau pas-1" uid="Helice nouveau pas-1" entityUid="Helice nouveau pas*:*Défaut">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>5.7372600038463339e-005 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="rondelle-d_helice-1" uid="rondelle-d_helice-1" entityUid="rondelle-d_helice*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0045573726000384118 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+<Instance name="hex thin nut gradeb_iso-1" uid="hex thin nut gradeb_iso-1" entityUid="hex thin nut gradeb_iso*:*Hexagon Nut ISO - 4036 - M5 - N">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>0.0092573726000384493 0.00054337203057548689 0.025999999999999995</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Coaxiale1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>balancier-complet-1</Uid>
+<Uid>Balancier-1</Uid>
+</InstancePath>
+<Position>0.15000000000000002 0.016500000000000056 0.01000000000000012</Position>
+<Axis>1.0141390007752217e-016 -1 -3.4914833611093817e-015</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>axe_pivot-1</Uid>
+</InstancePath>
+<Position>0 0 0.033000000000000002</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>balancier-complet-1</Uid>
+<Uid>Balancier-1</Uid>
+</InstancePath>
+<Position>-0.044999999999999984 -0.016500000000000056 0.016000000000000014</Position>
+<Axis>0 -1 -3.5850951836854019e-015</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>axe_pivot-1</Uid>
+</InstancePath>
+<Position>0 0 0.033000000000000002</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>balancier-complet-1</Uid>
+<Uid>moteur-1300-3</Uid>
+</InstancePath>
+<Position>0 0.044700000000000017 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Assemblagehelice-1</Uid>
+<Uid>porte-helice-1</Uid>
+</InstancePath>
+<Position>-0.019163170337664126 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>balancier-complet-1</Uid>
+<Uid>moteur-1300-3</Uid>
+</InstancePath>
+<Position>0.0039000000000000007 0.034100000000000019 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assemblagehelice-1</Uid>
+<Uid>porte-helice-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>balancier-complet-1</Uid>
+<Uid>moteur-1300-2</Uid>
+</InstancePath>
+<Position>0 0.044700000000000017 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Assemblagehelice-2</Uid>
+<Uid>porte-helice-1</Uid>
+</InstancePath>
+<Position>-0.019163170337664126 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>balancier-complet-1</Uid>
+<Uid>moteur-1300-2</Uid>
+</InstancePath>
+<Position>0.0039000000000000146 0.034100000000000019 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assemblagehelice-2</Uid>
+<Uid>porte-helice-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="balancier-complet" uid="balancier-complet" version="311">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="balancier-complet.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Assemblagehelice" uid="Assemblagehelice" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Assemblagehelice.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="Balancier" uid="Balancier*:*Défaut" version="5835">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Balancier.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.10868788083287979</Mass>
+<CenterOfMass>0.15092595815126242 -0.0055954417516134326 0.03321206596628435</CenterOfMass>
+<Inertia>0.0002279768609373649 0.0013975499788711082 0.0012073698871439781 2.9360911913842856e-005 1.4311202511345154e-006 -8.3097770581161266e-006</Inertia>
+</MassProperties>
+<GeometryFile name="Balancier_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Capteur IR" uid="Capteur IR*:*Défaut" version="134">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Capteur IR.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0040439685273448789</Mass>
+<CenterOfMass>0.013552071640850297 0.0082085193245774526 -1.2778545501351636e-010</CenterOfMass>
+<Inertia>1.2121099115944117e-007 3.2797331261480604e-007 4.0157922834207926e-007 -6.6796507342159151e-015 -2.385003642565068e-014 -6.5224223138422085e-009</Inertia>
+</MassProperties>
+<GeometryFile name="Capteur IR_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.39803921568627448" g="0.41176470588235292" b="0.46862745098039216" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Contre-poids" uid="Contre-poids*:*Défaut" version="203">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Contre-poids.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.27039065663164608</Mass>
+<CenterOfMass>0 0.041191392478717892 -0.0068728012680818107</CenterOfMass>
+<Inertia>0.00011411081952807889 0.00033644067800450939 0.00038741472136152698 2.8594616656305054e-005 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Contre-poids_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.65098039215686276" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Diffuse r="0.65098039215686276" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Specular r="0.52078432148578124" g="0.49568628189610503" b="0.47058824230642882" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.10000000149011612</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Helice nouveau pas" uid="Helice nouveau pas*:*Défaut" version="360">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Helice nouveau pas.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0011055785205309088</Mass>
+<CenterOfMass>-8.425195880187842e-009 -3.3201875582240012e-010 0.00012243394664900433</CenterOfMass>
+<Inertia>1.8320101459332409e-008 1.0876320403660795e-006 1.0965064198894597e-006 0 9.237632469614582e-015 4.2598378519778229e-009</Inertia>
+</MassProperties>
+<GeometryFile name="Helice nouveau pas_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="0.31999999999999995"/>
+<Diffuse r="1" g="1" b="1" a="0.31999999999999995"/>
+<Specular r="0.69999998807907104" g="0.69999998807907104" b="0.69999998807907104" a="0.31999999999999995"/>
+<Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="0.31999999999999995"/>
+<Shininess>0.10000000149011612</Shininess>
+</VisualProperties>
+</Part>
+<Part name="axe_pivot" uid="axe_pivot*:*Défaut" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="axe_pivot.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.025709134888525359</Mass>
+<CenterOfMass>0 0 0.050929483181181019</CenterOfMass>
+<Inertia>1.1869820028135652e-005 1.1869820028135652e-005 1.5406020330037163e-006 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="axe_pivot_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
+<Specular r="0.75627450980392152" g="0.78235294117647047" b="0.89039215686274509" a="1"/>
+<Emissive r="0.063686274509803922" g="0.065882352941176475" b="0.074980392156862752" a="1"/>
+<Shininess>0.55000000000000004</Shininess>
+</VisualProperties>
+</Part>
+<Part name="entretoise" uid="entretoise*:*Défaut" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="entretoise.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0092924771826024041</Mass>
+<CenterOfMass>0 0 0.015000000000000001</CenterOfMass>
+<Inertia>1.3626239073135526e-006 1.3626239073135526e-006 4.0579744178937346e-008 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="entretoise_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="hex nut gradec_iso" uid="hex nut gradec_iso*:*Hexagon Nut ISO - 4034 - M10 - N" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="hex nut gradec_iso.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0015465131644959186</Mass>
+<CenterOfMass>0 2.8546136068617091e-009 -0.0047483960648569377</CenterOfMass>
+<Inertia>4.5915701676405982e-008 4.59155001893399e-008 6.9122064920732128e-008 0 0 -3.8528188266803672e-015</Inertia>
+</MassProperties>
+<GeometryFile name="hex nut gradec_iso_Hexagon Nut ISO - 4034 - M10 - N_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Diffuse r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Specular r="0.38823529411764707" g="0.3784313725490196" b="0.36862745098039218" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="hex thin nut gradeb_iso" uid="hex thin nut gradeb_iso*:*Hexagon Nut ISO - 4036 - M5 - N" version="113">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="hex thin nut gradeb_iso.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00011052332052552973</Mass>
+<CenterOfMass>0 0 -0.0013484041011862574</CenterOfMass>
+<Inertia>6.850124743130459e-010 6.8501247431303514e-010 1.2390665874547095e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="hex thin nut gradeb_iso_Hexagon Nut ISO - 4036 - M5 - N_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Diffuse r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Specular r="0.38823529411764707" g="0.3784313725490196" b="0.36862745098039218" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="moteur-1300" uid="moteur-1300*:*Défaut" version="149">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="moteur-1300.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.11852110104621176</Mass>
+<CenterOfMass>0.00046073508801771555 0.01720837579120283 -0.00013519281673983244</CenterOfMass>
+<Inertia>1.2519427167381042e-005 1.2494640409623549e-005 1.3815023858615735e-005 2.2897566486791906e-007 3.7498506140654307e-007 -7.8323268664278171e-007</Inertia>
+</MassProperties>
+<GeometryFile name="moteur-1300_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="porte-helice" uid="porte-helice*:*Défaut" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="porte-helice.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0080180513103082149</Mass>
+<CenterOfMass>0.0082703743792181383 0 0</CenterOfMass>
+<Inertia>1.194978848474642e-007 4.3442971074557498e-007 4.3442971074557498e-007 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="porte-helice_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="rondelle-10" uid="rondelle-10*:*Défaut" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="rondelle-10.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00054286721054031602</Mass>
+<CenterOfMass>0 0 0.00089999999999999998</CenterOfMass>
+<Inertia>1.9961227331567423e-008 1.9961227331567413e-008 3.9629306369443064e-008 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="rondelle-10_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="rondelle-d_helice" uid="rondelle-d_helice*:*Défaut" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="rondelle-d_helice.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00061779419532843297</Mass>
+<CenterOfMass>0.00088558352402746043 0 0</CenterOfMass>
+<Inertia>1.5654403040196083e-008 8.0082691896624719e-009 8.0082691896624702e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="rondelle-d_helice_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="socket head cap screw_iso" uid="socket head cap screw_iso*:*ISO 4762 M10 x 20 --- 20C" version="121">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="socket head cap screw_iso.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0032235445272314287</Mass>
+<CenterOfMass>0.012480456094518935 0 0</CenterOfMass>
+<Inertia>7.9595777297562918e-008 2.7286699910342368e-007 2.7286699910342368e-007 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="socket head cap screw_iso_ISO 4762 M10 x 20 --- 20C_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Diffuse r="0.77647058823529413" g="0.75686274509803919" b="0.73725490196078436" a="1"/>
+<Specular r="0.38823529411764707" g="0.3784313725490196" b="0.36862745098039218" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
