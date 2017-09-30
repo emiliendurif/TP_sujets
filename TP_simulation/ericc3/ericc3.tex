@@ -1,0 +1,260 @@
+\graphicspath{{/Users/emiliendurif/Documents/prepa/sujets/automatique/ericc3/}}
+
+\subsection{Présentation du système réel}
+\subsubsection{Le robot Ericc3}
+
+Le Robot Ericc3 est un robot qui présente un caractère anthropomorphique. Il est constitué de 5 axes asservis en position.
+
+On s'intéresse ici uniquement à l'asservissement autour de l'axe de lacet.
+
+On considérera deux configurations
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\textbf{Configuration 1 : bras replié}
+\includegraphics[width=1.0\textwidth]{images/conf1.png}
+$Epaule=-39^{\circ}$ ; $Lacet=0^{\circ}$ ; $Coude=00^{\circ}$, $Poignet=-51^{\circ}$
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\textbf{Configuration 2 : bras déplié}
+\includegraphics[width=1.0\textwidth]{images/conf2.png}
+$Epaule=0^{\circ}$ ; $Lacet=0^{\circ}$ ; $Coude=-90^{\circ}$, $Poignet=0^{\circ}$
+\end{center}
+\end{minipage}
+
+
+
+\subsubsection{Analyse structurelle du robot}
+
+\question{Compléter la chaine fonctionnelle décrivant la chaine cinématique "axe de lacet".}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/chaine_fonctionnelle.png}
+\end{center}
+
+
+\subsection{Mise en oeuvre de la simulation}
+
+\subsubsection{Prise en main de Matlab Simulink}
+
+\begin{itemize}
+\item Créer un répertoire \textbf{TP4} à la racine de $U:\backslash Perso$. Lancer MATLAB (dernière version). Placer l'adresse du répertoire créé dans la barre d'adresse de Matlab. 
+\item Copier le contenu du dossier \textbf{TP4 situé dans le dossier transfert>MPSI2} dans le dossier que vous venez de créer.
+\item Tester le mode calculatrice en tapant un calcul dans la fenêtre d'exécution en bas de l'écran. 
+\item Faites click gauche dans la fenètre de gauche « New Script » pour créer un fichier de commandes Matlab dans le répertoire de travail. Ce fichier permettra de faire des calculs, des programmes et de définir des variables ce qui sera utile pour Simulink. Par exemple taper « A=3+pi » dans le script et l'exécuter (onglet lecture). La variable A apparait dans le « Workspace ». 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/matlab1.pdf}
+\end{center}
+
+\item Désormais presser le bouton Simulink dans l'onglet "Home" puis choisir un « Blank model » pour créer votre premier schéma bloc à simuler. 
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/matlab_simulink.png}
+\end{center}
+
+\item En pressant le bouton de couleur on peut choisir ses blocs (librairie Simulink). Dans les rubriques « commonly used block » (blocs courants) « source » (entrées) « sinks » (sorties) « continuous » (intégrale, dérivé, fonction de transfert) et « Math » (polynomes, trigonométrie, seuils) vous trouverez l'essentiel des blocs de base dont vous aurez besoin.
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/matlab2.jpg}
+\end{center}
+
+\item Glisser un signal échelon « source » dans le nouveau modèle et paramétrez le à la valeur finale 3, ajoutez un bloc \textbf{"transfert function"} de manière à modéliser un premier ordre avec une constante de temps égale à 1. Ajouter un bloc \textbf{Scope} et un bloc \textbf{to workspace} (sink). Reliez-les et exécutez (bouton lecture). Ouvrir le scope et commenter le résultat. Observer dans le workspace les variables créées.
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{images/simulink_1er_ordre.png}
+\end{center}
+
+\item Taper $a$, puis $a\cdot Time$ et $a.Data$ dans la fenêtre d'exécution.
+
+\end{itemize}
+
+\subsubsection{Construction du modèle du robot Ericc3}
+
+On donne le schéma bloc global du système : 
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/schema_bloc_ericc.pdf}
+\end{center}
+
+\begin{itemize}
+\item La structure de l'asservissement et numérique. Les grandeurs numériques sont représentées avec un exposant $*$.
+\item L'angle de consigne de lacet se note : \textbf{$\theta_c(p)$}.
+\item L'angle à la sortie de l'arbre moteur se note \textbf{$\theta_m(p)$}.
+\item Le système comporte un correcteur PID (Proportionnel Intégral Dérivé). Ici n'est représenté que le correcteur Proportionnel (de gain \textbf{$K_p$}) et Intégrale (de gain \textbf{$K_i$}). Dans l'étude on n'étudiera que l'influence de $K_p$. Ainsi on prendra $K_i=0$.
+\item Après une conversion numérique analogique, on modélise le moteur avec un \textbf{variateur} (de constante \textbf{$K_v$}), une \textbf{constante de couple} (\textbf{$K_m$}).
+\item On note $U_m(p)$ la tension du moteur, $I_m(p)$ l'intensité dans le circuit moteur et $C_m(p)$ le couple délivré par le moteur.
+\item L'inertie ramené à l'arbre moteur correspondant à la rotation du lacet du robot est donnée par \textbf{$J_{eq}$}. Le frottement visqueux est modélisé par le coefficient \textbf{$f_v$}.
+\item On note \textbf{$\Omega_m(p)$} la vitesse de rotation (en $rad/s$) de l'arbre moteur.
+\item Le \textbf{système de réduction} de vitesse de fonction de transfert \textbf{$K_r$} est composé 
+\begin{itemize}
+\item d'un réducteur poulie-courroie ;
+\item d'un réducteur Harmonic Drive de rapport de réduction $1/100$
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=0.45\textwidth]{images/poulie_courroie.png}
+&
+\includegraphics[width=0.45\textwidth]{images/harmonic_drive.png}
+\end{tabular}
+\end{center}
+
+\question{Déterminer le rapport de réduction $K_r$ du système.}
+
+\item Le \textbf{capteur de position} mesure directement l'angle à la sortie du moteur.
+
+\begin{minipage}{0.6\textwidth}
+La mesure de positon s'effectue par un codeur incrémental qui délivre une information du déplacement angulaire du disque sous forme de train d'impulsions. Le nombre d'impulsions décompté à partir d'une origine permet d'avoir accès à la position angulaire, tandis que la fréquence du signal renseigne sur la vitesse du disque.
+Il est constitué d'une ou plusieurs voies comportant les zones opaques et transparentes régulièrement espacées. Le nombre de zones transparentes définit la résolution du capteur. Le codeur de l'axe de lacet fournit 2000
+impulsions par tour.
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/codeur.png}
+\end{center}
+\end{minipage}
+
+
+\question{Déterminer l'expression du gain du capteur noté $K_c$.}
+
+\item \textbf{Gain d'adaptation}
+
+\question{Déterminer l'expression du gain d'adaptation $K_S$ pour garantir : 
+\begin{align*}
+\varepsilon(p)=0\Leftrightarrow \theta_c(p)=\theta(p)
+\end{align*}
+}
+\end{itemize}
+
+\question{Compléter le schéma bloc "TP$\_$modele$\_$matlab$\_$eleve.slx" pour modéliser le système asservi en boucle fermée. 
+\begin{itemize}
+\item On pourra utiliser le bloc "To Workspace" en nommant la variable de sortie "S1".
+\item On imposera un échelon de $30^{\circ}$.
+\end{itemize}
+}
+
+\subsection{Analyse temporelle des performances du robot}
+
+\subsubsection{Comparaison entre les performances réelles et simulées}
+
+L'étude portera sur la \textbf{configuration 1} (bras en partie replié).
+
+\question{Importation des données : 
+
+\begin{enumerate}
+\item Ouvrir le fichier \textbf{data$\_$modele$\_$eleve.m} et observer son contenu.
+\item Exécuter et observer le message d'erreur.
+\item Compléter le programme avec les informations manquantes issues de la partie précédente.
+\end{enumerate}
+}
+
+\question{Exécuter la simulation sur une durée de $2.5s$ et observer le résultat en double cliquant sur le Scope.}
+
+Pour comparer les données entre le modèle réel et simulé on pourra utiliser et exécuter le fichier \textbf{Compare$\_$modele1.m}. Ce fichier permet de traiter les données expérimentales d'un essai réalisé sur le système réel avec $K_p=10^6$ (fichier essai$\_$pos1$\_$kp1000000.csv).
+\question{A l'aide de la courbe qui s'affiche, analyser les écarts.}
+
+\question{Modifier la consigne pour obtenir un créneau en entrée comme sur l'essai expérimental (Le créneau dure $1,1s$.}
+
+\subsubsection{Amélioration du modèle}
+
+\begin{enumerate}
+\item \textbf{Prise en compte de la saturation}
+
+Les données expérimentales de la tension moteur et de l'intensité moteur sont stockées respectivement dans les variables $Im$ et $Um$.
+
+\question{En vous inspirant des commandes du fichier \textbf{compare$\_$modele1.m} tracer ces grandeurs en fonction du temps.}
+
+\question{Que pouvons nous dire de la saturation ? Proposer une modification du modèle tenant compte de ce phénomène.}
+
+\item \textbf{Prise en compte d'un couple de perturbation}
+
+\question{Proposer une modification du schéma bloc pour tenir compte d'un couple de frottement $C_r(p)$. On pour pourra tester la simulation avec des valeurs comprises entre $0,01N\cdot m$ et $0,02N\cdot m$.}
+\end{enumerate}
+
+\subsubsection{Influences des paramètres du correcteur}
+
+\question{Taper "clear all" dans la console Matlab. Relancer le script \textbf{data$\_$modele$\_$eleve.m}.}
+
+\question{Réaliser 3 simulations avec 3 valeurs de $K_p$ différentes ($\left\{10^6;10^5;5\times10^4\right\}$) en modifiant le nom de la variable dans le bloc "workspace" (respectivement (S1, S2 et S3).}
+
+Le fichier \textbf{"compare$\_$modele$\_$kp.m} à ouvrir dans Matlab. permet de comparer les trois simulations et trois essais expérimentaux avec les 3 valeurs de $K_p$ données précédemment.
+
+\question{Ouvrir le fichier et exécuter-le.}
+
+\question{Remplir le tableau suivant.}
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline 
+\textbf{Correcteur} & \multicolumn{2}{c|}{\textbf{Stabilité}} & \textbf{Rapidité} & \textbf{Précision } \\ 
+\hline 
+$K_p$ & Nombre de dépassement & Valeur de 1\up{er} dépassement & Temps de réponse à $5\%$ & Erreur statique $\varepsilon_s$ \\ 
+\hline 
+$5\times 10^4$ &  &  &  &  \\ 
+\hline 
+$10^5$ &  &  &  &  \\ 
+\hline 
+$10^6$ &  &  &  &  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+
+\subsection{Influence de l'inertie}
+
+Une étude dynamique permet de montrer qu'entre la configuration 1 et la configuration 2 $J_{eq}$ est multiplié par $1,4$.
+
+\question{Mettre en place deux simulations modélisant le comportement pour les configuration 1 et 2 (avec $K_p=10^6$) en modifiant le nom de la variable dans le bloc "workspace" (respectivement (S1, et S4).}
+
+Le fichier \textbf{"compare$\_$modele$\_$configuration.m} à ouvrir dans Matlab. permet de comparer les deux simulations et trois essais expérimentaux pour les configuration 1 et 2.
+
+\question{Ouvrir le fichier et exécuter-le.}
+
+
+\subsection{Analyse des performances fréquentielles du système}
+
+\subsubsection{Mise en oeuvre d'une étude fréquentielle en boucle fermée}
+
+Cet exemple montre comment utiliser le mode « Linear Analysis Tool » pour linéariser un modèle.
+Il faut pour cela préciser des points de prélèvements (entrée et sortie).
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/sb_linear_analysis.png}
+\end{center}
+
+\begin{enumerate}
+\item Ouvrir "Linear Analysis Tool" pour le modèle.
+
+Dans le menu de Simulink sélectionner Analysis > Control Design > Linear Analysis.
+\item Dans le menu de Simulink, définir la partie du modèle qui doit être linéarisée :
+\begin{enumerate}
+\item Cliquer droit sur le signal de sortie du qui correspond à l?entrée du bloc à étudier. Sélectionner Linear Analysis Points > Input Perturbation.
+\item Cliquer droit sur le signal en sortie du " Water-Tank System " et sélectionner Linear Analysis Points > Open-loop Output.
+\end{enumerate}
+\item Insérer ce point en « boucle ouverte » annule les effets du retour dans la linéarisation.
+\item On voit alors apparaître sur le schema bloc les points créés.
+
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/sb_linear_analysis2.png}
+\end{center}
+\item Il suffit de cliquer sur \includegraphics[width=0.1\textwidth]{images/bode_simulink.png} pour faire apparaître le diagramme.
+\end{enumerate}
+\question{Vérifier cette analyse sur un système du 1\up{er} ordre.}
+
+
+
+\subsubsection{Analyse fréquentielle par la simulation}
+
+\question{Effectuer l'analyse fréquentielle en boucle fermée du système.}
+
+\question{Effectuer l'analyse fréquentielle en boucle ouverte du système.}
+
+\subsubsection{Comparaison entre les modèles réels et simulés}
+
+Le fichier \textbf{"tracer$\_$bode$\_$exp.m} à ouvrir dans Matlab. permet de tracer le diagramme de bode en boucle fermé obtenu expérimentalement en configuration 1.
+
+\question{Ouvrir le fichier et exécuter-le.}

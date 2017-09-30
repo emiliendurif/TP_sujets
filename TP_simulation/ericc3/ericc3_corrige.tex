@@ -1,0 +1,131 @@
+\graphicspath{{/Users/emiliendurif/Documents/prepa/sujets/automatique/ericc3/}}
+
+\question{Compléter la chaine fonctionnelle décrivant la chaine cinématique "axe de lacet".}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/chaine_fonctionnelle.png}
+\end{center}
+
+
+
+
+\question{Déterminer le rapport de réduction $K_r$ du système.}
+
+
+
+
+\question{Déterminer l'expression du gain du capteur noté $K_c$.}
+
+
+\question{Déterminer l'expression du gain d'adaptation $K_S$ pour garantir : 
+\begin{align*}
+\varepsilon(p)=0\Leftrightarrow \theta_c(p)=\theta(p)
+\end{align*}
+}
+
+
+\question{Compléter le schéma bloc "TP$\_$modele$\_$matlab$\_$eleve.slx" pour modéliser le système asservi en boucle fermée. 
+\begin{itemize}
+\item On pourra utiliser le bloc "To Workspace" en nommant la variable de sortie "S1".
+\item On imposera un échelon de $30^{\circ}$.
+\end{itemize}
+}
+
+\question{Importation des données : 
+
+\begin{enumerate}
+\item Ouvrir le fichier \textbf{data$\_$modele$\_$eleve.m} et observer son contenu.
+\item Exécuter et observer le message d'erreur.
+\item Compléter le programme avec les informations manquantes issues de la partie précédente.
+\end{enumerate}
+}
+
+\question{Exécuter la simulation sur une durée de $2.5s$ et observer le résultat en double cliquant sur le Scope.}
+
+\question{A l'aide de la courbe qui s'affiche, analyser les écarts.}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{modele/analyse_ecart1.pdf}
+\end{center}
+
+\question{Modifier la consigne pour obtenir un créneau en entrée comme sur l'essai expérimental (Le créneau dure $1,1s$.}
+
+
+\question{En vous inspirant des commandes du fichier \textbf{compare$\_$modele1.m} tracer ces grandeurs en fonction du temps.}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{modele/analyse_tension_intensite.pdf}
+\end{center}
+
+\question{Que pouvons nous dire de la saturation ? Proposer une modification du modèle tenant compte de ce phénomène.}
+
+On ajoute une saturation en tension à $\pm 10V$.
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{modele/analyse_ecart2.pdf}
+\end{center}
+
+\question{Proposer une modification du schéma bloc pour tenir compte d'un couple de frottement $C_r(p)$. On pour pourra tester la simulation avec des valeurs comprises entre $0,01N\cdot m$ et $0,02N\cdot m$.}
+
+
+\question{Taper "clear all" dans la console Matlab. Relancer le script \textbf{data$\_$modele$\_$eleve.m}.}
+
+\question{Réaliser 3 simulations avec 3 valeurs de $K_p$ différentes ($\left\{10^6;10^5;5\times10^4\right\}$) en modifiant le nom de la variable dans le bloc "workspace" (respectivement (S1, S2 et S3).}
+
+\begin{tabular}{cc}
+\includegraphics[width=0.5\textwidth]{modele/schema_bloc_frottement1.png}
+&
+\includegraphics[width=0.5\textwidth]{modele/schema_bloc_frottement2.png}\\
+\includegraphics[width=0.5\textwidth]{modele/analyse_ecart_frottement1.pdf}
+&
+\includegraphics[width=0.5\textwidth]{modele/analyse_ecart_frottement2.pdf}
+\end{tabular}
+
+
+
+\question{Ouvrir le fichier et exécuter-le.}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{modele/analyse_ecart_kp.pdf}
+\end{center}
+
+\question{Remplir le tableau suivant.}
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline 
+\textbf{Correcteur} & \multicolumn{2}{c|}{\textbf{Stabilité}} & \textbf{Rapidité} & \textbf{Précision } \\ 
+\hline 
+$K_p$ & Nombre de dépassement & Valeur de 1\up{er} dépassement & Temps de réponse à $5\%$ & Erreur statique $\varepsilon_s$ \\ 
+\hline 
+$5\times 10^4$ &  &  &  &  \\ 
+\hline 
+$10^5$ &  &  &  &  \\ 
+\hline 
+$10^6$ &  &  &  &  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\question{Mettre en place deux simulations modélisant le comportement pour les configuration 1 et 2 (avec $K_p=10^6$) en modifiant le nom de la variable dans le bloc "workspace" (respectivement (S1, et S4).}
+
+
+
+\question{Ouvrir le fichier et exécuter-le.}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{modele/analyse_ecart_jeq.pdf}
+\end{center}
+
+
+\question{Vérifier cette analyse sur un système du 1\up{er} ordre.}
+
+
+
+\question{Effectuer l'analyse fréquentielle en boucle fermée du système.}
+
+\question{Effectuer l'analyse fréquentielle en boucle ouverte du système.}
+
+
+
+\question{Ouvrir le fichier et exécuter-le.}

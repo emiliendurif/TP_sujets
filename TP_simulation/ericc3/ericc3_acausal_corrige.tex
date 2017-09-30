@@ -1,0 +1,52 @@
+\graphicspath{{/Users/emiliendurif/Documents/prepa/sujets/TP_simulation/ericc3/}}
+
+\question{
+\begin{enumerate}
+\item Copier le dossier "modele$\_$simscape" sur votre espace perso.
+\item Placer le chemin d'accès de ce dossier dans la barre d'adresse Matlab.
+\item Dans Matlab ouvrir le fichier "ericc3$\_$DataFile.m" et l'exécuter. On note dans le workspace la création d'un objet appelé smiData qui contient l'ensemble des variables mécaniques nécessaires au calcul.
+\item Lancer Simulink et ouvrir le fichier ericc3$\_$simmechanics.slx.
+\item Exécuter le programme et observer le résultat de la simulation. 
+\end{enumerate}
+}
+
+\question{Compléter la chaine fonctionnelle décrivant la chaine cinématique "axe de lacet".}
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{images/chaine_fonctionnelle.png}
+\end{center}
+
+
+\question{Dans Simulink, réaliser le schéma électrique de la motorisation du robot sans la conversion électromécanique.}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/ericc_mcc_elec.pdf}
+\end{center}
+
+\question{Dans Simulink, réaliser le schéma mécanique de la motorisation du robot sans la conversion électromécanique.}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/ericc_mcc_meca.pdf}
+\end{center}
+
+\question{Raccorder les deux schémas électrique et mécanique définis précédemment à l'aide du bloc de conversion électromécanique.}
+
+\question{Réaliser la simulation consistant à imposer un échelon de tension au moteur et à visualiser le réponse en vitesse de rotation du moteur.}
+
+
+
+\question{A l'aide des équations \ref{eq_meca}, \ref{eq_elec}, \ref{eq_elec_meca1} et \ref{eq_elec_meca2}, construire le schéma bloc décrivant la modélisation causale du moteur. (On prendra en entrée $u_m(t)$ et en sortie $\omega_m(t)$}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/modele_mcc_ericc.pdf}
+\end{center}
+
+\question{Déterminer le rapport de réduction $K_r$ du système.}
+
+
+\question{Compléter le schéma bloc "modele$\_$ericc$\_$complet$\_$eleve.slx" pour modéliser le système asservi en boucle fermée. 
+}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/modele_ericc_complet.pdf}
+\end{center}
