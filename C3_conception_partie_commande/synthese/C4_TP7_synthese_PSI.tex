@@ -1,0 +1,187 @@
+%ENTETE / INCLUDES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+\input{../../../../../latex/packages.tex}	%Liste des packages
+%\import{../../../latex/}{notations.tex}	%Notations et commandes
+%\input{../../../latex/notations.tex}	%Notations et commandes
+
+\input{../../../../../latex/notations/notations_math.tex}
+\input{../../../../../latex/notations/notations_unites.tex}
+\input{../../../../../latex/notations/notations_AF.tex}
+\input{../../../../../latex/notations/notations_asservissement.tex}
+\input{../../../../../latex/notations/notations_vecteurs.tex}
+\input{../../../../../latex/notations/notations_torseurs.tex}
+\input{../../../../../latex/notations/notations_cinematique.tex}                          
+\input{../../../../../latex/notations/notations_cotation.tex}
+\input{../../../../../latex/notations/notations_fab.tex}
+\input{../../../../../latex/notations/notations_statique.tex}
+\input{../../../../../latex/notations/boites.tex}
+
+\input{../../../../../latex/style.tex}		%Style, mise en page
+
+% Commandes générales
+%===============================
+
+
+%Lettres grecques oubliees
+\newcommand{\Mu}{M} %mu majuscule
+
+%Mise en forme
+\newcommand{\gras}[1]	{\textbf{#1}}
+\newcommand{\bouton}[1]	{\fbox{\footnotesize{\textsc{#1}}}}
+\newcommand{\toutpetit}[1]	{{\tiny{1}}}
+\newcommand{\PETIT}[1]		{{\scriptsize{#1}}}
+\newcommand{\Petit}[1]		{\footnotesize{#1}}
+\newcommand{\petit}[1]		{{\small{#1}}}
+\newcommand{\normal}[1]		{{\normalsize{#1}}}
+\newcommand{\grand}[1]		{{\large{#1}}}
+\newcommand{\Grand}[1]		{{\Large{#1}}}
+\newcommand{\GRAND}[1]		{{\LARGE{#1}}}
+\newcommand{\enorme}[1]		{{\huge{#1}}}
+\newcommand{\Enorme}[1]		{{\Huge{#1}}}
+
+\newcommand{\oeuvre}		{\oe uvre}
+\newcommand{\oeuvres}		{\oe uvres}
+
+\newcommand{\fig}[1]		{(fig.\ref{#1})}
+
+\newcommand{\miniCentre}[2][\linewidth]	{\begin{minipage}{#1}\begin{center}#2\end{center}\end{minipage}}
+
+%\graphicspath{{../../../latex/notations/notations_cotation/}}
+\renewcommand	{\cycle}		{C4 : Performances des systèmes asservis}
+\renewcommand	{\cycleresume}		{C4 : Performances des systèmes asservis}
+\renewcommand	{\titre}		{Performances des systèmes linéaires continus et invariants}
+\renewcommand	{\titreresume}		{Performances des SLCI}
+\renewcommand	{\numero}		{C4}
+\renewcommand	{\numerotd}		{7}
+\renewcommand	{\auteur}		{Emilien DURIF}
+\renewcommand	{\etablissement}	{Lycée La Martinière Monplaisir Lyon}
+\renewcommand	{\discipline}		{Sciences Industrielles pour l'Ingénieur}
+\renewcommand	{\classe}		{Classe préparatoire P.S.I.}
+\renewcommand	{\annee}		{2016 - 2017}
+\renewcommand	{\icone}		{../../../../../latex/images/logo_martiniere.jpg}
+\renewcommand	{\competences}		{}
+\renewcommand	{\date}		{9/10 mars 2017}
+
+\setboolean{tdcorrige}{false}
+
+\begin{document}
+
+%	\begin{center}
+%		\huge {\textsc{\titre}}
+%	\end{center}
+
+	\input{../../../../../latex/page_de_garde_synthese.tex}
+	
+\subsection{Compétences}
+
+\begin{itemize}
+\item \textbf{Analyser :} 
+\begin{itemize}
+\item Appréhender les analyses fonctionnelles et structurelles : architectures fonctionnelle et structurelle
+\item Appréhender les analyses fonctionnelles et structurelles : réversibilité d'une chaine d'énergie.
+\end{itemize}
+\item \textbf{Modéliser :} 
+\begin{itemize}
+\item Proposer un modèle de connaissance et de comportement : 
+\begin{itemize}
+\item Systèmes linéaires continus et invariants ;
+\item Signaux canoniques d'entrée ;
+\item Schémas blocs ;
+\item Modèles de comportement
+\end{itemize}
+\end{itemize}
+\item \textbf{Résoudre :}  Proposer une démarche de résolution et mettre en oeuvre la résolution analytique et numérique: 
+\begin{itemize}
+\item Réponse temporelle et fréquentielle des systèmes du 1er et 2nd ordre
+\end{itemize}
+\item \textbf{Expérimenter : } proposer, justifier et mettre en oeuvre un protocole expérimental
+\begin{itemize}
+\item Prévoir les allures des réponses attendues ;
+\end{itemize}
+\item \textbf{Communiquer : } Mettre en oeuvre une communication
+\end{itemize} 
+
+
+\subsection{Proposition d'organisation du TP par îlot : }
+
+
+Pour mener le projet, il est indispensable de se répartir le travail pour arriver à terminer le travail demandé dans le temps imparti. 
+\begin{itemize}
+\item Le \textbf{« chef de projet »} gère le projet, conduit l'analyse structurelle sur le système, remplie le tableau des compétences, élabore la trame pour la présentation, fait le lien entre les deux responsables \textbf{"expérimentateur"} et \textbf{"modélisateur"} pour caractériser les écarts.
+\item Le responsable \textbf{« expérimentateur »} réalise les expériences sur le matériel, interprète et met en forme les résultats (pour la présentation)
+\item Le responsable \textbf{"modélisateur"} travaille sur la modélisation numérique du système, interprète les résultats et les met en forme pour la présentation.
+\end{itemize}
+
+\begin{remarque}[Mise à disposition des données]
+Les \textbf{modélisations numériques} associés à chacun des TP sont donnés sur le dossier "transfert" dans le répertoire \textit{PSI/TP7/"nom du tp asscocié"}
+\end{remarque}
+
+
+
+\subsection{Analyser les écarts des systèmes}
+
+Les travaux pratiques sont l'occasion de déterminer les \textbf{performances réelles} d'un système.
+Leur analyse présente trois principaux objectifs : 
+\begin{itemize}
+\item Quantification des \textbf{écarts entre performances réelles et simulées} pour vérifier la validité d'un modèle de simulation qui pourra, une fois validé, être destiné à une \textit{étude paramétrique}.
+\item Quantification des \textbf{écarts entre performances réelles et attendues} pour valider les \textit{critères d'un cahier des charges} généralement précisés sur un diagramme d'exigences.
+\item \textbf{Identifier} le comportement pour définir un \textit{modèle physique} associé au système
+\end{itemize}
+
+
+ \begin{center}
+   \includegraphics[width=0.5\linewidth]{./images/triptyque.pdf}
+\end{center} 
+
+
+
+
+\subsection{Analyse et identification des performances réelles d'un systèmes}
+
+\subsubsection{Méthodologie}
+On rappelle la méthodologie de l'analyse des performances réelles d'un système.
+
+\begin{enumerate}
+\item \textbf{Identifier la grandeur physique} à mesurer (exemple la position du bras du robot) qui peut être définie par le cahier des charges.
+\item Mettre en place un \textbf{protocole expérimental} : à définir et à expliciter rigoureusement.
+\item Effectuer la mesure avec généralement le logiciel d'acquisition dédié.
+\item \textbf{Analyser les données expérimentales} en identifiant des zones élémentaires.
+\item Vérifier la \textbf{reproductibilité des mesures} en réitérant les manipulations.
+\item Vérifier les \textbf{limites du modèle} (linéarité, vitesse de saturation, etc...).
+\item Confronter ces données (traduisant les \textbf{performances réelles} du systèmes) aux \textbf{performances attendues} définies par le cahier des charges.
+\end{enumerate}
+
+
+
+\subsection{Conception et optimisation de la commande d'un système asservi}
+
+\begin{propriete}[Correction des systèmes linéaires continus et invariants]
+On peut retenir de manière générale :
+\begin{itemize}
+\item L'\textbf{augmentation du gain} entraîne une \textbf{amélioration de la précision et de la rapidité mais diminue la stabilité} (correcteur proportionnel).
+
+\item L'action \textbf{dérivée} ou à avance de phase permet, à précision égale, de rendre le système \textbf{plus stable} (correcteur à action dérivée).
+
+\item L'action \textbf{intégrale} ou à retard de phase permet, à stabilité égale, de rendre le système \textbf{plus précis}.
+
+\end{itemize}
+
+\end{propriete}
+
+\subsection{Forme de la présentation}
+
+
+
+
+
+\subsection{Bilan}
+
+%\begin{center}
+%\includegraphics[width=0.95\textwidth]{images/tableau1.pdf}
+%\end{center}
+%\begin{center}
+%\includegraphics[width=0.95\textwidth]{images/tableau2.pdf}
+%\end{center}
+\end{document}
+ 

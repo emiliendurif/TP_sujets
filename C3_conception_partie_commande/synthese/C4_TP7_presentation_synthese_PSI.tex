@@ -1,0 +1,280 @@
+\documentclass[8pt]{beamer}
+\usetheme{roosevelt}
+%\documentclass[8pt,blue]{beamer}
+%\usetheme{Antibes}
+%\usecolortheme{lily}
+
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{bm}
+\usepackage{subfigure}
+\usepackage{multimedia}
+%\usepackage{movie16}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage{multido}
+\usepackage{multirow}
+\usepackage{beamerfoils}
+\usepackage{animate}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{mathrsfs}
+\def\etal{{\it et al.}}
+
+%\graphicspath{{./}{figures/}}
+\usepackage{bm} 
+
+\input{../../../../../latex/notations/notations_math.tex}
+\input{../../../../../latex/notations/notations_unites.tex}
+\input{../../../../../latex/notations/notations_AF.tex}
+\input{../../../../../latex/notations/notations_asservissement.tex}
+\input{../../../../../latex/notations/notations_vecteurs.tex}
+\input{../../../../../latex/notations/notations_torseurs.tex}
+\input{../../../../../latex/notations/notations_cinematique.tex}
+\input{../../../../../latex/notations/notations_cotation.tex}
+\input{../../../../../latex/notations/notations_fab.tex}
+\input{../../../../../latex/notations/notations_statique.tex}
+
+\newcommand{\fp}	{\vForce[f_p]{\sS1}{\sS2}}
+\newcommand{\miniCentre}[2][\linewidth]	{\begin{minipage}{#1}\begin{center}#2\end{center}\end{minipage}}
+\newcommand{\lintab}[3]{\hline \begin{minipage}{2cm}\begin{center}#1\end{center}\end{minipage} & \begin{minipage}{4.5cm}\begin{center}#2\end{center}\end{minipage} &  \begin{minipage}{3.5cm}\begin{center}#3\end{center}\end{minipage} \\}
+%\newcommand{\Veccin}				{\ensuremath{	\mathscr{V}	}}	%Symbole du torseur cinematique
+%\newcommand{\tCinematique}[3][]		{\ensuremath{	\torseur{\Veccin^{#1}_{\left(#2/#3\right)}}	}}%torseur cinematique
+
+%-----------------------------------------------------------------------
+%
+% chemins des fichiers graphiques
+%
+%\ifpdf
+%\graphicspath{{./}{figures/pdfs/}{figures/others/}}
+%\else
+%\RequirePackage{psfrag}
+%\graphicspath{{./}{figures/epss/}{figures/pdfs/}{figures/others/}}
+%\fi
+%-----------------------------------------------------------------------
+
+
+\pdfinfo
+{
+  /Title       ()
+  /Creator (E. DURIF)
+  /Author (Émilien DURIF)
+}
+
+
+
+\title{C3 : Performances dynamiques et énergétiques des systèmes\\
+TP4 : Performances dynamiques et énergétique des systèmes composés de chaines de solides}
+%\vspace{-1.cm}
+\author{Émilien DURIF}
+
+
+\date{\normalsize{Lycée La Martinière Monplaisir Lyon\\
+     Classe de PSI\\
+}}
+
+
+
+
+\begin{document}
+
+%\newcommand{\biblio_en}[1]{\textcolor[rgb]{0.9 0.9 0.9}{\it{#1}}}
+\newcommand{\biblioen}[1]{\textcolor[rgb]{0.2 0.5 0.9}{\small{\it{#1}}}}
+\setbeamertemplate{navigation symbols}{}
+%\rmfamily
+
+\frame{
+\vspace{-1.cm}
+\titlepage
+\vspace{-.5cm}
+%\begin{columns}
+%%	\column{.3\textwidth}
+%%	\begin{center}
+%%	\includegraphics[width=0.5\textwidth]{figures/lamcos.jpg}
+%%	\end{center}
+%%	\column{.4\textwidth}
+%%	\begin{center}
+%%	\includegraphics[width=0.4\textwidth]{figures/logoinsa.jpg}
+%%	\end{center}
+%%	\column{.3\textwidth}
+%%	\begin{center}
+%%	\includegraphics[width=0.4\textwidth]{figures/mateis.jpg}
+%%	\end{center}
+%\end{columns}
+}
+
+\newcommand<>{\highlighton}[1]{%
+  \alt#2{\structure{#1}}{{#1}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Content starts here %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}<beamer> 
+\frametitle{Plan}
+\tableofcontents
+\end{frame}
+\AtBeginSubsection[]{
+  \frame<handout:0>{
+    \frametitle{Plan}
+    \tableofcontents[current]
+  }
+}
+
+
+\section{Proposition d'organisation du TP par îlot : }
+
+\frame{
+\frametitle{Proposition d'organisation}
+
+\begin{block}{Proposition d'organisation}
+Pour mener le projet, il est indispensable de se répartir le travail pour arriver à terminer le travail demandé dans le temps imparti. 
+\begin{itemize}
+\item Le \textbf{« chef de projet »} gère le projet, conduit l'analyse structurelle sur le système, remplie le tableau des compétences, élabore la trame pour la présentation, fait le lien entre les deux responsables \textbf{"expérimentateur"} et \textbf{"modélisateur"} pour caractériser les écarts.
+\item Le responsable \textbf{« expérimentateur »} réalise les expériences sur le matériel, interprète et met en forme les résultats (pour la présentation)
+\item Le responsable \textbf{"modélisateur"} travaille sur la modélisation numérique du système, interprète les résultats et les met en forme pour la présentation.
+\end{itemize}
+\end{block}
+
+
+\begin{alertblock}<2->{Mise à disposition des données}
+Les \textbf{modélisations numériques} associés à chacun des TP sont données sur le dossier "transfert" dans le répertoire \textit{PSI/TP4/"nom du tp asscocié"}
+\end{alertblock}
+}
+
+\section{Compétences}
+
+\frame{
+\frametitle{Compétences}
+\begin{itemize}
+\item \textbf{Analyser : }
+\begin{itemize}
+\item Définir les \textbf{frontières de l'analyse} : 
+\begin{itemize}
+\item \textbf{Isoler} un système et justifier l'isolement.
+\item Définir les éléments influents du \textbf{milieu extérieur}.
+\end{itemize}
+\item \textbf{Caractériser les écarts} : 
+\begin{itemize}
+\item \textbf{Identifier} des écarts.
+\item \textbf{Quantification} des écarts.
+\item \textbf{Interprétation} des écarts.
+\end{itemize}
+\end{itemize}
+\item \textbf{Modéliser : }Proposer un \textbf{modèle de connaissance} et de \textbf{comportement}.
+\begin{itemize}
+\item Torseur \textbf{Cinétique} et \textbf{Dynamique}.
+\item \textbf{Géométrie de masse}.
+\end{itemize}
+\end{itemize}
+}
+\frame{
+\frametitle{Compétences}
+\begin{itemize}
+\item \textbf{Résoudre : } Procéder à la mise en oeuvre d'une démarche de résolution analytique et numérique :
+\begin{itemize}
+\item Appliquer le \textbf{Principe Fondamental de la Dynamique} pour obtenir une équation de mouvement.
+\item Choisir les valeurs des \textbf{paramètres de la résolution numérique}.
+\item Choisir les \textbf{grandeurs physiques tracées}.
+\item Choisir les \textbf{paramètres de simulation}.
+\item Faire \textbf{varier un paramètre} et \textbf{comparer les courbes} obtenues.
+\end{itemize}
+\item \textbf{Expérimenter : }
+\begin{itemize}
+\item Prévoir \textbf{l'allure} et \textbf{les ordres de grandeurs} des mesures.
+\item Définir des \textbf{Protocoles expérimentaux}.
+\end{itemize}
+\item \textbf{Communiquer : }
+\begin{itemize}
+\item \textbf{Choisir les outils de communication} adaptés par rapport à l'interlocuteur.
+\item Faire preuve d'écoute et \textbf{confronter des points de vue}.
+\item Présenter les \textbf{étapes du travail}.
+\item Présenter de \textbf{manière argumentée une synthèse des résultats}.
+\end{itemize}
+\end{itemize}
+}
+\section{Analyser}
+\frame{
+\frametitle{Analyser}
+
+\begin{block}{Analyser les écarts}
+Les travaux pratiques sont l'occasion de déterminer les \textbf{performances réelles} d'un système.
+Leur analyse présente trois principaux objectifs : 
+\begin{itemize}
+\item Quantification des \textbf{écarts entre performances réelles et simulées} pour vérifier la validité d'un modèle de simulation qui pourra, une fois validé, être destiné à une \textit{étude paramétrique}.
+\item Quantification des \textbf{écarts entre performances réelles et attendues} pour valider les \textit{critères d'un cahier des charges} généralement précisés sur un diagramme d'exigences.
+\item \textbf{Identifier} le comportement pour définir un \textit{modèle physique} associé au système
+\end{itemize}
+\end{block}
+
+
+ \begin{center}
+   \includegraphics[width=0.5\linewidth]{./images/triptyque.pdf}
+\end{center} 
+
+}
+
+
+
+\section{Modéliser}
+\subsection{Étapes de la modélisation}
+
+\frame{
+\frametitle{Modéliser}
+La \textbf{modélisation} d'un système s'appuie sur différentes étapes.
+\begin{itemize}
+\item Formulation et justification des \textbf{hypothèses} : 
+\begin{itemize}
+\item Solides indéformables ;
+\item Liaisons parfaites : sans jeu, sans frottement, contacts assurés, surfaces parfaites, etc ...
+\item Référentiel d'observation galiléen; 
+\item Modélisation plane ou dans l'espace ;
+\end{itemize}
+\item Définition des \textbf{modèles de connaissances} : 
+\begin{itemize}
+\item Torseurs \textbf{cinétique et dynamique} ;
+\item Torseurs des actions mécaniques transmissibles (\textbf{statique}) ;
+\item Traduction de l'équilibre dynamique (\textbf{Principe fondamental de la dynamique})
+\end{itemize}
+\end{itemize}
+}
+
+\subsubsection{Expérimenter : analyse des performances réelles d'un systèmes}
+
+
+\frame{
+\frametitle{Méthodologie de mesure}
+
+\begin{enumerate}
+\item Identifier la grandeur physique à mesurer qui peut être définie par le cahier des charges.
+\item Mettre en place un protocole expérimental : à définir et expliciter rigoureusement.
+\item Effectuer la mesure avec généralement le logiciel d'acquisition dédié.
+\item Analyser les données expérimentales en travaillant par zones élémentaires.
+\item Vérifier la reproductibilité de la mesure en réitérant les manipulations.
+\item Analyser la chaine d'acquisition que l'on peut représenter à l'aide d'une chaine d'information.
+\item Éventuellement revenir sur les hypothèses émises lors de la manipulation et de la modélisation.
+\end{enumerate}
+
+}
+
+\section{Bilan}
+\frame{
+\frametitle{Bilan}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/tableau1.pdf}
+\end{center}
+}
+\frame{
+\frametitle{Bilan}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/tableau2.pdf}
+\end{center}
+}
+\end{document}

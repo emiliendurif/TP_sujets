@@ -1,0 +1,201 @@
+%ENTETE / INCLUDES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+\input{../../../../../latex/packages.tex}	%Liste des packages
+%\import{../../../latex/}{notations.tex}	%Notations et commandes
+%\input{../../../latex/notations.tex}	%Notations et commandes
+
+\input{../../../../../latex/notations/notations_math.tex}
+\input{../../../../../latex/notations/notations_unites.tex}
+\input{../../../../../latex/notations/notations_AF.tex}
+\input{../../../../../latex/notations/notations_asservissement.tex}
+\input{../../../../../latex/notations/notations_vecteurs.tex}
+\input{../../../../../latex/notations/notations_torseurs.tex}
+\input{../../../../../latex/notations/notations_cinematique.tex}                          
+\input{../../../../../latex/notations/notations_cotation.tex}
+\input{../../../../../latex/notations/notations_fab.tex}
+\input{../../../../../latex/notations/notations_statique.tex}
+\input{../../../../../latex/notations/boites.tex}
+
+\input{../../../../../latex/style.tex}		%Style, mise en page
+
+% Commandes générales
+%===============================
+
+
+%Lettres grecques oubliees
+\newcommand{\Mu}{M} %mu majuscule
+
+%Mise en forme
+\newcommand{\gras}[1]	{\textbf{#1}}
+\newcommand{\bouton}[1]	{\fbox{\footnotesize{\textsc{#1}}}}
+\newcommand{\toutpetit}[1]	{{\tiny{1}}}
+\newcommand{\PETIT}[1]		{{\scriptsize{#1}}}
+\newcommand{\Petit}[1]		{\footnotesize{#1}}
+\newcommand{\petit}[1]		{{\small{#1}}}
+\newcommand{\normal}[1]		{{\normalsize{#1}}}
+\newcommand{\grand}[1]		{{\large{#1}}}
+\newcommand{\Grand}[1]		{{\Large{#1}}}
+\newcommand{\GRAND}[1]		{{\LARGE{#1}}}
+\newcommand{\enorme}[1]		{{\huge{#1}}}
+\newcommand{\Enorme}[1]		{{\Huge{#1}}}
+
+\newcommand{\oeuvre}		{\oe uvre}
+\newcommand{\oeuvres}		{\oe uvres}
+
+\newcommand{\fig}[1]		{(fig.\ref{#1})}
+
+\newcommand{\miniCentre}[2][\linewidth]	{\begin{minipage}{#1}\begin{center}#2\end{center}\end{minipage}}
+
+%\graphicspath{{../../../latex/notations/notations_cotation/}}
+\renewcommand	{\partie}		{Automatique}
+\renewcommand	{\titre}		{Modélisation des systèmes linéaires continus et invariants}
+\renewcommand	{\numero}		{4}
+\renewcommand	{\auteur}		{Emilien DURIF}
+\renewcommand	{\etablissement}	{Lycée Roosevelt Reims}
+\renewcommand	{\discipline}		{Sciences Industrielles pour l'Ingénieur}
+\renewcommand	{\classe}		{Classe préparatoire P.S.I.}
+\renewcommand	{\annee}		{2013 - 2014}
+\renewcommand	{\icone}		{../../../../../latex/images/logo_roosevelt.jpg}
+\renewcommand	{\competences}		{}
+
+\setboolean{tdcorrige}{false}
+
+\begin{document}
+
+%	\begin{center}
+%		\huge {\textsc{\titre}}
+%	\end{center}
+
+	\input{../../../../../latex/page_de_garde_synthese.tex}
+
+\subsection{Introduction}
+La modélisation des systèmes linéaires continus et invariants peut présenter plusieurs objectifs :
+\begin{itemize}
+\item Le premier permet de prévoir les performances d'un système et vérifier les performances vis-à-vis du cahier des charges. On détermine alors les écarts entre performances attendues et performances réelles associées à un système.
+\item Le deuxième permet d'identifier les caractéristiques d'un système. Pour cela on utilise une méthode d'identification. 
+\item Le troisième permet d'optimiser la commande d'un système asservi en fonction des performances à mettre en oeuvre vis-à-vis d'un cahier des charges.
+\end{itemize}
+
+ \begin{center}
+   \includegraphics[width=0.6\linewidth]{./images/triptyque.pdf}
+\end{center} 
+
+\subsection{Analyse des performances réelles d'un systèmes}
+
+\subsubsection{Méthodologie}
+On rappelle la méthodologie de l'analyse des performances réelles d'un système.
+
+\begin{enumerate}
+\item \textbf{Identifier la grandeur physique} à mesurer (exemple la position du bras du robot) qui peut être définie par le cahier des charges.
+\item Mettre en place un \textbf{protocole expérimental} : à définir et à expliciter rigoureusement.
+\item Effectuer la mesure avec généralement le logiciel d'acquisition dédié.
+\item \textbf{Analyser les données expérimentales} en identifiant des zones élémentaires.
+\item Vérifier la \textbf{reproductibilité des mesures} en réitérant les manipulations.
+\item Vérifier les \textbf{limites du modèle} (linéarité, vitesse de saturation, etc...).
+\item Confronter ces données (traduisant les \textbf{performances réelles} du systèmes) aux \textbf{performances attendues} définies par le cahier des charges.
+\end{enumerate}
+
+\subsubsection{Rappel des critères de performances attendues pour l'étude de la commande des systèmes}
+
+\begin{itemize}
+\item La \textbf{stabilité} est le critère à considérer en priorité. Il se définit au sens que pour toute entrée bornée, la sortie reste bornée. 
+\begin{itemize}
+\item Elle est étudiée sur la \textbf{FTBF} par le \textbf{critère algébrique de Routh}.
+\item Elle est étudiée sur la \textbf{FTBO} par les \textbf{critères graphiques du revers}. (Seul les critères graphiques permettent d'estimer les marges de stabilité).
+\end{itemize} 
+\item La \textbf{précision} s'estime par les erreurs statique ou de trainage. Elle dépend :
+\begin{itemize}
+\item de la \textbf{classe et de l'ordre de la FTBO} vis-à-vis de l'entrée du système ;
+\item de la \textbf{classe et de l'ordre de la fonction transfert en amont de la perturbation} vis-à-vis de de cette dernière ;
+\end{itemize}
+\item La \textbf{rapidité} des systèmes asservis se caractérisent par le \textbf{temps de réponse à $5\%$}.
+\end{itemize}
+
+\subsubsection{Performances d'un système du premier ordre}
+
+Lors d'une réponse indicielle (vis-à-vis d'une échelon), un système du premier ordre :
+\begin{itemize}
+\item est toujours stable (si $\tau>0$), 
+\item ne présente jamais de dépassements, 
+\item converge vers $K\;e_0$,
+\item possède une tangente à l'origine de pente $\frac{K\;e_0}{\tau}$ ,
+\item possède un temps de réponse à $5\%$ qui vaut $t_{r5\%}=3\;\tau$.
+\end{itemize} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+	\hfill
+	\includegraphics[width=15cm]{./images/1er_ordre.pdf}
+	\hfill{}
+	\caption{Réponse indicielle d'un système du $1^{er}$ ordre \label{echelon}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\FloatBarrier
+
+\subsubsection{Performances d'un système du deuxième ordre}
+
+Lors d'une réponse indicielle (vis-à-vis d'une échelon), un système du deuxième ordre :
+\begin{itemize}
+\item présente un dépassement si $\xi<1$, 
+\item converge vers $K\;e_0$,
+\item possède une tangente à l'origine de \textbf{pente nulle} ,
+\item possède un temps de réponse à $5\%$ qui se calcule à partir de l'abaque donné en figure \ref{rapidite_2nd}.
+\item possède un optimal de rapidité pour $\xi=0,7$ et $t_{r5\%}\cong \frac{3}{\omega_0\xi}$.
+\end{itemize} 
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{figure}[ht]
+		\begin{center}
+			\includegraphics[width=15cm]{./images/2nd_ordre_echelon0.pdf}
+		\end{center}
+		\caption{Illustration des différents régimes en fonctions de l'amortissement $\xi$.\label{regimes}}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{figure}[ht]
+		\begin{center}
+			\includegraphics[width=.7\textwidth]{./images/amortissement.pdf}
+		\end{center}
+		\caption{Temps de réponses, fonctions de $\xi$.\label{rapidite_2nd}}
+	\end{figure}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+\subsection{Identification d'un modèle de connaissance}
+
+L'identification d'un modèle de connaissance à partir des performances réelles issues d'une étude expérimentale consiste à choisir un modèle pertinent puis d'extraire les paramètres associés.
+Selon la forme du relevé expérimental, le choix se porte généralement vers un modèle du premier ou du deuxième ordre.
+\begin{itemize}
+\item L'identification du gain statique s'obtient par le rapport de la valeur à convergence sur la valeur de l'échelon d'entrée : $K=\frac{s_{\infty}}{e_0}$ ;
+\item Pour \textbf{un premier ordre} la constante de temps $\tau$ s'obtient par :
+\begin{itemize}
+\item par le temps à $63\%$ ;
+\item par la tangente à l'origine ;
+\item le temps de réponse à $5\%$ égal à $3\tau$. 
+\end{itemize}
+\item Pour \textbf{un second ordre} oscillant la pulsation propre $\omega_0$ et le coefficient d'amortissement s'identifient avec les définitions de : 
+\begin{itemize}
+\item la pseudo période : $T_p=\frac{2\pi}{\omega_p}=\frac{2\pi}{\omega_0\sqrt{1-\xi^2}}$
+\item le dépassement $\%$ : $D\%=100\times exp\left(\frac{-\xi \pi}{\sqrt{1-\xi^2}}\right)=\frac{s_{max}-s_{\infty}}{s_{\infty}}\times 100$
+\end{itemize}
+\end{itemize} 
+
+
+\subsection{Conception et optimisation de la commande d'un système asservi}
+
+\begin{propriete}[Correction des systèmes linéaires continus et invariants]
+On peut retenir de manière générale :
+\begin{itemize}
+\item L'\textbf{augmentation du gain} entraîne une \textbf{amélioration de la précision et de la rapidité mais diminue la stabilité} (correcteur proportionnel).
+
+\item L'action \textbf{dérivée} ou à avance de phase permet, à précision égale, de rendre le système \textbf{plus stable} (correcteur à action dérivée).
+
+\item L'action \textbf{intégrale} ou à retard de phase permet, à stabilité égale, de rendre le système \textbf{plus précis}.
+
+\end{itemize}
+
+\end{propriete}
+
+\end{document}
+ 
