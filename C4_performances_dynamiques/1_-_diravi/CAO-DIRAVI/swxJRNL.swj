@@ -1,0 +1,1293 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 10/05/03 by labosi
+' *****************************************************************************
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long
+Dim Annotation As Object
+Dim Gtol As Object
+Dim DatumTag As Object
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\Regulateur-simplif.SLDASM", 2, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.RotateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.0121448098433, 0.0227341619771, -0.03205877219312, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Set Part = Nothing
+swApp.CloseDoc "Regulateur-simplif.SLDASM"
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\Regulateur-simplif.SLDASM", 2, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+Part.WindowRedraw
+swApp.ActiveDoc.ActiveView.FrameWidth = 949
+swApp.ActiveDoc.ActiveView.FrameHeight = 610
+Part.RotateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.01090610637967, 0.01785657255652, -0.03576045110189, False, 0, Nothing)
+Part.ClearSelection
+' MSGBOX
+' C:\Mes documents\François\Regulateur-MW\Regulateur-simplif.SLDASM n'a pas été reconstruit avec succès depuis le dernier changement de fonction ou un modèle référencé de l'extérieur a changé.
+' 	Il est plus sûr de reconstruire avant d'enregistrer.
+' 		Reconstruire maintenant ?
+
+Part.Save2 FALSE
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Set Part = Nothing
+swApp.CloseDoc "Regulateur-simplif.SLDASM"
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\Regulateur-simplif.SLDASM", 2, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+Part.Save2 FALSE
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.0232711
+Part.ActiveView().RotateAboutCenter -0.137828, -0.267617
+Part.ActiveView().RotateAboutCenter -0.0459425, -0.0465421
+Part.ActiveView().RotateAboutCenter -0.073508, -0.0930842
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.0116355
+Part.ActiveView().RotateAboutCenter 0.036754, -0.0116355
+Part.ActiveView().RotateAboutCenter 0.073508, -0.0349066
+Part.ActiveView().RotateAboutCenter 0.036754, -0.0232711
+Part.ActiveView().RotateAboutCenter 0.0275655, -0.0349066
+Part.ActiveView().RotateAboutCenter 0.0091885, -0.0116355
+Part.ActiveView().RotateAboutCenter 0, -0.0232711
+Part.ActiveView().RotateAboutCenter 0, -0.0465421
+Part.ActiveView().RotateAboutCenter -0.018377, -0.0581776
+Part.ViewZoomTo2 -0.0265695, 0.00287204, -0.00532965, 0.000106515, -0.0212634, -0.00532965
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.004901907412631, 0.008559238426756, -0.003306910731567, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.00487109396056, 0.005928069375443, -0.0009878549191171, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.00358962130224, 0.01083334854843, 0.001907500780476, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.005943003198723, 0.008278010672086, -0.005500280504009, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.004901907412602, 0.008325407930897, -0.002792896837889, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.006028338404889, 0.008140492290465, -0.005243485794324, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().TranslateBy -0.00272396, 0
+Part.ActiveView().TranslateBy -0.0396919, 0.00505877
+Part.ActiveView().TranslateBy -0.036968, 0
+Part.ActiveView().TranslateBy -0.0377462, -0.00233482
+Part.ActiveView().TranslateBy -0.00778273, -0.000778273
+Part.ActiveView().TranslateBy -0.0151763, -0.00194568
+Part.ActiveView().TranslateBy -0.0132306, -0.00155655
+Part.ActiveView().TranslateBy -0.028407, -0.00350223
+Part.ActiveView().TranslateBy -0.0143981, 0
+Part.ActiveView().TranslateBy -0.000778273, 0
+Part.ActiveView().RotateAboutCenter 0, 0.0232711
+Part.ActiveView().RotateAboutCenter 0.0091885, 0.221075
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.232711
+Part.ActiveView().RotateAboutCenter -0.055131, 0.255982
+Part.ActiveView().RotateAboutCenter -0.036754, 0.186168
+Part.ActiveView().RotateAboutCenter -0.0643195, 0.174533
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.0698132
+Part.ActiveView().RotateAboutCenter -0.110262, -0.523599
+Part.ActiveView().RotateAboutCenter -0.036754, -0.174533
+Part.ActiveView().RotateAboutCenter -0.0643195, -0.221075
+Part.ActiveView().RotateAboutCenter 0.0091885, -0.0814487
+Part.ActiveView().RotateAboutCenter 0.0643195, -0.232711
+Part.ActiveView().RotateAboutCenter 0.0459425, -0.139626
+Part.ActiveView().RotateAboutCenter 0.0643195, -0.314159
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.20944
+Part.ActiveView().RotateAboutCenter -0.091885, -0.232711
+Part.ActiveView().RotateAboutCenter -0.0275655, -0.0349066
+Part.ViewZoomtofit2
+Part.ActiveView().RotateAboutCenter 0.018377, 0.0116355
+Part.ActiveView().RotateAboutCenter 0.137828, 0.267617
+Part.ActiveView().RotateAboutCenter 0.0826965, 0.267617
+Part.ActiveView().RotateAboutCenter 0.018377, 0.151262
+Part.ActiveView().RotateAboutCenter 0, 0.0930842
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.0930842
+Part.ActiveView().RotateAboutCenter -0.0275655, 0.116355
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.0465421
+Part.ActiveView().RotateAboutCenter -0.091885, 0.0465421
+Part.ActiveView().RotateAboutCenter -0.036754, 0.0116355
+Part.ActiveView().RotateAboutCenter 0.202147, 0.0698132
+Part.ActiveView().RotateAboutCenter 0.156205, 0.0698132
+Part.ActiveView().RotateAboutCenter 0.156205, 0.139626
+Part.ActiveView().RotateAboutCenter 0.0091885, 0.0116355
+Part.ActiveView().RotateAboutCenter 0.0275655, 0.0232711
+Part.ActiveView().RotateAboutCenter 0.018377, 0.0232711
+Part.ActiveView().RotateAboutCenter -0.0459425, 0.0232711
+Part.ActiveView().RotateAboutCenter -0.101074, 0.0116355
+Part.ActiveView().RotateAboutCenter -0.018377, 0
+Part.ActiveView().RotateAboutCenter -0.018377, 0
+Part.ActiveView().RotateAboutCenter -0.018377, 0
+Part.ActiveView().RotateAboutCenter -0.0275655, 0
+Part.ActiveView().RotateAboutCenter -0.055131, 0
+Part.ActiveView().RotateAboutCenter -0.0091885, 0
+Part.ActiveView().RotateAboutCenter -0.018377, 0.0116355
+Part.ActiveView().RotateAboutCenter -0.0275655, 0.0232711
+Part.ActiveView().RotateAboutCenter 0.0091885, 0
+Part.ActiveView().RotateAboutCenter 0.0275655, 0
+Part.ActiveView().RotateAboutCenter 0.0275655, 0
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.0232711
+Part.ActiveView().RotateAboutCenter -0.0459425, 0.0698132
+Part.ActiveView().RotateAboutCenter -0.0275655, 0.0232711
+Part.ActiveView().RotateAboutCenter -0.0275655, 0.0232711
+Part.ActiveView().RotateAboutCenter 0, 0.0116355
+Part.ActiveView().RotateAboutCenter 0.0826965, 0
+Part.ActiveView().RotateAboutCenter 0.0275655, 0
+Part.ActiveView().RotateAboutCenter 0.0091885, 0
+Part.ActiveView().RotateAboutCenter 0.0275655, 0
+Part.ActiveView().RotateAboutCenter 0.0275655, 0.0116355
+Part.ActiveView().RotateAboutCenter 0.0091885, 0
+Part.ActiveView().RotateAboutCenter -0.055131, 0.0232711
+Part.ActiveView().RotateAboutCenter -0.036754, 0
+Part.ActiveView().RotateAboutCenter -0.0091885, 0
+Part.ActiveView().RotateAboutCenter -0.0275655, 0.0232711
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.0116355
+Part.ActiveView().RotateAboutCenter -0.0275655, 0.0698132
+Part.ActiveView().RotateAboutCenter 0, 0.174533
+Part.ActiveView().RotateAboutCenter 0, 0.0116355
+Part.ActiveView().RotateAboutCenter 0, 0.0814487
+Part.ActiveView().RotateAboutCenter 0, 0.0814487
+Part.ActiveView().RotateAboutCenter 0.0091885, 0.116355
+Part.ActiveView().RotateAboutCenter 0, 0.0814487
+Part.ActiveView().RotateAboutCenter 0, 0.0930842
+Part.ActiveView().RotateAboutCenter 0.036754, -0.10472
+Part.ActiveView().RotateAboutCenter 0.073508, -0.20944
+Part.ActiveView().RotateAboutCenter 0.0459425, -0.221075
+Part.ActiveView().RotateAboutCenter 0.036754, -0.279253
+Part.ActiveView().RotateAboutCenter 0.0459425, -0.349066
+Part.ActiveView().RotateAboutCenter 0.055131, -0.314159
+Part.ActiveView().RotateAboutCenter 0.036754, -0.151262
+Part.ActiveView().RotateAboutCenter 0, -0.0232711
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.HideComponent2
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter -0.0177587, 0
+Part.ActiveView().RotateAboutCenter -0.0355173, 0.0117182
+Part.ActiveView().RotateAboutCenter -0.0621553, 0
+Part.ActiveView().RotateAboutCenter -0.0621553, -0.058591
+Part.ActiveView().RotateAboutCenter -0.026638, -0.0468728
+Part.ActiveView().RotateAboutCenter -0.053276, -0.140618
+Part.ActiveView().RotateAboutCenter -0.026638, -0.140618
+Part.ActiveView().RotateAboutCenter -0.00887933, -0.140618
+Part.ActiveView().RotateAboutCenter 0, -0.140618
+Part.ActiveView().RotateAboutCenter 0, -0.0234364
+Part.ActiveView().RotateAboutCenter 0, -0.0468728
+Part.ActiveView().RotateAboutCenter -0.00887933, -0.398419
+Part.ActiveView().RotateAboutCenter -0.0355173, -0.421855
+Part.ActiveView().RotateAboutCenter 0, -0.152337
+Part.ActiveView().RotateAboutCenter 0, -0.117182
+Part.ActiveView().RotateAboutCenter -0.026638, -0.304673
+Part.ActiveView().RotateAboutCenter -0.00887933, -0.164055
+Part.ActiveView().RotateAboutCenter -0.0355173, -0.187491
+Part.ActiveView().RotateAboutCenter -0.053276, -0.199209
+Part.ActiveView().RotateAboutCenter -0.0355173, -0.152337
+Part.ActiveView().RotateAboutCenter -0.0443967, -0.1289
+Part.ActiveView().RotateAboutCenter -0.026638, -0.0468728
+Part.ActiveView().RotateAboutCenter -0.0177587, -0.0117182
+Part.ActiveView().RotateAboutCenter -0.026638, -0.0351546
+Part.ActiveView().RotateAboutCenter -0.0443967, -0.0820274
+Part.ActiveView().RotateAboutCenter -0.0355173, -0.058591
+Part.ActiveView().RotateAboutCenter -0.0177587, -0.0351546
+Part.ActiveView().RotateAboutCenter 0, -0.0117182
+Part.ActiveView().RotateAboutCenter 0, -0.0117182
+Part.ActiveView().RotateAboutCenter 0, -0.0234364
+Part.ActiveView().RotateAboutCenter 0.00887933, -0.0234364
+Part.ActiveView().RotateAboutCenter 0.0177587, -0.0351546
+Part.ActiveView().RotateAboutCenter 0, -0.0117182
+Part.ActiveView().RotateAboutCenter -0.026638, 0
+Part.ActiveView().RotateAboutCenter -0.0177587, 0
+Part.ActiveView().RotateAboutCenter -0.00887933, -0.0117182
+Part.ActiveView().RotateAboutCenter 0, -0.0351546
+Part.ActiveView().RotateAboutCenter 0.0177587, -0.0468728
+Part.ViewZoomTo2 -0.0293413, -0.00556524, -0.00763398, -0.00822746, -0.0218531, -0.00763398
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.006401773280558, -0.0081218848932, -0.001419398435928, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Set Part = Nothing
+swApp.CloseDoc "Regulateur-simplif.SLDASM"
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\Regulateur-simplif.SLDASM", 2, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+Part.WindowRedraw
+swApp.ActiveDoc.ActiveView.FrameWidth = 949
+swApp.ActiveDoc.ActiveView.FrameHeight = 580
+Part.EditRebuild
+Part.WindowRedraw
+Part.WindowRedraw
+Part.ActiveView().RotateAboutCenter 0, -0.17493
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.19992
+Part.ActiveView().RotateAboutCenter -0.018377, -0.187425
+Part.ActiveView().RotateAboutCenter -0.018377, -0.12495
+Part.ActiveView().RotateAboutCenter 0, -0.0874648
+Part.ActiveView().RotateAboutCenter 0, -0.0249899
+Part.ActiveView().RotateAboutCenter 0.0275655, -0.0749698
+Part.ActiveView().RotateAboutCenter 0.018377, -0.0249899
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.04372302957113, 2.478142693008e-005, 0.002999897644941, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.OpenCompFile
+swApp.LoadFile2 "C:\Mes documents\François\Regulateur-MW\fourreau.SLDPRT", ""
+Set Part = swApp.ActiveDoc
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\fourreau.SLDPRT", 1, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("fourreau.SLDPRT")
+Part.ClearSelection
+Set Part = Nothing
+swApp.CloseDoc "fourreau.SLDPRT"
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.OpenCompFile
+swApp.LoadFile2 "C:\Mes documents\François\Regulateur-MW\bague.SLDPRT", ""
+Set Part = swApp.ActiveDoc
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\bague.SLDPRT", 1, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("bague.SLDPRT")
+Part.ClearSelection
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+Part.ActiveView().RotateAboutCenter 0.0091885, 0.0249899
+Part.ActiveView().RotateAboutCenter 0.036754, 0.462314
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.17493
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.237404
+Part.ActiveView().RotateAboutCenter -0.0091885, 0.19992
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.0374849
+Part.ActiveView().RotateAboutCenter -0.018377, -0.0249899
+Part.ActiveView().RotateAboutCenter 0, -0.0249899
+Part.ActiveView().RotateAboutCenter 0, -0.0874648
+Part.ActiveView().RotateAboutCenter 0, -0.012495
+Set Part = swApp.ActivateDoc ("bague.SLDPRT")
+Part.ActiveView().RotateAboutCenter 0.018377, 0
+Part.ActiveView().RotateAboutCenter 0.0459425, 0
+Part.ActiveView().RotateAboutCenter 0.055131, 0.197804
+Part.ActiveView().RotateAboutCenter 0.0091885, 0.0814487
+Part.ActiveView().RotateAboutCenter 0.018377, 0.0930842
+Part.ActiveView().RotateAboutCenter 0.018377, 0.116355
+Part.ActiveView().RotateAboutCenter 0, 0.0232711
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.004000000000019, 0.008216540695457, -0.001298119715898, False, 0, Nothing)
+Part.CreatePlaneAtOffset3  0.0015, False, True
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("Plan1", "PLANE", 0, 0, 0, False, 0, Nothing)
+Part.Save2 FALSE
+Part.ClearSelection
+Set Part = Nothing
+swApp.CloseDoc "bague.SLDPRT"
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.OpenCompFile
+swApp.LoadFile2 "C:\Mes documents\François\Regulateur-MW\masselo-c03.SLDPRT", ""
+Set Part = swApp.ActiveDoc
+Set Part = swApp.OpenDoc4 ("C:\Mes documents\François\Regulateur-MW\masselo-c03.SLDPRT", 1, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("masselo-c03.SLDPRT")
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("Esquisse10", "SKETCH", 0, 0, 0, False, 0, Nothing)
+Part.EditSketch
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("Arc2", "SKETCHSEGMENT", -0.004313447390699, 0.004891634373157, 0.0003664291300581, False, 0, Nothing)
+Set Annotation = Part.AddDimension2(-0.00355113, 8.90522e-005, 0.0075)
+Part.ClearSelection
+Part.Parameter("D3@Esquisse10").SystemValue = 0.0015
+Part.EditRebuild
+Part.ClearSelection
+Part.Save2 FALSE
+Set Part = Nothing
+swApp.CloseDoc "masselo-c03.SLDPRT"
+Set Part = swApp.ActivateDoc ("Regulateur-simplif.SLDASM")
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04778085792778, -0.005187564005382, 0.00469991273242, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.04296327530851, 5.262064064482e-007, 0.004599062933821, False, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter -0.238901, 0
+Part.ActiveView().RotateAboutCenter -0.055131, 0
+Part.ActiveView().RotateAboutCenter -0.0826965, -0.0249899
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04300000000003, -0.002610929249158, -0.004966562552966, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04974018540341, 0.002633084402873, -0.001437660087433, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.03723705105924, 0.002432372663009, -0.002522555873142, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04801545664267, -0.004203446036968, 0.005597413814812, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03820545508253, 0, -0.007032129209051, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03700000000003, -0.002904281683129, -0.006560333847077, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.03753823357383, -0.0002233999547911, -0.007571067923266, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04403798571005, 0.002959260622617, 0.0004927236217469, False, 0, Nothing)
+Part.ClearSelection
+Part.ViewZoomTo2 -0.00598949, -0.00252332, -0.00532965, 0.0300503, -0.045682, -0.00532965
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.03714343003878, 0.00383695912609, 0.0008772033342126, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.009664361217148, 0.007249037970439, 0.01457057968079, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter 0.0275655, -0.0499799
+Part.ActiveView().RotateAboutCenter 0.119451, -0.474809
+Part.ActiveView().RotateAboutCenter 0.0091885, -0.337364
+Part.ActiveView().RotateAboutCenter 0, -0.299879
+Part.ActiveView().RotateAboutCenter 0.055131, 0
+Part.ActiveView().RotateAboutCenter 0.055131, 0.0249899
+Part.ActiveView().TranslateBy 0.0012267, 0
+Part.ActiveView().TranslateBy 0.0188095, -0.00163561
+Part.ActiveView().TranslateBy 0.00858693, 0.00286231
+Part.ActiveView().TranslateBy 0.00613352, 0.00327121
+Part.ActiveView().TranslateBy 0.00408902, 0.00163561
+Part.ActiveView().TranslateBy 0.000408902, 0
+boolstatus = Part.SetUserPreferenceToggle(5, True)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("Plan1@bague-1@Regulateur-simplif", "PLANE", -0.006967987212339, 0.002396271820555, -0.008574469756022, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.006233148736065, 0.007742256887809, -0.00485635508096, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.HideComponent2
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter -0.018377, -0.0749698
+Part.ActiveView().RotateAboutCenter -0.137828, -0.562274
+Part.ActiveView().RotateAboutCenter -0.0826965, -0.537284
+Part.ActiveView().RotateAboutCenter -0.101074, -0.624749
+Part.ActiveView().RotateAboutCenter -0.091885, -0.424829
+Part.ActiveView().RotateAboutCenter -0.073508, -0.424829
+Part.ActiveView().RotateAboutCenter -0.0091885, 0
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.0874648
+Part.ActiveView().RotateAboutCenter 0, -0.012495
+Part.ActiveView().RotateAboutCenter -0.055131, -0.012495
+Part.ActiveView().RotateAboutCenter -0.128639, -0.0499799
+Part.ActiveView().RotateAboutCenter -0.0643195, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.055131, -0.0624749
+Part.ActiveView().RotateAboutCenter 0.018377, -0.012495
+Part.ActiveView().RotateAboutCenter 0.0091885, 0
+boolstatus = Part.Extension.SelectByID("Plan1@bague-1@Regulateur-simplif", "PLANE", -0.002895853961897, -0.001481271868251, 0.008800445385441, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.0056389657735, -0.007761761190238, 0.00510471756678, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ViewZoomtofit2
+Part.ActiveView().RotateAboutCenter 0.0275655, 0.0749698
+Part.ActiveView().RotateAboutCenter 0.101074, 0.337364
+Part.ActiveView().RotateAboutCenter 0.0275655, 0.112455
+Part.ActiveView().RotateAboutCenter 0.055131, 0.19992
+Part.ActiveView().RotateAboutCenter 0.036754, 0.0999598
+Part.ActiveView().RotateAboutCenter 0.0643195, 0.162435
+Part.ActiveView().RotateAboutCenter 0.0275655, 0.0749698
+Part.ActiveView().RotateAboutCenter 0, -0.12495
+Part.ActiveView().RotateAboutCenter -0.036754, -0.324869
+Part.ActiveView().RotateAboutCenter 0, -0.0499799
+Part.ActiveView().RotateAboutCenter 0, -0.187425
+Part.ActiveView().RotateAboutCenter 0, -0.0999598
+Part.ActiveView().RotateAboutCenter 0.0091885, -0.224909
+Part.ActiveView().RotateAboutCenter 0, -0.237404
+Part.ActiveView().RotateAboutCenter 0, -0.19992
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.212415
+Part.ActiveView().RotateAboutCenter 0, -0.17493
+Part.ActiveView().RotateAboutCenter 0, -0.0374849
+Part.ActiveView().RotateAboutCenter -0.018377, -0.112455
+Part.ActiveView().RotateAboutCenter -0.036754, -0.449819
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.224909
+Part.ActiveView().RotateAboutCenter 0, -0.324869
+Part.ActiveView().RotateAboutCenter 0, -0.162435
+Part.ActiveView().RotateAboutCenter 0, -0.0874648
+Part.ActiveView().RotateAboutCenter 0.0275655, -0.0624749
+Part.ActiveView().RotateAboutCenter 0.0091885, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0275655, 0
+Part.ActiveView().RotateAboutCenter -0.018377, 0
+Part.ActiveView().RotateAboutCenter -0.0275655, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0275655, -0.012495
+Part.ActiveView().RotateAboutCenter 0, 0.0874648
+Part.ActiveView().RotateAboutCenter 0, 0.0624749
+Part.ActiveView().RotateAboutCenter 0, -0.0499799
+Part.ActiveView().RotateAboutCenter 0, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.018377, -0.012495
+Part.ActiveView().RotateAboutCenter -0.073508, -0.0374849
+Part.ActiveView().RotateAboutCenter -0.036754, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.012495
+Part.ActiveView().RotateAboutCenter -0.0275655, -0.012495
+Part.ActiveView().RotateAboutCenter -0.018377, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0275655, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0091885, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.018377, -0.012495
+Part.ActiveView().RotateAboutCenter -0.018377, -0.012495
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.03349728456138, 0.005196826897361, -0.002573357771084, False, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter 0.0459425, 0
+Part.ActiveView().RotateAboutCenter 0.110262, 0.0374849
+Part.ActiveView().RotateAboutCenter 0.101074, 0.012495
+Part.ActiveView().RotateAboutCenter 0.101074, 0
+Part.ActiveView().RotateAboutCenter 0.0826965, 0.012495
+Part.ActiveView().RotateAboutCenter 0.091885, 0.012495
+Part.ActiveView().RotateAboutCenter 0.147016, 0
+Part.ActiveView().RotateAboutCenter 0.091885, 0
+Part.ActiveView().RotateAboutCenter 0.036754, 0
+Part.ActiveView().RotateAboutCenter 0.055131, 0
+Part.ActiveView().RotateAboutCenter 0.0643195, 0
+Part.ActiveView().RotateAboutCenter 0.128639, 0.0249899
+Part.ActiveView().RotateAboutCenter 0.0643195, 0
+Part.ActiveView().RotateAboutCenter 0.0459425, 0.012495
+Part.ActiveView().RotateAboutCenter 0.018377, 0
+Part.ActiveView().RotateAboutCenter 0.0091885, 0
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.007098092587285, 0.00797948460729, 0.001292261272543, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ShowComponent2
+Part.ActiveView().RotateAboutCenter -0.0459425, 0
+Part.ActiveView().RotateAboutCenter -0.725892, 0.474809
+Part.ActiveView().RotateAboutCenter -0.514556, 0.474809
+Part.ActiveView().RotateAboutCenter -0.284844, 0.137445
+Part.ActiveView().RotateAboutCenter 0.156205, 0.0749698
+Part.ActiveView().RotateAboutCenter 0.634007, 0.237404
+Part.ActiveView().RotateAboutCenter 0.147016, 0.012495
+Part.ActiveView().RotateAboutCenter 0.284844, 0
+Part.ActiveView().RotateAboutCenter 0.091885, -0.17493
+Part.ActiveView().RotateAboutCenter 0.110262, -0.249899
+Part.ActiveView().RotateAboutCenter 0, -0.0749698
+Part.ActiveView().RotateAboutCenter -0.0643195, -0.12495
+Part.ActiveView().RotateAboutCenter -0.147016, -0.0749698
+Part.ActiveView().RotateAboutCenter -0.0826965, -0.0249899
+Part.ActiveView().RotateAboutCenter 0, -0.0999598
+Part.ActiveView().RotateAboutCenter 0.0275655, -0.12495
+Part.ActiveView().RotateAboutCenter 0.073508, -0.0999598
+Part.ActiveView().RotateAboutCenter 0.018377, -0.012495
+boolstatus = Part.SetUserPreferenceToggle(5, False)
+Part.Save2 FALSE
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.Save2 FALSE
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter 0, -0.0499799
+Part.ActiveView().RotateAboutCenter 0.011802, -0.212415
+Part.ActiveView().RotateAboutCenter 0.0236041, -0.0999598
+Part.ActiveView().RotateAboutCenter 0.0236041, -0.112455
+Part.ActiveView().RotateAboutCenter -0.0354061, -0.012495
+Part.ActiveView().RotateAboutCenter -0.0708123, -0.0249899
+Part.ActiveView().RotateAboutCenter 0, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0236041, -0.0374849
+Part.ClearSelection
+Part.ClearSelection
+Part.ClearSelection
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.WindowRedraw
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ViewZoomTo2 -0.025292, -0.0246236, 6.85053e-006, 0.0228844, -0.0606782, 6.85053e-006
+Part.ActiveView().RotateAboutCenter -0.0354061, 0.0249899
+Part.ActiveView().RotateAboutCenter -0.259645, -0.12495
+Part.ActiveView().RotateAboutCenter -0.236041, -0.187425
+Part.ActiveView().RotateAboutCenter -0.0590102, -0.112455
+Part.ActiveView().RotateAboutCenter 0.0472082, 0.0249899
+Part.ActiveView().RotateAboutCenter 0.11802, 0.0499799
+Part.ActiveView().RotateAboutCenter 0.0472082, 0.012495
+Part.ActiveView().TranslateBy 0, -0.000499821
+Part.ActiveView().TranslateBy 0.00199928, -0.0204927
+Part.ActiveView().TranslateBy 0, -0.0184934
+Part.ActiveView().TranslateBy 0, -0.0094966
+Part.ActiveView().TranslateBy 0, -0.000499821
+Part.ActiveView().TranslateBy 0, -0.000999642
+Part.ActiveView().TranslateBy 0.00199928, -0.0094966
+Part.ActiveView().TranslateBy 0.00149946, -0.00299893
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04698983986765, -0.00136435268513, -0.00686575136109, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03824606901151, 0, -0.006851449139162, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03699999999992, -0.001645234254397, -0.008274132506017, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.03705717832673, -4.330577314704e-005, -0.006589188842611, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04279608077445, 0.002964627757137, 0.0004593280536938, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03699999999992, 0.003099126578036, -0.001673813526168, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.0137104709255, 0.008674948730174, 0.01577166017029, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.01262831422957, 0.007246134396382, 0.01453612159469, False, 0, Nothing)
+Part.ClearSelection
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ViewZoomTo2 -0.0351914, -0.0160175, -0.00876102, 0.0113077, -0.0464533, -0.00876102
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04528994784198, -0.001056370426681, -0.006919832477934, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03796498526316, 0, -0.007216222648424, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03699999999998, -0.001274108251778, -0.008317982238339, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.036839943149, 0.0001212240028963, -0.007627353180965, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.04244433316768, 0.00289267767937, 0.0007952457748956, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.03699999999998, 0.003197646640388, 0.001113055144742, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.009045595315797, 0.007280212219882, 0.01494053924409, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.009999218554299, 0.00409322641093, 0.01752841971057, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.001153203064632, 0.01408226657207, 0.0194328743184, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.01882457259757, 0.0178849844512, 0.002031583415715, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "EDGE", 0.001563497135521, 0.01760740606625, -0.005533781141537, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter -0.011802, 0.0999598
+Part.ActiveView().RotateAboutCenter 0, 0.237404
+Part.ActiveView().RotateAboutCenter 0, 0.187425
+Part.ActiveView().RotateAboutCenter 0, 0.14994
+Part.ActiveView().RotateAboutCenter 0.0354061, 0
+Part.ActiveView().RotateAboutCenter 0.11802, 0.012495
+Part.ActiveView().RotateAboutCenter 0.0826143, 0.012495
+Part.ActiveView().RotateAboutCenter 0.0590102, 0.012495
+Part.ActiveView().RotateAboutCenter 0.0354061, 0
+Part.ActiveView().RotateAboutCenter 0.011802, 0
+Part.ActiveView().RotateAboutCenter -0.0236041, 0
+Part.ActiveView().RotateAboutCenter -0.0590102, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.011802, 0
+Part.ViewZoomTo2 -0.00815703, -0.00370192, -0.00876102, 0.00756449, -0.0117706, -0.00876102
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.01116966789843, 0.002950218467731, -0.0005442526916966, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.009906200805723, 0.005993787983357, -0.0002729571575202, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.SetUserPreferenceToggle(5, True)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter 0.011802, -0.0249899
+Part.ActiveView().RotateAboutCenter 0, -0.12495
+Part.ActiveView().RotateAboutCenter 0, -0.0624749
+Part.ActiveView().RotateAboutCenter 0.011802, -0.012495
+Part.ActiveView().RotateAboutCenter 0, 0.0249899
+Part.ActiveView().RotateAboutCenter -0.0236041, 0.0874648
+Part.ActiveView().RotateAboutCenter 0.011802, 0.112455
+Part.ActiveView().RotateAboutCenter 0.0354061, 0.0249899
+Part.ActiveView().RotateAboutCenter 0.0472082, 0.0499799
+Part.ActiveView().RotateAboutCenter 0, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.011802, -0.0374849
+Part.ActiveView().RotateAboutCenter -0.0236041, -0.012495
+boolstatus = Part.Extension.SelectByID("Plan1@bague-1@Regulateur-simplif", "PLANE", -0.005013644235638, -0.01598357999758, -0.006898997939089, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.005843231076305, 0.007968102411837, -0.005145388877409, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.008292542725449, 0.002807208395893, 0.005302789928109, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("Plan1@bague-1@Regulateur-simplif", "PLANE", -0.006088806567213, -0.01722715470637, 0.003529053144361, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.005402684913065, -0.005903186579985, 0.006328956479408, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("bague-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().ZoomByFactor 0.961538
+Part.ActiveView().ZoomByFactor 0.892857
+Part.ActiveView().ZoomByFactor 0.877193
+Part.ActiveView().ZoomByFactor 0.917431
+Part.ActiveView().ZoomByFactor 0.970874
+Part.ActiveView().ZoomByFactor 0.892857
+Part.ActiveView().ZoomByFactor 0.909091
+Part.ActiveView().ZoomByFactor 0.877193
+Part.ActiveView().ZoomByFactor 0.862069
+Part.ActiveView().ZoomByFactor 0.909091
+Part.ActiveView().ZoomByFactor 0.900901
+Part.ActiveView().ZoomByFactor 0.980392
+Part.ActiveView().ZoomByFactor 0.909091
+Part.ActiveView().ZoomByFactor 0.952381
+Part.ActiveView().ZoomByFactor 0.970874
+Part.ActiveView().ZoomByFactor 0.961538
+Part.ActiveView().ZoomByFactor 0.934579
+Part.ActiveView().ZoomByFactor 0.980392
+Part.ActiveView().ZoomByFactor 0.961538
+Part.ActiveView().ZoomByFactor 0.970874
+Part.ActiveView().ZoomByFactor 0.961538
+Part.ActiveView().ZoomByFactor 0.990099
+Part.ActiveView().TranslateBy 0, -0.00149946
+Part.ActiveView().TranslateBy 0.00199928, -0.0104962
+Part.ActiveView().TranslateBy 0.00349875, -0.0144948
+Part.ActiveView().TranslateBy 0.0069975, -0.0184934
+Part.ActiveView().TranslateBy 0.00599785, -0.0104962
+Part.ActiveView().TranslateBy 0.00349875, -0.00799714
+Part.ActiveView().TranslateBy 0.00349875, -0.00849696
+Part.ActiveView().TranslateBy 0.00149946, -0.00399857
+Part.ActiveView().RotateAboutCenter 0, -0.012495
+Part.ActiveView().RotateAboutCenter -0.0708123, -0.0749698
+Part.ActiveView().RotateAboutCenter -0.0354061, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0472082, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0826143, -0.0249899
+Part.ActiveView().RotateAboutCenter -0.0590102, -0.012495
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.03349728456143, 0.007019650911559, -0.001469988071179, False, 0, Nothing)
+Part.ClearSelection
+Part.ActiveView().RotateAboutCenter 0.0354061, 0
+Part.ActiveView().RotateAboutCenter 0.295051, 0.137445
+Part.ActiveView().RotateAboutCenter 0.271447, 0.12495
+Part.ActiveView().RotateAboutCenter 0.224239, 0.0999598
+Part.ActiveView().RotateAboutCenter 0.11802, 0.0499799
+Part.ActiveView().RotateAboutCenter 0.0354061, 0.012495
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.007098184561187, 0.008118382915882, -0.002240768478302, False, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("corps-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+Part.ViewZoomtofit2
+Part.ActiveView().ZoomByFactor 1.04
+Part.ActiveView().ZoomByFactor 1.3
+Part.ActiveView().ZoomByFactor 1.13
+Part.ActiveView().ZoomByFactor 1.2
+Part.ActiveView().ZoomByFactor 1.06
+Part.ActiveView().ZoomByFactor 1.03
+boolstatus = Part.SetUserPreferenceToggle(5, False)
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+Part.WindowRedraw
+Part.ActiveView().RotateAboutCenter -0.268107, 0
+Part.ActiveView().RotateAboutCenter -0.229806, -0.012495
+Part.ActiveView().RotateAboutCenter -0.038301, -0.012495
+Part.ActiveView().RotateAboutCenter 0.00957525, 0
+Part.ActiveView().RotateAboutCenter 0.038301, -0.0249899
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("masselo-c03-2@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.WindowRedraw
+Part.WindowRedraw
+Part.Save2 FALSE
+boolstatus = Part.Extension.SelectByID("fourreau-1@Regulateur-simplif", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+Part.WindowRedraw
