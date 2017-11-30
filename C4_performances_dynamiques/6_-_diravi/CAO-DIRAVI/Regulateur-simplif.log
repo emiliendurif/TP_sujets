@@ -362,3 +362,66 @@
 
 ===============Finish Logging================
 
+
+===============Init Logging================
+
+30/11/2017 - 09:39:59 	===== Ouverture de session =====
+30/11/2017 - 09:41:02 	Début du calcul
+30/11/2017 - 09:41:02 	Nombre de positions : 100
+30/11/2017 - 09:41:02 	Simulation activée
+30/11/2017 - 09:41:02 	Lecture des conditions initiales
+30/11/2017 - 09:41:04 	Fin du calcul
+30/11/2017 - 09:41:05 	Début du calcul
+30/11/2017 - 09:41:05 	Nombre de positions : 100
+30/11/2017 - 09:41:05 	Simulation activée
+30/11/2017 - 09:41:05 	Lecture des conditions initiales
+30/11/2017 - 09:41:06 	Fin du calcul
+30/11/2017 - 09:41:07 	Début du calcul
+30/11/2017 - 09:41:07 	Nombre de positions : 100
+30/11/2017 - 09:41:07 	Simulation activée
+30/11/2017 - 09:41:07 	Lecture des conditions initiales
+30/11/2017 - 09:41:08 	Fin du calcul
+30/11/2017 - 09:44:55 	Début du calcul
+30/11/2017 - 09:44:55 	Nombre de positions : 100
+30/11/2017 - 09:44:55 	Simulation activée
+30/11/2017 - 09:44:55 	Lecture des conditions initiales
+30/11/2017 - 09:44:56 	Fin du calcul
+30/11/2017 - 09:45:02 	Début du calcul
+30/11/2017 - 09:45:02 	Nombre de positions : 100
+30/11/2017 - 09:45:02 	Simulation activée
+30/11/2017 - 09:45:02 	Lecture des conditions initiales
+30/11/2017 - 09:45:04 	Fin du calcul
+30/11/2017 - 09:45:50 	Début du calcul
+30/11/2017 - 09:45:50 	Nombre de positions : 100
+30/11/2017 - 09:45:50 	Simulation activée
+30/11/2017 - 09:45:50 	Lecture des conditions initiales
+30/11/2017 - 09:45:52 	Fin du calcul
+30/11/2017 - 09:45:52 	Début du calcul
+30/11/2017 - 09:45:52 	Nombre de positions : 100
+30/11/2017 - 09:45:52 	Simulation activée
+30/11/2017 - 09:45:52 	Lecture des conditions initiales
+30/11/2017 - 09:45:54 	Fin du calcul
+30/11/2017 - 09:45:55 	Début du calcul
+30/11/2017 - 09:45:55 	Nombre de positions : 100
+30/11/2017 - 09:45:55 	Simulation activée
+30/11/2017 - 09:45:55 	Lecture des conditions initiales
+30/11/2017 - 09:45:57 	Fin du calcul
+30/11/2017 - 09:46:02 	Début du calcul
+30/11/2017 - 09:46:02 	Nombre de positions : 100
+30/11/2017 - 09:46:02 	Simulation activée
+30/11/2017 - 09:46:02 	Lecture des conditions initiales
+30/11/2017 - 09:46:04 	Fin du calcul
+30/11/2017 - 09:46:05 	Début du calcul
+30/11/2017 - 09:46:05 	Nombre de positions : 100
+30/11/2017 - 09:46:05 	Simulation activée
+30/11/2017 - 09:46:05 	Lecture des conditions initiales
+30/11/2017 - 09:46:06 	Fin du calcul
+30/11/2017 - 09:46:12 	Début du calcul
+30/11/2017 - 09:46:12 	Nombre de positions : 100
+30/11/2017 - 09:46:12 	Simulation activée
+30/11/2017 - 09:46:12 	Lecture des conditions initiales
+30/11/2017 - 09:46:14 	Fin du calcul
+30/11/2017 - 10:22:02 	===== Fermeture de session =====
+
+===============Finish Logging================
+
