@@ -1,0 +1,4 @@
+cr0	Ecrou desseré
+cr1	Ecrou serré à 1/6 de tour
+
+2 masses	situées le plus proche de l'axe
