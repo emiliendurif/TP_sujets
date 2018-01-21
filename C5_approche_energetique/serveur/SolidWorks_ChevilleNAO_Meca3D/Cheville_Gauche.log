@@ -1,0 +1,160 @@
+
+===============Init Logging================
+
+12/01/2018 - 10:18:12 	===== Ouverture de session =====
+12/01/2018 - 10:27:17 	Début du calcul
+12/01/2018 - 10:27:17 	Nombre de positions : 1000
+12/01/2018 - 10:27:17 	Simulation inactivée
+12/01/2018 - 10:27:17 	Lecture des conditions initiales
+12/01/2018 - 10:27:20 	Fin du calcul
+12/01/2018 - 10:27:20 	Début du calcul
+12/01/2018 - 10:27:20 	Nombre de positions : 1000
+12/01/2018 - 10:27:20 	Simulation inactivée
+12/01/2018 - 10:27:20 	Lecture des conditions initiales
+12/01/2018 - 10:27:22 	Fin du calcul
+12/01/2018 - 10:27:23 	Début du calcul
+12/01/2018 - 10:27:23 	Nombre de positions : 1000
+12/01/2018 - 10:27:23 	Simulation activée
+12/01/2018 - 10:27:23 	Lecture des conditions initiales
+12/01/2018 - 10:27:42 	Fin du calcul
+12/01/2018 - 10:27:47 	Début du calcul
+12/01/2018 - 10:27:47 	Nombre de positions : 200
+12/01/2018 - 10:27:47 	Simulation activée
+12/01/2018 - 10:27:47 	Lecture des conditions initiales
+12/01/2018 - 10:27:56 	Fin du calcul
+12/01/2018 - 10:28:02 	Début du calcul
+12/01/2018 - 10:28:02 	Nombre de positions : 200
+12/01/2018 - 10:28:02 	Simulation inactivée
+12/01/2018 - 10:28:02 	Lecture des conditions initiales
+12/01/2018 - 10:28:03 	Fin du calcul
+12/01/2018 - 10:28:47 	Début du calcul
+12/01/2018 - 10:28:47 	Nombre de positions : 200
+12/01/2018 - 10:28:47 	Simulation inactivée
+12/01/2018 - 10:28:47 	Lecture des conditions initiales
+12/01/2018 - 10:28:48 	Fin du calcul
+12/01/2018 - 10:46:42 	Début du calcul
+12/01/2018 - 10:46:42 	Nombre de positions : 2000
+12/01/2018 - 10:46:42 	Simulation inactivée
+12/01/2018 - 10:46:42 	Lecture des conditions initiales
+12/01/2018 - 10:46:46 	Fin du calcul
+12/01/2018 - 10:48:17 	Début du calcul
+12/01/2018 - 10:48:17 	Nombre de positions : 2000
+12/01/2018 - 10:48:17 	Simulation activée
+12/01/2018 - 10:48:17 	Lecture des conditions initiales
+12/01/2018 - 10:48:30 	Fin du calcul
+12/01/2018 - 10:48:32 	Début du calcul
+12/01/2018 - 10:48:32 	Nombre de positions : 2000
+12/01/2018 - 10:48:32 	Simulation inactivée
+12/01/2018 - 10:48:32 	Lecture des conditions initiales
+12/01/2018 - 10:48:37 	Fin du calcul
+12/01/2018 - 10:55:23 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+12/01/2018 - 11:11:49 	===== Ouverture de session =====
+12/01/2018 - 11:19:30 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+12/01/2018 - 11:22:27 	===== Ouverture de session =====
+12/01/2018 - 11:31:02 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+12/01/2018 - 11:32:20 	===== Ouverture de session =====
+12/01/2018 - 11:39:22 	Début du calcul
+12/01/2018 - 11:39:22 	Nombre de positions : 2000
+12/01/2018 - 11:39:22 	Simulation activée
+12/01/2018 - 11:39:22 	Lecture des conditions initiales
+12/01/2018 - 11:40:32 	Fin du calcul
+12/01/2018 - 11:40:34 	Début du calcul
+12/01/2018 - 11:40:34 	Nombre de positions : 500
+12/01/2018 - 11:40:34 	Simulation activée
+12/01/2018 - 11:40:34 	Lecture des conditions initiales
+12/01/2018 - 11:40:42 	Fin du calcul
+12/01/2018 - 11:41:13 	Début du calcul
+12/01/2018 - 11:41:13 	Nombre de positions : 500
+12/01/2018 - 11:41:13 	Simulation activée
+12/01/2018 - 11:41:13 	Lecture des conditions initiales
+12/01/2018 - 11:41:25 	Fin du calcul
+12/01/2018 - 11:45:11 	Début du calcul
+12/01/2018 - 11:45:11 	Nombre de positions : 500
+12/01/2018 - 11:45:11 	Simulation activée
+12/01/2018 - 11:45:11 	Lecture des conditions initiales
+12/01/2018 - 11:45:42 	Fin du calcul
+12/01/2018 - 11:45:54 	Début du calcul
+12/01/2018 - 11:45:54 	Nombre de positions : 200
+12/01/2018 - 11:45:54 	Simulation activée
+12/01/2018 - 11:45:54 	Lecture des conditions initiales
+12/01/2018 - 11:46:08 	Fin du calcul
+12/01/2018 - 11:46:12 	Début du calcul
+12/01/2018 - 11:46:12 	Nombre de positions : 100
+12/01/2018 - 11:46:12 	Simulation activée
+12/01/2018 - 11:46:12 	Lecture des conditions initiales
+12/01/2018 - 11:46:21 	Fin du calcul
+12/01/2018 - 11:46:43 	Début du calcul
+12/01/2018 - 11:46:43 	Nombre de positions : 2000
+12/01/2018 - 11:46:43 	Simulation activée
+12/01/2018 - 11:46:43 	Lecture des conditions initiales
+12/01/2018 - 11:46:59 	Fin du calcul
+12/01/2018 - 11:48:49 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+12/01/2018 - 13:13:38 	===== Ouverture de session =====
+12/01/2018 - 13:14:21 	Début du calcul
+12/01/2018 - 13:14:21 	Nombre de positions : 2000
+12/01/2018 - 13:14:21 	Simulation inactivée
+12/01/2018 - 13:14:21 	Lecture des conditions initiales
+12/01/2018 - 13:14:28 	Fin du calcul
+12/01/2018 - 13:14:35 	Début du calcul
+12/01/2018 - 13:14:35 	Nombre de positions : 1000
+12/01/2018 - 13:14:35 	Simulation inactivée
+12/01/2018 - 13:14:35 	Lecture des conditions initiales
+12/01/2018 - 13:14:45 	Fin du calcul
+12/01/2018 - 13:16:49 	Début du calcul
+12/01/2018 - 13:16:49 	Nombre de positions : 1000
+12/01/2018 - 13:16:49 	Simulation inactivée
+12/01/2018 - 13:16:49 	Lecture des conditions initiales
+12/01/2018 - 13:16:52 	Fin du calcul
+12/01/2018 - 13:16:53 	Début du calcul
+12/01/2018 - 13:16:53 	Nombre de positions : 1000
+12/01/2018 - 13:16:53 	Simulation activée
+12/01/2018 - 13:16:53 	Lecture des conditions initiales
+12/01/2018 - 13:17:19 	Fin du calcul
+12/01/2018 - 13:26:17 	Début du calcul
+12/01/2018 - 13:26:17 	Nombre de positions : 1000
+12/01/2018 - 13:26:17 	Simulation activée
+12/01/2018 - 13:26:17 	Lecture des conditions initiales
+12/01/2018 - 13:26:33 	Fin du calcul
+12/01/2018 - 13:26:35 	Début du calcul
+12/01/2018 - 13:26:35 	Nombre de positions : 1000
+12/01/2018 - 13:26:35 	Simulation inactivée
+12/01/2018 - 13:26:35 	Lecture des conditions initiales
+12/01/2018 - 13:26:39 	Fin du calcul
+12/01/2018 - 13:26:41 	Début du calcul
+12/01/2018 - 13:26:41 	Nombre de positions : 1000
+12/01/2018 - 13:26:41 	Simulation inactivée
+12/01/2018 - 13:26:41 	Lecture des conditions initiales
+12/01/2018 - 13:26:45 	Fin du calcul
+12/01/2018 - 13:26:47 	Début du calcul
+12/01/2018 - 13:26:47 	Nombre de positions : 1000
+12/01/2018 - 13:26:47 	Simulation activée
+12/01/2018 - 13:26:47 	Lecture des conditions initiales
+12/01/2018 - 13:26:52 	Fin du calcul
+12/01/2018 - 13:31:28 	===== Fermeture de session =====
+
+===============Finish Logging================
+
