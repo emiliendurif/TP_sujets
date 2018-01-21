@@ -365,6 +365,117 @@
 
 ===============Init Logging================
 
+<<<<<<< HEAD:C4_performances_dynamiques/6_-_diravi/CAO-DIRAVI/Regulateur-simplif.log
+30/11/2017 - 09:47:34 	===== Ouverture de session =====
+30/11/2017 - 09:48:01 	Début du calcul
+30/11/2017 - 09:48:01 	Nombre de positions : 100
+30/11/2017 - 09:48:01 	Simulation inactivée
+30/11/2017 - 09:48:01 	Lecture des conditions initiales
+30/11/2017 - 09:48:02 	Fin du calcul
+30/11/2017 - 09:48:03 	Début du calcul
+30/11/2017 - 09:48:03 	Nombre de positions : 100
+30/11/2017 - 09:48:03 	Simulation activée
+30/11/2017 - 09:48:03 	Lecture des conditions initiales
+30/11/2017 - 09:48:04 	Fin du calcul
+30/11/2017 - 09:48:20 	Début du calcul
+30/11/2017 - 09:48:20 	Nombre de positions : 100
+30/11/2017 - 09:48:20 	Simulation activée
+30/11/2017 - 09:48:20 	Lecture des conditions initiales
+30/11/2017 - 09:48:21 	Fin du calcul
+30/11/2017 - 09:48:21 	Début du calcul
+30/11/2017 - 09:48:21 	Nombre de positions : 100
+30/11/2017 - 09:48:21 	Simulation activée
+30/11/2017 - 09:48:21 	Lecture des conditions initiales
+30/11/2017 - 09:48:22 	Fin du calcul
+30/11/2017 - 09:48:23 	Début du calcul
+30/11/2017 - 09:48:23 	Nombre de positions : 100
+30/11/2017 - 09:48:23 	Simulation activée
+30/11/2017 - 09:48:23 	Lecture des conditions initiales
+30/11/2017 - 09:48:24 	Fin du calcul
+30/11/2017 - 09:49:08 	Début du calcul
+30/11/2017 - 09:49:08 	Nombre de positions : 100
+30/11/2017 - 09:49:08 	Simulation activée
+30/11/2017 - 09:49:08 	Lecture des conditions initiales
+30/11/2017 - 09:49:13 	Analyse du système incorrecte
+30/11/2017 - 09:49:13 	Abandon du calcul
+30/11/2017 - 09:49:18 	Début du calcul
+30/11/2017 - 09:49:18 	Nombre de positions : 100
+30/11/2017 - 09:49:18 	Simulation activée
+30/11/2017 - 09:49:18 	Lecture des conditions initiales
+30/11/2017 - 09:49:21 	Analyse du système incorrecte
+30/11/2017 - 09:49:21 	Abandon du calcul
+30/11/2017 - 09:49:54 	Début du calcul
+30/11/2017 - 09:49:54 	Nombre de positions : 100
+30/11/2017 - 09:49:54 	Simulation activée
+30/11/2017 - 09:49:54 	Lecture des conditions initiales
+30/11/2017 - 09:49:55 	Fin du calcul
+30/11/2017 - 09:49:58 	Début du calcul
+30/11/2017 - 09:49:58 	Nombre de positions : 100
+30/11/2017 - 09:49:58 	Simulation activée
+30/11/2017 - 09:49:58 	Lecture des conditions initiales
+30/11/2017 - 09:49:59 	Fin du calcul
+30/11/2017 - 09:50:17 	Début du calcul
+30/11/2017 - 09:50:17 	Nombre de positions : 100
+30/11/2017 - 09:50:17 	Simulation activée
+30/11/2017 - 09:50:17 	Lecture des conditions initiales
+30/11/2017 - 09:50:18 	Fin du calcul
+30/11/2017 - 09:50:43 	Début du calcul
+30/11/2017 - 09:50:43 	Nombre de positions : 100
+30/11/2017 - 09:50:43 	Simulation activée
+30/11/2017 - 09:50:43 	Lecture des conditions initiales
+30/11/2017 - 09:50:44 	Fin du calcul
+30/11/2017 - 09:50:45 	Début du calcul
+30/11/2017 - 09:50:45 	Nombre de positions : 100
+30/11/2017 - 09:50:45 	Simulation activée
+30/11/2017 - 09:50:45 	Lecture des conditions initiales
+30/11/2017 - 09:50:46 	Fin du calcul
+30/11/2017 - 09:50:46 	Début du calcul
+30/11/2017 - 09:50:46 	Nombre de positions : 100
+30/11/2017 - 09:50:46 	Simulation activée
+30/11/2017 - 09:50:46 	Lecture des conditions initiales
+30/11/2017 - 09:50:47 	Fin du calcul
+30/11/2017 - 09:50:48 	Début du calcul
+30/11/2017 - 09:50:48 	Nombre de positions : 100
+30/11/2017 - 09:50:48 	Simulation activée
+30/11/2017 - 09:50:48 	Lecture des conditions initiales
+30/11/2017 - 09:50:48 	Fin du calcul
+30/11/2017 - 09:50:52 	Début du calcul
+30/11/2017 - 09:50:52 	Nombre de positions : 100
+30/11/2017 - 09:50:52 	Simulation activée
+30/11/2017 - 09:50:52 	Lecture des conditions initiales
+30/11/2017 - 09:50:53 	Fin du calcul
+30/11/2017 - 09:52:17 	Début du calcul
+30/11/2017 - 09:52:17 	Nombre de positions : 100
+30/11/2017 - 09:52:17 	Simulation activée
+30/11/2017 - 09:52:17 	Lecture des conditions initiales
+30/11/2017 - 09:52:18 	Fin du calcul
+30/11/2017 - 09:52:22 	Début du calcul
+30/11/2017 - 09:52:22 	Nombre de positions : 100
+30/11/2017 - 09:52:22 	Simulation activée
+30/11/2017 - 09:52:22 	Lecture des conditions initiales
+30/11/2017 - 09:52:23 	Fin du calcul
+30/11/2017 - 09:52:26 	Début du calcul
+30/11/2017 - 09:52:26 	Nombre de positions : 100
+30/11/2017 - 09:52:26 	Simulation activée
+30/11/2017 - 09:52:26 	Lecture des conditions initiales
+30/11/2017 - 09:52:26 	Fin du calcul
+30/11/2017 - 09:52:30 	Début du calcul
+30/11/2017 - 09:52:30 	Nombre de positions : 100
+30/11/2017 - 09:52:30 	Simulation activée
+30/11/2017 - 09:52:30 	Lecture des conditions initiales
+30/11/2017 - 09:52:31 	Fin du calcul
+30/11/2017 - 09:52:35 	Début du calcul
+30/11/2017 - 09:52:35 	Nombre de positions : 100
+30/11/2017 - 09:52:35 	Simulation activée
+30/11/2017 - 09:52:35 	Lecture des conditions initiales
+30/11/2017 - 09:52:36 	Fin du calcul
+30/11/2017 - 09:52:39 	Début du calcul
+30/11/2017 - 09:52:39 	Nombre de positions : 1000
+30/11/2017 - 09:52:39 	Simulation activée
+30/11/2017 - 09:52:39 	Lecture des conditions initiales
+30/11/2017 - 09:52:45 	Fin du calcul
+30/11/2017 - 10:59:58 	===== Fermeture de session =====
+=======
 30/11/2017 - 09:39:59 	===== Ouverture de session =====
 30/11/2017 - 09:41:02 	Début du calcul
 30/11/2017 - 09:41:02 	Nombre de positions : 100
@@ -422,6 +533,7 @@
 30/11/2017 - 09:46:12 	Lecture des conditions initiales
 30/11/2017 - 09:46:14 	Fin du calcul
 30/11/2017 - 10:22:02 	===== Fermeture de session =====
+>>>>>>> 7ae40f9c73e081d3ad7cc0aecb993b1694e9fd56:C4_performances_dynamiques/7_diravi/CAO-DIRAVI/Regulateur-simplif.log
 
 ===============Finish Logging================
 
