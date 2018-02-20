@@ -1,0 +1,250 @@
+%ENTETE / INCLUDES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+\input{../../../../../../latex/packages.tex}	%Liste des packages
+%\import{../../../latex/}{notations.tex}	%Notations et commandes
+%\input{../../../latex/notations.tex}	%Notations et commandes
+
+\input{../../../../../../latex/notations/notations_math.tex}
+\input{../../../../../../latex/notations/notations_unites.tex}
+\input{../../../../../../latex/notations/notations_AF.tex}
+\input{../../../../../../latex/notations/notations_asservissement.tex}
+\input{../../../../../../latex/notations/notations_vecteurs.tex}
+\input{../../../../../../latex/notations/notations_torseurs.tex}
+\input{../../../../../../latex/notations/notations_cinematique.tex}                          
+\input{../../../../../../latex/notations/notations_cotation.tex}
+\input{../../../../../../latex/notations/notations_fab.tex}
+\input{../../../../../../latex/notations/notations_statique.tex}
+\input{../../../../../../latex/notations/boites.tex}
+
+\input{../../../../../../latex/style.tex}		%Style, mise en page
+
+% Commandes générales
+%===============================
+
+
+%Lettres grecques oubliees
+\newcommand{\Mu}{M} %mu majuscule
+
+%Mise en forme
+\newcommand{\gras}[1]	{\textbf{#1}}
+\newcommand{\bouton}[1]	{\fbox{\footnotesize{\textsc{#1}}}}
+\newcommand{\toutpetit}[1]	{{\tiny{1}}}
+\newcommand{\PETIT}[1]		{{\scriptsize{#1}}}
+\newcommand{\Petit}[1]		{\footnotesize{#1}}
+\newcommand{\petit}[1]		{{\small{#1}}}
+\newcommand{\normal}[1]		{{\normalsize{#1}}}
+\newcommand{\grand}[1]		{{\large{#1}}}
+\newcommand{\Grand}[1]		{{\Large{#1}}}
+\newcommand{\GRAND}[1]		{{\LARGE{#1}}}
+\newcommand{\enorme}[1]		{{\huge{#1}}}
+\newcommand{\Enorme}[1]		{{\Huge{#1}}}
+
+\newcommand{\oeuvre}		{\oe uvre}
+\newcommand{\oeuvres}		{\oe uvres}
+
+\newcommand{\fig}[1]		{(fig.\ref{#1})}
+
+\newcommand{\miniCentre}[2][\linewidth]	{\begin{minipage}{#1}\begin{center}#2\end{center}\end{minipage}}
+
+\renewcommand	{\cycle}		{C4 : Modélisation des performances cinématiques des systèmes}
+\renewcommand	{\cycleresume}		{C4 : Performances cinématiques}
+\renewcommand	{\titre}		{Performances cinématiques des systèmes}
+\renewcommand	{\numero}		{C4}
+\renewcommand	{\numerotd}		{3}
+\renewcommand	{\auteur}		{Emilien DURIF}
+\renewcommand	{\etablissement}	{Lycée La Martinière Monplaisir Lyon}
+\renewcommand	{\discipline}		{Sciences Industrielles pour l'Ingénieur}
+\renewcommand	{\classe}		{Classe préparatoire M.P.S.I.}
+\renewcommand	{\annee}		{2016 - 2017}
+\renewcommand	{\icone}		{../../../../../../latex/images/logo_martiniere.jpg}
+\renewcommand	{\competences}		{}
+
+\setboolean{tdcorrige}{false}
+
+\begin{document}
+
+%	\begin{center}
+%		\huge {\textsc{\titre}}
+%	\end{center}
+
+	\input{../../../../../../latex/page_de_garde_synthese.tex}
+	
+	
+\begin{itemize}
+\item \textbf{Analyser : }
+\begin{itemize}
+\item Définir les \textbf{frontières de l'analyse} : 
+\begin{itemize}
+\item \textbf{Isoler} un système et justifier l'isolement.
+\item Définir les éléments influents du \textbf{milieu extérieur}.
+\end{itemize}
+\item \textbf{Caractériser les écarts} : 
+\begin{itemize}
+\item \textbf{Quantification} des écarts.
+\item \textbf{Interprétation} des écarts.
+\end{itemize}
+\end{itemize}
+\item \textbf{Modéliser : }Proposer un \textbf{modèle de connaissance} et de \textbf{comportement}.
+\begin{itemize}
+\item Préciser et justifier les conditions et les limites de la \textbf{modélisation plane}.
+\item Associer à une liaison le \textbf{torseur cinématique}.
+\item Déterminer les conditions géométriques associées à l'\textbf{hyperstatisme}.
+\end{itemize}
+\item \textbf{Résoudre : } Procéder à la mise en oeuvre d'une démarche de résolution analytique et numérique :
+\begin{itemize}
+\item Déterminer la \textbf{loi entrée-sortie géométrique ou cinématique} d'une chaîne de solides.
+\item Déterminer la \textbf{loi entrée-sortie en action mécanique transmissible} d'une chaîne de solides.
+\item Résoudre le système associé à la \textbf{fermeture cinématique} et en déduire le \textbf{degré de mobilité}.
+\item Choisir les valeurs des \textbf{paramètres de la résolution numérique}.
+\item Choisir les \textbf{grandeurs physiques tracées}.
+\item Choisir les \textbf{paramètres de simulation}.
+\item Faire \textbf{varier un paramètre} et \textbf{comparer les courbes} obtenues.
+\end{itemize}
+\item \textbf{Expérimenter : }
+\begin{itemize}
+\item Prévoir \textbf{l'allure} et \textbf{les ordres de grandeurs} des mesures.
+\item Définir des \textbf{Protocoles expérimentaux}.
+\end{itemize}
+\item \textbf{Communiquer : }
+\begin{itemize}
+\item \textbf{Choisir les outils de communication} adaptés par rapport à l'interlocuteur.
+\item Faire preuve d'écoute et \textbf{confronter des points de vue}.
+\item Présenter les \textbf{étapes du travail}.
+\item Présenter de \textbf{manière argumentée une synthèse des résultats}.
+\item Réaliser un \textbf{schéma cinématique}.
+\end{itemize}
+\end{itemize}
+
+\subsection{Introduction}
+La modélisation cinématiques des systèmes a pour objectif de prévoir les performances d'un système.
+Pour cela on doit identifier une \textbf{loi entrée-sortie cinématique}.
+En travaux pratique le but est de confronter les performances simulées extraites d'un modèle géométrique et cinématiques aux performances réelles issus des mesures données directement par des capteurs présents sur le système réel.
+
+ \begin{center}
+   \includegraphics[width=0.6\linewidth]{./images/triptyque.pdf}
+\end{center} 
+
+\subsection{Analyse des performances réelles d'un systèmes}
+
+On rappelle la méthodologie de l'analyse des performances réelles d'un système.
+
+\begin{enumerate}
+\item Identifier les grandeurs cinématiques d'entrée et de sortie d'un système.
+\item Mettre en place un protocole expérimental : à définir et à expliciter rigoureusement.
+\item Effectuer la mesure avec généralement le logiciel d'acquisition dédié.
+\item Analyser les données expérimentales en identifiant des zones élémentaires.
+\item Vérifier la reproductibilité de la mesure en réitérant les manipulations.
+\end{enumerate}
+
+\subsection{Synthèses des éléments théoriques de la cinématique du solide}
+
+\subsubsection{Fermetures géométriques}
+
+\paragraph{Cas d'une relation entre une longueur et un paramètre angulaire}
+
+
+Prenons l'exemple du robot Maxpid. Dans le cas d'un système fermée avec 3 paramètres de mouvements  : $\theta_{31}$, $\theta_{51}$ et $x=\overrightarrow{BC}\cdot \overrightarrow{x_3}$.
+
+La fermeture géométrique : $\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CA}=\overrightarrow{0}$ donne deux équations scalaires en projection suivant $\overrightarrow{x_1}$ et $\overrightarrow{y_1}$ : 
+\begin{align*}
+\left\{
+\begin{array}{c}
+x\;\cos\theta_{31}-a\;\cos\theta_{51}=0\\
+\\
+b+x\;\sin\theta_{31}-a\;\sin\theta_{51}=0
+\end{array}
+\right.
+\end{align*}
+
+Pour avoir une relation entre \textbf{l'entrée $x$} et \textbf{la sortie $\theta_{51}$}, il faut éliminer $\theta_{31}$ : pour cela on combine les deux équation précédente pour faire apparaître $\cos^2\theta_{31}+\sin^2\theta_{31}=1$.
+
+On obtient alors : 
+
+\begin{align*}
+x^2\left(\cos^2\theta_{31}+\sin^2\theta_{31}\right)=a^2\;\cos^2\theta_{51}+\left(a\;\sin\theta_{51}-b\right)^2\\
+\Rightarrow\\
+x=\sqrt{a^2+b^2-2\;a\;b\sin\theta_{51}}
+\end{align*}
+
+
+ \begin{center}
+   \includegraphics[width=0.6\linewidth]{./images/maxpid.jpg}
+\end{center} 
+
+
+\paragraph{Cas d'une relation entre deux paramètres angulaires}
+
+Prenons l'exemple du système à croix de malt de la capsuleuse de bocaux. Dans le cas d'un système fermée avec 3 paramètres de mouvements  : $\theta$, $\alpha$ et $x=\overrightarrow{OB}\cdot \overrightarrow{x_3}$.
+
+La fermeture géométrique : $\overrightarrow{OA}+\overrightarrow{AB}+\overrightarrow{BO}=\overrightarrow{0}$ donne deux équations scalaires en projection suivant $\overrightarrow{x_0}$ et $\overrightarrow{y_0}$ : 
+
+\begin{align*}
+\left\{
+\begin{array}{c}
+a-b\;\sin\theta-x\;\cos\alpha=0\\
+\\
+b\;\cos\theta-x\;\sin\alpha=0
+\end{array}
+\right.
+\end{align*}
+
+Pour avoir une relation entre \textbf{l'entrée $\theta$} et \textbf{la sortie $\alpha$}, il faut éliminer $x$ : pour cela on combine les deux équation précédente pour isoler x sur chaque équation puis les égaliser.
+
+On obtient alors : 
+
+\begin{align*}
+\left\{
+\begin{array}{c}
+x\;\cos\alpha=a-b\;\sin\theta\\
+\\
+x\;\sin\alpha=b\;\cos\theta
+\end{array}
+\right.
+\end{align*}
+
+En faisant le rapport des expression précédentes :
+
+\begin{align*}
+\tan\alpha=\frac{b\;\cos\theta}{a-b\;\sin\theta}
+\end{align*}
+
+ \begin{center}
+   \includegraphics[width=0.6\linewidth]{./images/capsuleuse.jpg}
+\end{center} 
+\subsubsection{Calcul de vitesses}
+
+Pour calculer la vitesse d'un point par rapport à un repère on a deux possibilités :
+\begin{itemize}
+\item \textbf{La dérivation vectorielle} :
+
+\begin{align*}
+\overrightarrow{V}(M/R_0)=\left[\frac{d\overrightarrow{OM(t)}}{dt}\right]_{R_0}.
+\end{align*}
+
+\item \textbf{La formule de Varignon ou de changement de point :}
+
+Pour cela il faut au préalable utiliser la formule de composition des vitesses :
+
+\begin{align*}
+\overrightarrow{V}(M/R_0)=\overrightarrow{V}(M\in R_1/R_0)+\overrightarrow{V_r}(M/R_1).
+\end{align*}
+
+Car la formule de Varignon ne s'applique que pour des \textbf{vitesses d'entrainement} : $\overrightarrow{V}(M\in R_1/R_0)$.
+
+\begin{align*}
+\overrightarrow{V}(M\in R_1/R_0)=\overrightarrow{V}(P\in R_1/R_0)+\overrightarrow{MP}\wedge \overrightarrow{\Omega}(R_1/R_0)
+\end{align*}
+
+\end{itemize}
+
+Dans tous les cas on veillera à ne pas mélanger \textbf{base d'expression} (dans laquelle on exprime le vecteur) et \textbf{base de dérivation} (dans laquelle on observe le mouvement).
+
+
+\subsection{Bilan}
+
+\textbf{Remplir le tableau des compétences du système.}
+
+
+\end{document}
+ 

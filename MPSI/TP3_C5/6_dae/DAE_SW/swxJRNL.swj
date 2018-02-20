@@ -1,0 +1,20 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 03/10/04 by florence
+' *****************************************************************************
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long
+Dim Annotation As Object
+Dim Gtol As Object
+Dim DatumTag As Object
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Set Part = swApp.OpenDoc4 ("H:\premiere s-si\ci6\DAE\Fichiers SolidWorks\tp statique dae.SLDASM", 2, 0, "", longstatus)
+swApp.ExitApp
+End Sub

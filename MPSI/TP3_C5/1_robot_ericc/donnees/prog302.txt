@@ -1,0 +1,14 @@
+CLOSE
+DELETE GATHER
+OPEN PROG 302 CLEAR
+; parametrage de l'acceleration et de la vitesse
+ts100
+ta600
+f15
+; point de depart
+G00 b90.0g0.0x450.0y-0.0z35.0
+; point final
+G01 b90.0g0.0x375.0y-0.0z35.0
+; retour au point de depart
+G01 b90.0g0.0x450.0y-0.0z35.0
+CLOSE

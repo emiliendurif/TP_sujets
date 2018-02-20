@@ -1,0 +1,268 @@
+\documentclass[8pt]{beamer}
+\usetheme{roosevelt}
+%\documentclass[8pt,blue]{beamer}
+%\usetheme{Antibes}
+%\usecolortheme{lily}
+
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{bm}
+\usepackage{subfigure}
+\usepackage{multimedia}
+%\usepackage{movie16}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage{multido}
+\usepackage{multirow}
+\usepackage{beamerfoils}
+\usepackage{animate}
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{mathrsfs}
+\def\etal{{\it et al.}}
+
+%\graphicspath{{./}{figures/}}
+\usepackage{bm} 
+
+\input{../../../../../latex/notations/notations_math.tex}
+\input{../../../../../latex/notations/notations_unites.tex}
+\input{../../../../../latex/notations/notations_AF.tex}
+\input{../../../../../latex/notations/notations_asservissement.tex}
+\input{../../../../../latex/notations/notations_vecteurs.tex}
+\input{../../../../../latex/notations/notations_torseurs.tex}
+\input{../../../../../latex/notations/notations_cinematique.tex}
+\input{../../../../../latex/notations/notations_cotation.tex}
+\input{../../../../../latex/notations/notations_fab.tex}
+\input{../../../../../latex/notations/notations_statique.tex}
+
+\newcommand{\fp}	{\vForce[f_p]{\sS1}{\sS2}}
+\newcommand{\miniCentre}[2][\linewidth]	{\begin{minipage}{#1}\begin{center}#2\end{center}\end{minipage}}
+\newcommand{\lintab}[3]{\hline \begin{minipage}{2cm}\begin{center}#1\end{center}\end{minipage} & \begin{minipage}{4.5cm}\begin{center}#2\end{center}\end{minipage} &  \begin{minipage}{3.5cm}\begin{center}#3\end{center}\end{minipage} \\}
+%\newcommand{\Veccin}				{\ensuremath{	\mathscr{V}	}}	%Symbole du torseur cinematique
+%\newcommand{\tCinematique}[3][]		{\ensuremath{	\torseur{\Veccin^{#1}_{\left(#2/#3\right)}}	}}%torseur cinematique
+
+%-----------------------------------------------------------------------
+%
+% chemins des fichiers graphiques
+%
+%\ifpdf
+%\graphicspath{{./}{figures/pdfs/}{figures/others/}}
+%\else
+%\RequirePackage{psfrag}
+%\graphicspath{{./}{figures/epss/}{figures/pdfs/}{figures/others/}}
+%\fi
+%-----------------------------------------------------------------------
+
+
+\pdfinfo
+{
+  /Title       ()
+  /Creator (E. DURIF)
+  /Author (Émilien DURIF)
+}
+
+
+\title{C4 : Modélisation des performances cinématiques des systèmes\\
+TP3 : performances cinématiques des systèmes.}
+%\vspace{-1.cm}
+\author{Émilien DURIF\\
+emilien.durif@gmail.com}
+
+
+\date{\normalsize{Lycée La Martinière Monplaisir Lyon\\
+     Classe de MPSI\\
+}}
+
+
+
+
+\begin{document}
+
+%\newcommand{\biblio_en}[1]{\textcolor[rgb]{0.9 0.9 0.9}{\it{#1}}}
+\newcommand{\biblioen}[1]{\textcolor[rgb]{0.2 0.5 0.9}{\small{\it{#1}}}}
+\setbeamertemplate{navigation symbols}{}
+%\rmfamily
+
+\frame{
+\vspace{-1.cm}
+\titlepage
+\vspace{-.5cm}
+%\begin{columns}
+%%	\column{.3\textwidth}
+%%	\begin{center}
+%%	\includegraphics[width=0.5\textwidth]{figures/lamcos.jpg}
+%%	\end{center}
+%%	\column{.4\textwidth}
+%%	\begin{center}
+%%	\includegraphics[width=0.4\textwidth]{figures/logoinsa.jpg}
+%%	\end{center}
+%%	\column{.3\textwidth}
+%%	\begin{center}
+%%	\includegraphics[width=0.4\textwidth]{figures/mateis.jpg}
+%%	\end{center}
+%\end{columns}
+}
+
+\newcommand<>{\highlighton}[1]{%
+  \alt#2{\structure{#1}}{{#1}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Content starts here %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}<beamer> 
+\frametitle{Plan}
+\tableofcontents
+\end{frame}
+\AtBeginSubsection[]{
+  \frame<handout:0>{
+    \frametitle{Plan}
+    \tableofcontents[current]
+  }
+}
+
+\section{Introduction}
+\frame{
+\frametitle{Introduction}
+
+\begin{block}{Introduction}
+La modélisation des systèmes linéaires continus et invariants peut présenté plusieurs objectifs :
+\begin{itemize}
+\item<1-> Prévoir les performances d'un système et vérifier les performances vis-à-vis du cahier des charges. 
+\item<2-> Identifier les caractéristiques d'un système. 
+\end{itemize}
+
+ \begin{center}
+   \includegraphics[width=0.6\linewidth]{./images/triptyque.pdf}
+\end{center} 
+\end{block}
+
+}
+\section{Analyse des performances réelles d'un systèmes}
+\frame{
+\frametitle{Analyse des performances réelles d'un systèmes}
+On rappelle la méthodologie de l'analyse des performances réelles d'un système.
+
+\begin{enumerate}
+\item<1-> Identifier la grandeur physique à mesurer (exemple la position du bras du robot) qui peut être défini par le cahier des charges.
+\item<2-> Mettre en place un protocole expérimental : à définir et à expliciter rigoureusement.
+\item<3-> Effectuer la mesure avec généralement le logiciel d'acquisition dédié.
+\item<4-> Analyser les données expérimentales en identifiant des zones élémentaires.
+\item<5-> Vérifier la reproductibilité de la mesure en réitérant les manipulations.
+\item<6-> Vérifier la limite du modèle (linéarité, vitesse de saturation, etc...).
+\end{enumerate}
+
+	}
+\section{Synthèse des éléments théoriques de l'analyse des SLCI}	
+\frame{
+\frametitle{Synthèse des éléments théoriques de l'analyse des SLCI}
+Les systèmes élémentaires sont principalement :
+
+\begin{itemize}
+\item<1-> système à action proportionnelle : $H(p)=K$ ;
+\item<2-> système à action intégrale : $H(p)=\frac{1}{p}$ ;
+\item<3-> système à action dérivée : $H(p)=p$ ;
+\item<4-> système du premier ordre : $H(p)=\frac{K}{1+\tau\;p}$ avec $K$ le gain statique et $\tau$ (en $s$) la constante de temps ;
+\item<5-> système du premier ordre : $H(p)=\frac{K}{1+\frac{2\;\xi}{\omega_0}\;p+\frac{p^2}{\omega_0^2}}$ avec $K$ le gain statique, $\xi$ coefficient d'amortissement (sans dimension) et $\omega_0$, la pulsation propre ;
+\end{itemize}
+
+
+
+}
+
+\frame{
+\frametitle{Synthèse des éléments théoriques de l'analyse des SLCI}
+Théorèmes généraux :
+\begin{itemize}
+\item<1-> Théorème du retard : $\L\left[f(t-\tau)\right]	=	e^{-\tau p}\;F(p)$ ;
+\item<2-> Amortissement : $\L\left[e^{-\omega t}f(t)\right]=	F(p+\omega)$ ;
+\item<3-> Dérivation première : $\L\left[\frac{df}{dt}\right]	=	p\;F(p)-f(0^-)$ ;
+\item<4-> Dérivation seconde : $\L\left[\frac{d^2f}{dt^2}\right]	=	p^2F(p)-p\;f(0^-)-f'(0^-)$ ;
+\item<5-> Intégration : $\L\left[g(t)\right]	=	\frac 1p F(p)+\frac{g(0^-)}p \qquad \text{avec }f(t)=\frac{dg(t)}{dt}$ ;
+\item<6-> Théorème de la valeur finale : $$\lim_{t\rightarrow+\infty} f(t) = \lim_{p\rightarrow0} p\;F(p)$$ ;
+\item<7-> Théorème de la valeur initiale : $$\lim_{t\rightarrow0} f(t) = \lim_{p\rightarrow+\infty} p\;F(p)$$.
+\end{itemize}
+
+
+}
+
+
+
+\frame{
+\frametitle{Synthèse des éléments théoriques de l'analyse des SLCI}
+Lors d'une réponse indicielle (vis-à-vis d'une échelon), un système du premier ordre :
+\begin{itemize}
+\item<1-> est toujours stable (si $\tau>0$), 
+\item<2-> ne présente jamais de dépassements, 
+\item<3-> converge vers $K\;e_0$,
+\item<4-> possède une tangente à l'origine de pente $\frac{K\;e_0}{\tau}$ ,
+\item<5-> possède un temps de réponse à $5\%$ qui vaut $t_{r5\%}=3\;\tau$.
+\end{itemize} 
+
+\begin{center}
+	\includegraphics[width=.5\textwidth]{./images/1er_ordre.pdf}
+\end{center}
+	
+	}
+
+\frame{
+\frametitle{Synthèse des éléments théoriques de l'analyse des SLCI}	
+	Lors d'une réponse indicielle (vis-à-vis d'une échelon), un système du deuxième ordre :
+\begin{itemize}
+\item<1-> présente un dépassement si $\xi<1$, 
+\item<2-> converge vers $K\;e_0$,
+\item<3-> possède une tangente à l'origine de \textbf{pente nulle} ,
+\item<4-> possède un temps de réponse à $5\%$ qui se calcule à partir de l'abaque.
+\item<5-> possède un optimal de rapidité pour $\xi=0,7$ et $t_{r5\%}\cong \frac{3}{\omega_0\xi}$.
+\end{itemize} 
+
+		\begin{center}
+			\includegraphics[width=.5\textwidth]{./images/2nd_ordre_echelon0.pdf}
+		\end{center}
+		
+		}
+
+
+\section{Notion d'identification}		
+\frame{
+\frametitle{Notion d'identification}			
+		L'identification d'un modèle sur une réponse expérimentale consiste à choisir un modèle pertinent puis d'extraire les paramètres associés.
+Selon la forme du relevé expérimental, le choix se porte généralement vers un modèle du premier ou du deuxième ordre.
+\begin{itemize}
+\item L'identification du gain statique s'obtient par le rapport de la valeur à convergence sur la valeur de l'échelon d'entrée : $K=\frac{s_{\infty}}{e_0}$ ;
+\item Pour \textbf{un premier ordre} la constante de temps $\tau$ s'obtient par :
+\begin{itemize}
+\item par le temps à $63\%$ ;
+\item par la tangente à l'origine ;
+\item le temps de réponse à $5\%$ égal à $3\tau$. 
+\end{itemize}
+\item Pour \textbf{un second ordre} oscillant la pulsation propre $\omega_0$ et le coefficient d'amortissement s'identifient avec les définitions de : 
+\begin{itemize}
+\item la pseudo période : $T_p=\frac{2\pi}{\omega_p}=\frac{2\pi}{\omega_0\sqrt{1-\xi^2}}$
+\item le dépassement $\%$ : $D\%=100\times exp\left(\frac{-\xi \pi}{\sqrt{1-\xi^2}}\right)=\frac{s_{max}-s_{\infty}}{s_{\infty}}\times 100$
+\end{itemize}
+\end{itemize} 
+
+}
+
+
+\section{Calcul de la réponse temporelle}
+\frame{
+\frametitle{Calcul de la réponse temporelle}	
+Le retour en temporel est rarement nécessaire car la plupart des performances utiles peuvent être déterminées directement à partir des expressions dans le domaine de Laplace. On peut éventuellement utiliser un logiciel de simulation pour estimer ces réponses temporelles (\textbf{\textit{Scilab}}).
+Néanmoins pour calculer la réponse temporelle, il faut :
+\begin{itemize}
+\item<1-> Décomposer en éléments simples la réponse dans le domaine de Laplace.
+\item<2-> Identifier les coefficients introduits par la méthode aux limites ou la réduction au même dénominateur.
+\item<3-> Transformer chaque élément simple à l'aide du tableau des transformées de Laplace usuelles.
+\end{itemize}
+
+}
+\end{document}

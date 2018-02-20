@@ -1,0 +1,130 @@
+
+===============Init Logging================
+
+14/04/2014 - 06:15:29 	===== Ouverture de session =====
+14/04/2014 - 06:15:57 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+09/01/2016 - 21:47:55 	===== Ouverture de session =====
+09/01/2016 - 22:13:09 	Début du calcul
+09/01/2016 - 22:13:09 	Nombre de positions : 18
+09/01/2016 - 22:13:09 	Simulation inactivée
+09/01/2016 - 22:13:09 	Lecture des conditions initiales
+09/01/2016 - 22:13:09 	Fin du calcul
+09/01/2016 - 22:13:33 	Début du calcul
+09/01/2016 - 22:13:33 	Nombre de positions : 24
+09/01/2016 - 22:13:33 	Simulation inactivée
+09/01/2016 - 22:13:33 	Lecture des conditions initiales
+09/01/2016 - 22:13:33 	Fin du calcul
+09/01/2016 - 22:13:37 	Début du calcul
+09/01/2016 - 22:13:37 	Nombre de positions : 24
+09/01/2016 - 22:13:37 	Simulation activée
+09/01/2016 - 22:13:37 	Lecture des conditions initiales
+09/01/2016 - 22:13:37 	Fin du calcul
+09/01/2016 - 22:13:38 	Début du calcul
+09/01/2016 - 22:13:38 	Nombre de positions : 24
+09/01/2016 - 22:13:38 	Simulation activée
+09/01/2016 - 22:13:38 	Lecture des conditions initiales
+09/01/2016 - 22:13:38 	Fin du calcul
+09/01/2016 - 22:13:50 	Début du calcul
+09/01/2016 - 22:13:50 	Nombre de positions : 24
+09/01/2016 - 22:13:50 	Simulation activée
+09/01/2016 - 22:13:50 	Lecture des conditions initiales
+09/01/2016 - 22:13:50 	Fin du calcul
+09/01/2016 - 22:14:14 	Début du calcul
+09/01/2016 - 22:14:14 	Nombre de positions : 24
+09/01/2016 - 22:14:14 	Simulation activée
+09/01/2016 - 22:14:14 	Lecture des conditions initiales
+09/01/2016 - 22:14:16 	Analyse du système incorrecte
+09/01/2016 - 22:14:16 	Abandon du calcul
+09/01/2016 - 22:14:20 	Début du calcul
+09/01/2016 - 22:14:20 	Nombre de positions : 24
+09/01/2016 - 22:14:20 	Simulation activée
+09/01/2016 - 22:14:20 	Lecture des conditions initiales
+09/01/2016 - 22:14:21 	Fin du calcul
+09/01/2016 - 22:14:22 	Début du calcul
+09/01/2016 - 22:14:22 	Nombre de positions : 24
+09/01/2016 - 22:14:22 	Simulation activée
+09/01/2016 - 22:14:22 	Lecture des conditions initiales
+09/01/2016 - 22:14:23 	Fin du calcul
+09/01/2016 - 22:14:24 	Début du calcul
+09/01/2016 - 22:14:24 	Nombre de positions : 24
+09/01/2016 - 22:14:24 	Simulation activée
+09/01/2016 - 22:14:24 	Lecture des conditions initiales
+09/01/2016 - 22:14:24 	Fin du calcul
+09/01/2016 - 22:15:14 	Début du calcul
+09/01/2016 - 22:15:14 	Nombre de positions : 24
+09/01/2016 - 22:15:14 	Simulation activée
+09/01/2016 - 22:15:14 	Lecture des conditions initiales
+09/01/2016 - 22:15:14 	Fin du calcul
+09/01/2016 - 22:15:15 	Début du calcul
+09/01/2016 - 22:15:15 	Nombre de positions : 24
+09/01/2016 - 22:15:15 	Simulation activée
+09/01/2016 - 22:15:15 	Lecture des conditions initiales
+09/01/2016 - 22:15:15 	Fin du calcul
+09/01/2016 - 22:15:24 	Début du calcul
+09/01/2016 - 22:15:24 	Nombre de positions : 240
+09/01/2016 - 22:15:24 	Simulation activée
+09/01/2016 - 22:15:24 	Lecture des conditions initiales
+09/01/2016 - 22:15:27 	Fin du calcul
+09/01/2016 - 22:15:29 	Début du calcul
+09/01/2016 - 22:15:29 	Nombre de positions : 240
+09/01/2016 - 22:15:29 	Simulation activée
+09/01/2016 - 22:15:29 	Lecture des conditions initiales
+09/01/2016 - 22:15:32 	Fin du calcul
+09/01/2016 - 22:15:33 	Début du calcul
+09/01/2016 - 22:15:33 	Nombre de positions : 240
+09/01/2016 - 22:15:33 	Simulation activée
+09/01/2016 - 22:15:33 	Lecture des conditions initiales
+09/01/2016 - 22:15:36 	Fin du calcul
+09/01/2016 - 22:21:17 	Début du calcul
+09/01/2016 - 22:21:17 	Nombre de positions : 240
+09/01/2016 - 22:21:17 	Simulation activée
+09/01/2016 - 22:21:17 	Lecture des conditions initiales
+09/01/2016 - 22:21:22 	Fin du calcul
+09/01/2016 - 22:21:32 	Début du calcul
+09/01/2016 - 22:21:32 	Nombre de positions : 240
+09/01/2016 - 22:21:32 	Simulation activée
+09/01/2016 - 22:21:32 	Lecture des conditions initiales
+09/01/2016 - 22:21:35 	Fin du calcul
+09/01/2016 - 22:22:04 	Début du calcul
+09/01/2016 - 22:22:04 	Nombre de positions : 19
+09/01/2016 - 22:22:04 	Simulation activée
+09/01/2016 - 22:22:04 	Lecture des conditions initiales
+09/01/2016 - 22:22:04 	Fin du calcul
+09/01/2016 - 22:28:35 	Début du calcul
+09/01/2016 - 22:28:35 	Nombre de positions : 18
+09/01/2016 - 22:28:35 	Simulation activée
+09/01/2016 - 22:28:35 	Lecture des conditions initiales
+09/01/2016 - 22:28:35 	Fin du calcul
+09/01/2016 - 22:52:31 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+10/01/2016 - 11:36:53 	===== Ouverture de session =====
+10/01/2016 - 11:43:49 	Début du calcul
+10/01/2016 - 11:43:49 	Nombre de positions : 18
+10/01/2016 - 11:43:49 	Simulation activée
+10/01/2016 - 11:43:49 	Lecture des conditions initiales
+10/01/2016 - 11:43:49 	Fin du calcul
+10/01/2016 - 11:43:50 	Début du calcul
+10/01/2016 - 11:43:50 	Nombre de positions : 18
+10/01/2016 - 11:43:50 	Simulation activée
+10/01/2016 - 11:43:50 	Lecture des conditions initiales
+10/01/2016 - 11:43:50 	Fin du calcul
+10/01/2016 - 11:43:55 	Début du calcul
+10/01/2016 - 11:43:55 	Nombre de positions : 180
+10/01/2016 - 11:43:55 	Simulation activée
+10/01/2016 - 11:43:55 	Lecture des conditions initiales
+10/01/2016 - 11:43:57 	Fin du calcul
+10/01/2016 - 22:32:58 	===== Fermeture de session =====
+
+===============Finish Logging================
+
