@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.18)  21 FEB 2018 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.18)  3 APR 2018 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2398,7 +2398,9 @@ Overfull \hbox (30.76997pt too wide) in paragraph at lines 109--119
 [4 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/i
 mages/schema_bloc_ericc.pdf> </Users/emiliendurif/Documents/prepa/sujets/TP_suj
 ets/TP_simulation/ericc3/images/poulie_courroie.png> </Users/emiliendurif/Docum
-ents/prepa/sujets/TP_sujets/TP_simulation/ericc3/images/harmonic_drive.png>]
+ents/prepa/sujets/TP_sujets/TP_simulation/ericc3/images/harmonic_drive.png> </U
+sers/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/images/
+codeur.png>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
@@ -2406,59 +2408,58 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <10> not available
 (Font)              Font shape `TS1/futs/b/n' tried instead on input line 137.
 
-Overfull \hbox (18.03226pt too wide) in paragraph at lines 156--157
+Overfull \hbox (18.03226pt too wide) in paragraph at lines 157--158
 []\T1/futs/m/n/10 Pour com-pa-rer les don-nées entre le mo-dèle réel et si-mulé
  on pourra uti-li-ser et exé-cu-ter le fi-chier \T1/futs/b/n/10 Compare$[]$mode
 le1.m\T1/futs/m/n/10 .
  []
 
-[5 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/i
-mages/codeur.png>]
-Overfull \hbox (5.4944pt too wide) in paragraph at lines 190--203
+
+Overfull \hbox (5.4944pt too wide) in paragraph at lines 192--205
  [] 
  []
 
-
+[5]
 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/imag
-es/sb_linear_analysis.png, id=210, 480.8364pt x 174.8934pt>
+es/sb_linear_analysis.png, id=211, 480.8364pt x 174.8934pt>
 File: /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3
 /images/sb_linear_analysis.png Graphic file (type png)
 
 <use /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/
 images/sb_linear_analysis.png>
 Package pdftex.def Info: /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/T
-P_simulation/ericc3/images/sb_linear_analysis.png used on input line 225.
+P_simulation/ericc3/images/sb_linear_analysis.png used on input line 227.
 (pdftex.def)             Requested size: 483.69687pt x 175.94174pt.
- [6 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/
-images/sb_linear_analysis.png>]
+
 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/imag
-es/sb_linear_analysis2.png, id=219, 483.7272pt x 181.6386pt>
+es/sb_linear_analysis2.png, id=212, 483.7272pt x 181.6386pt>
 File: /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3
 /images/sb_linear_analysis2.png Graphic file (type png)
 
 <use /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/
 images/sb_linear_analysis2.png>
 Package pdftex.def Info: /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/T
-P_simulation/ericc3/images/sb_linear_analysis2.png used on input line 242.
+P_simulation/ericc3/images/sb_linear_analysis2.png used on input line 244.
 (pdftex.def)             Requested size: 483.69687pt x 181.62982pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 242--243
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 244--245
  [] 
  []
 
-
+[6 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/i
+mages/sb_linear_analysis.png>]
 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/imag
-es/bode_simulink.png, id=220, 45.2892pt x 30.3534pt>
+es/bode_simulink.png, id=225, 45.2892pt x 30.3534pt>
 File: /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3
 /images/bode_simulink.png Graphic file (type png)
 
 <use /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/
 images/bode_simulink.png>
 Package pdftex.def Info: /Users/emiliendurif/Documents/prepa/sujets/TP_sujets/T
-P_simulation/ericc3/images/bode_simulink.png used on input line 244.
+P_simulation/ericc3/images/bode_simulink.png used on input line 246.
 (pdftex.def)             Requested size: 48.37263pt x 32.41989pt.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6.49994> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 246.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 248.
 ) 
 AED: lastpage setting LastPage
 [7 </Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/i
@@ -2479,11 +2480,11 @@ Package rerunfilecheck Info: File `TP4.out' has not changed.
 Here is how much of TeX's memory you used:
  55871 strings out of 492995
  1296609 string characters out of 6132704
- 1668775 words of memory out of 5000000
+ 1671775 words of memory out of 5000000
  58432 multiletter control sequences out of 15000+600000
  96224 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,15n,96p,10543b,10858s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,15n,96p,10543b,10926s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb>
@@ -2492,7 +2493,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on TP4.pdf (7 pages, 1519622 bytes).
+Output written on TP4.pdf (7 pages, 1519501 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams

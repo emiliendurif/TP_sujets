@@ -79,10 +79,10 @@ On donne le schéma bloc global du système :
 \end{center}
 
 \begin{itemize}
-\item La structure de l'asservissement et numérique. Les grandeurs numériques sont représentées avec un exposant $*$.
+\item La structure de l'asservissement est numérique. Les grandeurs numériques sont représentées avec un exposant $*$.
 \item L'angle de consigne de lacet se note : \textbf{$\theta_c(p)$}.
 \item L'angle à la sortie de l'arbre moteur se note \textbf{$\theta_m(p)$}.
-\item Le système comporte un correcteur PID (Proportionnel Intégral Dérivé). Ici n'est représenté que le correcteur Proportionnel (de gain \textbf{$K_p$}) et Intégrale (de gain \textbf{$K_i$}). Dans l'étude on n'étudiera que l'influence de $K_p$. Ainsi on prendra $K_i=0$.
+\item Le système comporte un correcteur PID (Proportionnel Intégral Dérivé). Ici on ne considèrera que le correcteur Proportionnel (de gain \textbf{$K_p$}). Ainsi on prendra $K_i=0$ et $K_d=0$.
 \item Après une conversion numérique analogique, on modélise le moteur avec un \textbf{variateur} (de constante \textbf{$K_v$}), une \textbf{constante de couple} (\textbf{$K_m$}).
 \item On note $U_m(p)$ la tension du moteur, $I_m(p)$ l'intensité dans le circuit moteur et $C_m(p)$ le couple délivré par le moteur.
 \item L'inertie ramené à l'arbre moteur correspondant à la rotation du lacet du robot est donnée par \textbf{$J_{eq}$}. Le frottement visqueux est modélisé par le coefficient \textbf{$f_v$}.
@@ -129,12 +129,13 @@ impulsions par tour.
 }
 \end{itemize}
 
-\question{Compléter le schéma bloc "TP$\_$modele$\_$matlab$\_$eleve.slx" pour modéliser le système asservi en boucle fermée. 
+\question{Compléter le schéma bloc "TP$\_$Ericc3$\_$Modele$\_$Matlab$\_$eleve.slx" pour modéliser le système asservi en boucle fermée. 
 \begin{itemize}
 \item On pourra utiliser le bloc "To Workspace" en nommant la variable de sortie "S1".
 \item On imposera un échelon de $30^{\circ}$.
 \end{itemize}
 }
+
 
 \subsection{Analyse temporelle des performances du robot}
 
@@ -154,6 +155,7 @@ L'étude portera sur la \textbf{configuration 1} (bras en partie replié).
 \question{Exécuter la simulation sur une durée de $2.5s$ et observer le résultat en double cliquant sur le Scope.}
 
 Pour comparer les données entre le modèle réel et simulé on pourra utiliser et exécuter le fichier \textbf{Compare$\_$modele1.m}. Ce fichier permet de traiter les données expérimentales d'un essai réalisé sur le système réel avec $K_p=10^6$ (fichier essai$\_$pos1$\_$kp1000000.csv).
+
 \question{A l'aide de la courbe qui s'affiche, analyser les écarts.}
 
 \question{Modifier la consigne pour obtenir un créneau en entrée comme sur l'essai expérimental (Le créneau dure $1,1s$.}
