@@ -1,0 +1,5 @@
+BARRE NACELLE
+
+cette pièce usinée est un élément de la structure qui relie entres-elles les platines de la nacelle et supporte le plateau.
+
+La structure comporte deux pièces de ce type.

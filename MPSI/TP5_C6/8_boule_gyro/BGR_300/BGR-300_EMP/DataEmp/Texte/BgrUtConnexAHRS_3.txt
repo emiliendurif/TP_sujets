@@ -1,0 +1,7 @@
+CONNEXION module "AHRS"
+
+- 1 - Cliquez sur l'icône "Loupe" pour rechercher les Ports COM libres sur votre PC, un Port COM a été créé lors du raccordement de votre module AHRS sur un Port USB de votre PC ;
+
+- 2 - Sélectionnez le Port COM de votre PC affecté au module AHRS ;
+
+- 3 - Cliquez sur "CONNEXION" pour établir la connexion avec le module AHRS ;

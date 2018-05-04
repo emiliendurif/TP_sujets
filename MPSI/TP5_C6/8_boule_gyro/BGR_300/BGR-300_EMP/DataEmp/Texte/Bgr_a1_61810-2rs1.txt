@@ -1,0 +1,11 @@
+ROULEMENT AXE 1
+
+Ce roulement à simple rangée de billes est monté sur l'axe d'articulation de la nacelle.
+
+Type : 61810-2rs1
+Diamètre exter : 65mm
+Diamètre inter : 50mm
+Epaisseur : 7mm
+
+
+

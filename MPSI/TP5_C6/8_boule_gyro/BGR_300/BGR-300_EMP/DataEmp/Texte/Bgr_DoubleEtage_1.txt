@@ -1,0 +1,10 @@
+RAPPEL CONTEXTE EUROFLIR
+
+Afin de limiter l’influence des vibrations du porteur sur la ligne de visée et augmenter la précision de son orientation, les ingénieurs de chez Safran ont choisi de décomposer l’axe motorisé d’élévation en deux étages.
+
+Le premier étage, appelé étage gros (Axe BOULE), est en prise directe avec l’air et est donc soumis aux effets aérodynamiques lors des mouvements du porteur.
+
+Le second, appelé étage fin (Axe OPTIQUE), est protégé des effets aérodynamiques grâce au carter sphérique solidaire de l’étage gros.
+Cet étage fin est en liaison pivot avec l’étage gros.
+L’inertie des éléments déplacés par l’étage fin est plus faible que celle de l’étage gros et le choix de motorisation permet d’atteindre des accélérations et des vitesses élevées.
+Cependant, l’amplitude du mouvement de l’étage fin est limitée.

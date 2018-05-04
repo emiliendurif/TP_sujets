@@ -1,0 +1,5 @@
+PRESSE-ETOUPE
+
+Presse-étoupe destiné à fixer le câble d'alimentation du BGR-300.
+
+Type : PG-9.

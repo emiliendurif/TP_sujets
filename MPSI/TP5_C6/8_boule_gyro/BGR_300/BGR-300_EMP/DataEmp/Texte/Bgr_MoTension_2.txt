@@ -1,0 +1,7 @@
+MISE SOUS TENSION ALIMENTATION
+
+1 : Basculer l'interrupteur de l'alimentation.
+
+2 : Le voyant s'allume (présence 24V).
+
+Le système est prêt à fonctionner.

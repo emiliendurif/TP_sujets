@@ -1,0 +1,7 @@
+MASSE AXE 2 (Axe 1)
+
+Cette pièce usinée permet d'équilibrer statiquement l'axe 1 "Boule".
+
+Cette masse est fixée sur la barre Arrière de la nacelle.
+
+Poids : ??

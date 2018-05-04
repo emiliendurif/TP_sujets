@@ -1,0 +1,6 @@
+INITIALISATION GYROMETRE
+
+- Cliquez sur "OK" pour lancer l'initialisation (lecture offset) du Gyromètre de l'axe "Optique".
+
+ATTENTION, les axes du BGR-300 et son support (porteur) doivent êtres IMMOBILES durant l'initialisation !
+

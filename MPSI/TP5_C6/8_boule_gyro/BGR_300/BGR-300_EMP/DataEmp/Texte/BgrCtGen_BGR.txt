@@ -1,0 +1,9 @@
+BGR-300
+
+Cet ensemble est une reproduction simplifiée de l'Euroflir.
+
+Le BGR-300 est constitué d'un axe "primaire" (Axe 1 "Boule") sur lequel est embarqué un axe "fin" (Axe 2 "Optique") à fin de mettre en oeuvre une gyrostabilisation double-étage.
+
+ 
+
+

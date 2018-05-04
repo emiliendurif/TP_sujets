@@ -1,0 +1,5 @@
+PLOT BUTEE AXE 2
+
+Cette pièce usinée est fixée sur la chape droite de l'axe 2.
+
+Elle permet de limiter l'angle de rotation de l'axe 2 "Optique".

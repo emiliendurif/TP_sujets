@@ -1,0 +1,5 @@
+POIGNEE
+
+Cette poignée permet de manoeuvrer la commande manuelle du BGR-300.
+
+Elle fait office également de dispositif de verrouillage (en position 0°) lorsqu'elle est vissée à fond.

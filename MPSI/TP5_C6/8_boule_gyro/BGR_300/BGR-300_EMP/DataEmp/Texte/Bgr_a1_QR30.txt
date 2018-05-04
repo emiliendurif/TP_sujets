@@ -1,0 +1,14 @@
+CAPTEUR QR30
+
+Ce capteur permet de mesurer la position angulaire relative entre l'axe 2 "Optique" et l'axe 1 "Boule" (Nacelle).
+
+Sa particularité est que la mesure angulaire se fait sans contact en détectant la position d'un aimant (fixé sur l'axe de rotation du sous-ensemble "Optique").
+
+Principales caractéristiques :
+
+Tension d'alimentation : 7 à 30Vdc
+Tension de sortie : 0-5 V
+Plage de mesure : 0 à 360°
+
+
+

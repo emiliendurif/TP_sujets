@@ -1,0 +1,3 @@
+BRIDE MOTEUR
+
+Cette pièce usinée permet d'interfacer le moteur Maxon de l'axe 1 "Boule" avec l'embase du BGR-300.

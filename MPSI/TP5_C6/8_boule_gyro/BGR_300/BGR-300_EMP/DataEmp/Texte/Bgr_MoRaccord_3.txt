@@ -1,0 +1,5 @@
+CABLE USB
+
+Se munir du câble de liaison USB (fourni).
+
+Connecter la mini fiche USB du câble (côté USB "B") sur le connecteur USB situé à l'arrière du support bleu du BGR-300.

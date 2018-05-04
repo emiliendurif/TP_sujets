@@ -1,0 +1,5 @@
+TESTER LA GYROSTABILISATION
+
+La Gyrostablisation double-étage est activée, la led jaune "Fonctions"  est allumée et la fenêtre "Visualisation cinématique" ci-contre est affichée.
+
+Vous pouvez maintenant tester la gyrostabilisation en inclinant (perturbation) le BGR-300 à l'aide de la commande manuelle et vérifier sur la fenêtre "Visualisation cinématique" la position angulaire par rapport au repère Galiléen de l'axe optique "op" (axe de visée).

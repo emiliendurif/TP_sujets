@@ -1,0 +1,3 @@
+BORNIER ALIMENTATION
+
+Ce bornier permet de raccorder les alimentations nécessaires (24v CC et 5v CC) pour les constituants électroniques (carte et capteurs). 

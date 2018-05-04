@@ -1,0 +1,12 @@
+MISE EN POSITION
+
+Pour plus de facilité, il est recommandé d'asservir le BGR-300 et d'orienter sa boule vers le bas.
+
+La dépose peut se faire alors que le système est asservi dans cette position.
+
+
+AVERTISSEMENT !
+
+SEULE LA DEMI-BOULE AVANT PEUT ETRE DEPOSEE LORSQUE LE SYSTEME EST ASSERVI OU SOUS TENSION.
+
+POUR CE QUI CONCERNE LA DEPOSE DE LA DEMI BOULE-ARRIERE, VEUILLEZ VOUS REFERER AU DOSSIER TECHNIQUE (RISQUE DE COINCEMENT).

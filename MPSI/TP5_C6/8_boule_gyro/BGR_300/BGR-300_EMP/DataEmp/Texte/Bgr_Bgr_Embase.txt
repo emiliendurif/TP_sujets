@@ -1,0 +1,5 @@
+EMBASE
+
+Cette pièce réalisée en tôles mécano-soudées constitue le châssis de la boule gyrostabilisée.
+
+Elle comporte les points de fixation de l'axe 1 "Boule", les passages de câbles ainsi qu'un compartiment pour la carte de commande de l'axe 1.

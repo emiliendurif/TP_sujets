@@ -1,0 +1,4 @@
+CARTE DE COMMANDE AXE 1
+
+Cette carte de commande de type EPOS2-24/2 de chez Maxon Motors contrôle le moteur à courant continu de l'axe 1 "Boule" et son codeur.
+

@@ -1,0 +1,7 @@
+CHAPE MOTEUR (AXE 2)
+
+Cette pièce usinée fait partie du sous-ensemble "Chape Moteur" de l'Axe 2 "Optique".
+
+Elle est fixée sur la nacelle et reçoit le moteur Maxon équipé de sa bride.
+
+La chape moteur supporte l'optique du BGR-300.

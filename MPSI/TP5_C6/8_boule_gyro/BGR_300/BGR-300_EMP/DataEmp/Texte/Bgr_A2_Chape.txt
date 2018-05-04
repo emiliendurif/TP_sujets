@@ -1,0 +1,7 @@
+CHAPE (AXE 2)
+
+Cette pièce usinée fait partie du sous-ensemble "Chape" de l'axe 2 "optique".
+
+Elle est fixée sur la nacelle et reçoit le montage de roulement de l'axe 2 "Optique" ainsi que le capteur "QR30" qui mesure son angle de rotation.
+
+La chape supporte l'optique du BGR-300.

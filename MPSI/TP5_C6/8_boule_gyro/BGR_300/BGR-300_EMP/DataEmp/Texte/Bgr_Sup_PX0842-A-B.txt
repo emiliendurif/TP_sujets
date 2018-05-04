@@ -1,0 +1,3 @@
+CONNECTEUR USB A->B
+
+Cette embase fixée sur le support permet de connecter le BGR-300 au PC via le câble de liaison USB.

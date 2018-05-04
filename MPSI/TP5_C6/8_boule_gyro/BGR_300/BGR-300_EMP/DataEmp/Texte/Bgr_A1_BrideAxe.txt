@@ -1,0 +1,5 @@
+BRIDE AXE
+
+cette pièce usinée se fixe sur la pièce "Bgr_A1_Axe".
+
+Elle permet de maintenir la bague intérieure du roulement à bille (ensemble Platine roulement) et supporte également les deux plots des butées (haute et basse).

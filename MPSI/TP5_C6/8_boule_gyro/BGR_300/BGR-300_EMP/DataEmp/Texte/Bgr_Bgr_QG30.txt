@@ -1,0 +1,12 @@
+INCLINOMETRE QG30
+
+Ce capteur permet de mesurer l'angle d'inclinaison du BGR-300 par rapport au repère Galiléen.
+
+Il est fixé à l'arrière du BGR, sur son embase.
+
+
+Principales caractéristiques :
+
+Tension d'alimentation : 10 à 30Vdc
+Tension de sortie : 0-5 V
+Plage de mesure : +/- 90°

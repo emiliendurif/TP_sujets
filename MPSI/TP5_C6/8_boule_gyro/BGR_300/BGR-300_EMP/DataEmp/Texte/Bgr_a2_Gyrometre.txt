@@ -1,0 +1,17 @@
+GYROMETRE NavG-01
+
+Le gyromètre NavG-01 est un gyromètre intelligent capable de mesurer une vitesse angulaire et d’y appliquer un double filtrage numérique d’ordre 4.
+
+La résolution de l’acquisition du capteur et des calculs est de 16 bits. La sortie du gyromètre est une tension analogique par conversion D/A 1 bit rapide.
+
+Caractéristiques techniques :
+
+- Gyromètre LSM6DS3 de chez ST Micro.
+- Processeur Microchip cadencé à 140Mhz (70Mips).
+- Range de mesure : jusqu’à 2000°/s.
+- Coefficients des filtres paramétrables (connexion directe par câble FTDI).
+- Sortie analogique centrée sur 1.65V (0V à 3.3V).
+- Bande passante 200Hz.
+- Alimentation 5V.
+- Consommation 50mA.
+- Dimensions : 28mm*28mm.

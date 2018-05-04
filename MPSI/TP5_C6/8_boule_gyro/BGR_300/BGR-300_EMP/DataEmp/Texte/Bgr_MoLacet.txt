@@ -1,0 +1,9 @@
+POSITION "LACET"
+
+- Basculez le support du BGR-300 à l'horizontale
+
+- Simulez un mouvement de lacet du porteur en agissant sur la poignée.
+
+La règle graduée permet de visualiser l'angle du lacet.
+
+ 

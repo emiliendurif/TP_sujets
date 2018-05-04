@@ -1,0 +1,8 @@
+ACTIVER LA GYROSTABILISATION
+
+Un panneau "ACTIVATION FONCTIONS" rappelle les fonctions choisies, "GYROSTABILISATION double-étage" sur l'exemple ci-contre :
+
+- Axe 1 "Boule" asservi en vitesse et suiveur du Capteur angulaire 2/1 ;
+- Axe 2 "Optique" asservi en vitesse et suiveur du Gyromètre axe Optique.
+
+- Cliquez sur "VALIDER" pour activer ces fonctions décrites.

@@ -1,0 +1,5 @@
+ACTIVER LA GYROSTABILISATION
+
+L’Interface PC est connectée (led verte "Connexion") au BGR-300 asservi en positions initiales (led rouge "Activation").
+
+- Cliquez sur l'interrupteur "Fonctions" pour activer la fonction de gyrostabilisation double-étage, fonction choisie par défaut au lancement de l'interface.

@@ -1,0 +1,9 @@
+GYROSTABILISATION avec COMMANDE CASQUE
+
+Avant de lancer la Gyrostablisation avec commande Casque, la fenêtre "Visualisation cinématique" et le panneau "Commande CASQUE avec Module AHRS" ci-contre sont affichés.
+
+- Posez les Lunettes avec le Module AHRS sur votre visage ;
+
+- A l'aide de la fenêtre "Visualisation cinématique" et en inclinant votre visage, veuillez aligner l'axe "u" des lunettes (position casque Pilote) avec l'axe "op" de visée de l'Optique ;
+
+- Cliquez sur "OK" pour continuer ...

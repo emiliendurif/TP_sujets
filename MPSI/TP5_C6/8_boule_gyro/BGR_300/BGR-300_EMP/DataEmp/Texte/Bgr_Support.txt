@@ -1,0 +1,5 @@
+SUPPORT
+
+Pièce mécano-soudée constituant le châssis principal du système BGR-300.
+
+Le support est conçu pour faire fonctionner le BGR-300 en position verticale (tangage) ou horizontale (lacet).

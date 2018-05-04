@@ -1,0 +1,12 @@
+CONNEXION ETABLIE
+
+Si la communication est correctement établie, s'affiche à l'écran le  
+panneau "CONNEXION ETABLIE" ci-contre.
+
+Le dialogue entre le PC et le BGR-300 est opérationnel.
+
+- Cliquez sur "OK" pour initialiser :
+   - la position des axes ;
+   - le Gyromètre de l'axe "Optique".
+
+Si la connexion a échoué, veuillez consulter le "Manuel d’utilisation de  l’Interface".

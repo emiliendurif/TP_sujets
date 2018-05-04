@@ -1,0 +1,7 @@
+LUNETTES avec MODULE AHRS
+
+Les lunettes proposées avec le BGR-300 sont équipées d'un Module AHRS ("Attitude and Heading Reference System") : c'est une centrale d'attitude et de navigation.
+
+Ce module AHRS est équipé de 3 accéléromètres, de 3 gyromètres, de 3 magnétomètres et d'un DSP cadencé à 32 Mhz.
+
+Il est fixé sur les lunettes du BGR-300 et permet via une liaison USB de mesurer les mouvements de la tête (attitude du pilote) par rapport au référentiel inertiel (repère Galiléen).

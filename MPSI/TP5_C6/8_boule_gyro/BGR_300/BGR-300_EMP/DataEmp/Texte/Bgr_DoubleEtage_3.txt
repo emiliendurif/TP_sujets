@@ -1,0 +1,6 @@
+ETAGE GROS
+
+L'étage gros permet de déplacer l'étage fin afin de pallier le déplacement limité de ce dernier.
+L'étage gros est asservi en position grâce au capteur de position relative placé entre l'étage fin et l'étage gros.
+
+La ligne de visée de l'axe gros (en bleu sur la figure ci-contre) "suit" la ligne de visée de l'axe fin (en vert sur la figure ci-contre).

@@ -1,0 +1,6 @@
+ETAGE FIN
+
+L'étage fin est asservi en vitesse par rapport au référentiel terrestre.
+Le gyromètre embarqué permet d'acquérir le taux de rotation de l'étage fin par rapport au référentiel terrestre.
+La consigne de vitesse est donnée par le module AHRS placé sur les lunettes (casque du pilote).
+Les performances dynamiques de l'étage fin lui permettent de suivre des déplacements de fréquence élevées (évolution rapide de la consigne, filtrage des vibrations) mais son déplacement est limité.

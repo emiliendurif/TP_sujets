@@ -1,0 +1,5 @@
+BRIDE GPX16 (AXE 2)
+
+Cette pièce usinée fait partie du sous-ensemble "Chape Moteur" de l'axe 2 "Optique".
+
+Elle permet d'interfacer le motoréducteur Maxon avec la chape moteur.

@@ -1,0 +1,6 @@
+SUPPORT
+
+Le support du BGR-300 est un ensemble mécanique composé d'une partie fixe (châssis réalisé en tôle mécano-soudée) et d'un dispositif mobile (commande manuelle) sur lequel est embarqué la boule gyrostabilisée double-étage BGR-300.
+
+La commande manuelle permet d'incliner le BGR-300 pour simuler une inclinaison du porteur (hélicoptère).
+

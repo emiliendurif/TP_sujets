@@ -1,0 +1,3 @@
+BRIDE CRS43
+
+Cette pièce fixée sous le gyromètre CRS43 permet de brider sa sortie de câble.

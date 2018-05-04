@@ -1,0 +1,11 @@
+ROULEMENT AXE 2 
+
+Ce roulement à simple rangée de billes est monté sur l'axe d'articulation de l'optique.
+
+Type : 61801-2rs1
+Diamètre exter : 21mm
+Diamètre inter : 12mm
+Epaisseur : 5mm
+
+
+

@@ -1,0 +1,3 @@
+LENTILLE
+
+Cette pièce en plexiglass est fixée sur la face avant de l'optique. Elle simule l'objectif de l'optique. 

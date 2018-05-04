@@ -1,0 +1,7 @@
+ACTIVER LA COMMANDE CASQUE
+
+- 1 - Cliquez dans le menu graphique de la fenêtre principale sur l'icône "Paramétrer BGR-300" ;
+
+- 2 - Sélectionnez dans le Panneau "PARAMETRES BGR-300", onglet "Choix FONCTIONS", les Fonctions "GYROSTABILISATION double-étage avec Commande CASQUE", la Commande Casque est alors cochée ;
+
+- 3 - Sélectionnez l'onglet "Casque" ...

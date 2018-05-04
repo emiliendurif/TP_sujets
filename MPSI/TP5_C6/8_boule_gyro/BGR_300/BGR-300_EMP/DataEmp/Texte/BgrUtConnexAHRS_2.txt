@@ -1,0 +1,3 @@
+CONNEXION LUNETTES "AHRS"
+
+- Dans la fenêtre principale de l’interface cliquez sur l’interrupteur "Casque (AHRS)" ;

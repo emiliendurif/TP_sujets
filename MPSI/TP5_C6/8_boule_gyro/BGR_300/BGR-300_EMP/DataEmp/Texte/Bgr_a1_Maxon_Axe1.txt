@@ -1,0 +1,18 @@
+MOTORISATION AXE 1 "Boule"
+
+Ce motoréducteur à courant continu équipé d'un codeur permet d'entrainer l'axe 1 "Boule" (Nacelle complète).
+
+Principales caractéristiques :
+
+Rapport de réduction : 92.70
+Rendement : 0,70
+Vitesse à vide : 188 tr/mn
+Vitesse en charge : 167 ts/mn
+Couple nom. : 0,94 Nm
+Courant nom. : 1,2 A
+Tension nom. : 24V
+Codeur :  3 voies à 512 tops/tr.
+ 
+
+
+

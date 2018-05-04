@@ -1,0 +1,8 @@
+ACTIVER LA GYROSTABILISATION avec COMMANDE CASQUE
+
+Un panneau "ACTIVATION FONCTIONS" rappelle les fonctions choisies, "GYROSTABILISATION double-étage avec Commande CASQUE" ci-contre :
+
+- Axe 1 "Boule" asservi en vitesse et suiveur du Cappteur angulaire 2/1 ;
+- Axée2 "Optique" asservi en vitesse, suiveur du Gyromètre axe Optique et commandé par Casque via le Module AHRS.
+
+- Cliquez sur "VALIDER" pour activer ces fonctions décrites.

@@ -1,0 +1,3 @@
+FLASQUE
+
+Ces 2 pièces sont fixées respectivement sur les brides droite et gauche de la nacelle, elles permettent d'interfacer l'ensemble Nacelle ("Boule") avec l'embase du BGR-300.

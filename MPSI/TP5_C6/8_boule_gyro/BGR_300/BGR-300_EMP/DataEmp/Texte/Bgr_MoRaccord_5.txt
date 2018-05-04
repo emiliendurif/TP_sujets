@@ -1,0 +1,8 @@
+LUNETTES avec module "AHRS"
+
+Se munir de la paire de lunettes avec module "AHRS" fourni et raccorder son câble sur un des ports USB disponible de votre PC.
+
+Le voyant du module AHRS s'allume.
+
+IMPORTANT : LES LUNETTES DOIVENT RESTER A PLAT ET IMMOBILES DURANT LEUR CONNEXION (INITIALISATION).
+ 

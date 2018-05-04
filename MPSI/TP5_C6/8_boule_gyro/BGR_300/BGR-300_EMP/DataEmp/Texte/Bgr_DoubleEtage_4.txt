@@ -1,0 +1,7 @@
+GYROSTABILISATION DOUBLE-ETAGE
+
+- L'axe fin (axe OPTIQUE) est gyrostabilisé, c'est à dire que sa ligne de visée par rapport au référentiel terrestre doit être inchangée quelles que soient les perturbations extérieures.
+
+- L'axe gros (axe BOULE) suit le déplacement de l'axe fin dans la limite de ses possibilités. Il est important de noter que l'axe gros suit les déplacements du porteur (hélicoptère) qui sont à très basse fréquence.
+
+

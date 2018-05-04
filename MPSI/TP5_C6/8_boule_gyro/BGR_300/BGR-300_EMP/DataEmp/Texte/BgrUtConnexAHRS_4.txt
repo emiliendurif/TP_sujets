@@ -1,0 +1,11 @@
+ALIGNEMENT AHRS
+
+Si la communication est correctement établie avec le module AHRS, s'affiche à l'écran le panneau "ALIGNEMENT capteurs Module AHRS" ci-contre.
+
+Le dialogue entre le PC et le module AHRS est opérationnel.
+
+- Cliquez sur "OK" pour lancer l'alignement des capteurs (gyromètres, accéléromètres, etc.) du module AHRS.
+
+ATTENTION, le module AHRS doit-être IMMOBILE durant l'alignement de ces capteurs !
+
+CONSEIL : poser le Module (avec ses Lunettes) sur une table stable avant de lancer l'alignement. 

@@ -1,0 +1,9 @@
+LANCEMENT INTERFACE
+
+Vous avez préalablement installé l’Interface PC du système BGR-300 sur votre PC et enregistré votre licence (Voir "Manuel d’utilisation de l’Interface").
+
+Le système est relié au PC, sous tension et en service (Alimentation sous tension et voyant allumé).
+
+- Lancez l’Interface du BGR-300 à l’aide de la barre de tâches Windows ("Programmes / Interface BGR-300"), l’écran d’accueil s’affiche sur votre PC.
+
+- Cliquez sur "Continuer" pour accéder à la fenêtre principale de l’Interface du BGR-300.

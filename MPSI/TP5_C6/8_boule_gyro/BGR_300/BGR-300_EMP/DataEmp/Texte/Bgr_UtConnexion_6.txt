@@ -1,0 +1,11 @@
+INITIALISATION REALISEE
+
+Si l'initialisation des codeurs et capteurs a été réalisée correctement, s'affiche à l'écran le panneau "INITIALISATION REALISEE" ci-contre.
+
+Les axes du BGR-300 sont asservis en position initiale.
+
+- Cliquez sur "OK", de retour à la fenêtre principale de l’Interface, la led verte "Connexion" et la led rouge "Activation" sont allumées.
+
+Vous pouvez maintenant activer les fonctions de commande et Gyrostabilisation.
+
+Si l'initialisation des axes a échoué, veuillez consulter le "Manuel d’utilisation de l’Interface".

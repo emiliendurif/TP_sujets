@@ -1,0 +1,6 @@
+AIMANT CAPTEUR QR30
+
+Cet aimant permanent est fixé en bout de l'axe de l'optique.
+
+Sa position est détectée par le capteur QR30 fixé sur la chape de l'Axe 2.
+

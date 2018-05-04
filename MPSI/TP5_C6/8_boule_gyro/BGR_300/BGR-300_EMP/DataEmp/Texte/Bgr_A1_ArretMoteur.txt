@@ -1,0 +1,5 @@
+ARRÊT MOTEUR 
+
+cette pièce usinée permet de brider l'axe de sortie du moteur Maxon sur la barre moteur.
+
+Le bridage est effectué par une vis de pression de type HC.

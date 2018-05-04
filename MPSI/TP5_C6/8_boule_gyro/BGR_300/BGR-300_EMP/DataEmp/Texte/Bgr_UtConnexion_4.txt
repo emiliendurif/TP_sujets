@@ -1,0 +1,6 @@
+INITIALISATION AXES
+
+- Cliquez sur "OK" pour lancer l'initialisation des axes :
+
+- RAZ du codeur de l'axe 2 "Optique" en fonction du capteur angulaire 1/2 ;
+- Recherches butées et RAZ codeur de l'axe 1 "Boule".

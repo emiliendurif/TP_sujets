@@ -1,0 +1,5 @@
+CONNECTEUR ALIMENTATION
+
+Placer le boîtier d’alimentation dans l’angle de la table comme sur l’illustration ci-contre.
+
+Raccorder le câble d’alimentation du BGR-300 sur le boîtier (connecteur 4 points).

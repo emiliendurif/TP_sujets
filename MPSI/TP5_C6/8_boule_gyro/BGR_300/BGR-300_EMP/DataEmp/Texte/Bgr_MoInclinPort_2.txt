@@ -1,0 +1,7 @@
+INCLINAISON PORTEUR
+
+- Simulez une inclinaison du porteur (helicoptère) en agissant sur la poignée.
+
+La règle graduée permet de visualiser l'angle d'inclinaison.
+
+ 

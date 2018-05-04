@@ -1,0 +1,7 @@
+GYROSTABILISATION DOUBLE-ETAGE
+
+En gyrostabilisation l'étage fin élimine les perturbations haute fréquences du porteur. L'étage gros élimine les perturbations basses fréquences.
+
+Un léger retard apparait pour des perturbations trop rapides de grande amplitude. Les perturbations faites avec la poignée sont bien plus rapides que les variations d'inclinason réelles du porteur.
+
+Le mode suivi permet de suivre une ligné de visée malgré les mouvements du porteur.

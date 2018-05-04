@@ -1,0 +1,5 @@
+PLOT BUTEE AXE 1
+
+Cette pièce usinée est fixée sur la bride de l'axe. Elle permet de limiter l'angle de rotation de la nacelle (Axe 1 "Boule").
+
+Le BGR-300 comporte deux butées (haute et basse) au niveau de l'axe 1 "Boule".

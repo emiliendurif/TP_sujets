@@ -1,0 +1,3 @@
+CONNEXION
+
+- Dans la fenêtre principale de l’interface cliquez sur l’interrupteur "Connexion" ;

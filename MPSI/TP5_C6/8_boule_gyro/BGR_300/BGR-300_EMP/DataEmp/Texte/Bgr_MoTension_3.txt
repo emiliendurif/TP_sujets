@@ -1,0 +1,5 @@
+VOYANTS CARTES
+
+Vérifier que les voyants des cartes électroniques du robot sont allumés.
+
+Le robot est prêt à fonctionner.

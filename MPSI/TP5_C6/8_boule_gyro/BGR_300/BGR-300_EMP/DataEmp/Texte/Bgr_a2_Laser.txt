@@ -1,0 +1,14 @@
+POINTEUR LASER
+
+Ce mini-pointeur laser est inséré au centre de l'optique.
+
+Il permet de matérialiser sur un mur les mouvements de l'optique du BGR-300.
+
+Principales caractéristiques :
+
+Tension d'alim. : 3-12 Vdc
+Classe laser : 2
+Puissance : 0,75 mW
+Courant : 25 mA
+
+

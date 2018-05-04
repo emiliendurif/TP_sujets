@@ -1,0 +1,5 @@
+AXE (Axe 2)
+
+Cette pièce usinée constitue l'axe de rotation droit de l'ensemble optique.
+
+C'est sur cette pièce qu'est fixé l'aimant détecté par le capteur QR30 (capteur qui mesure l'angle de rotation de l'optique).

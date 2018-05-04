@@ -1,0 +1,5 @@
+CADRAN
+
+Associé au repère du dispositif de commande manuelle, le cadran permet de relever l'angle d'inclinaison en degrés du BGR-300.
+
+

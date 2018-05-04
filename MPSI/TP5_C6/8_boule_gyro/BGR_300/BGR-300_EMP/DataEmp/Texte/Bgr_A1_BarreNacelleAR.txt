@@ -1,0 +1,5 @@
+BARRE NACELLE ARRIERE
+
+cette pièce usinée est un élément de la structure qui relie entres-elles les platines de la nacelle.
+
+Cette barre permet de supporter la masse d'équilibrage "MASSE A2". 

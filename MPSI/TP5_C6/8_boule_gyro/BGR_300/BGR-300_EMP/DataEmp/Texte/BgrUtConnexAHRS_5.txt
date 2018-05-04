@@ -1,0 +1,5 @@
+TESTER MODULE AHRS
+
+Le dialogue entre le PC et le module AHRS est opérationnel, la led verte "Casque (AHRS)" est allumée.
+
+Vous pouvez maintenant visualiser la position et la vitesse angulaire des lunettes (attitude du pilote avec casque) par rapport au référentiel inertiel (repère Galiléen).

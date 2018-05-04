@@ -1,0 +1,24 @@
+MOTORISATION AXE 2
+
+Ce motoréducteur à courant continu équipé d'un codeur permet d'entrainer l'axe 2 "Optique".
+
+Principales caractéristiques :
+
+REDUCTEUR :
+Rapport de réduction : 26:1
+Couple nom. : 0,2 Nm
+Rendement : 0,8
+
+MOTEUR :
+Vitesse à vide : 6260 tr/mn
+Vitesse en charge : 3320 tr/mn
+Couple nom. : 5,19 mNm
+Courant nom. : 0,299 A
+Rendement : 0,754
+Tension nom. : 12V
+
+CODEUR :  3 voies à 256 tops/tr.
+ 
+
+
+

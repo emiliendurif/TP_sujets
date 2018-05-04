@@ -1,0 +1,5 @@
+BUTEE HAUTE ET BASSE
+
+Ces deux pièces permettent de limiter l'angle de rotation (-45° à 90°) de l'axe 1 "Boule" (Nacelle).
+
+Elles sont réglées en usine.

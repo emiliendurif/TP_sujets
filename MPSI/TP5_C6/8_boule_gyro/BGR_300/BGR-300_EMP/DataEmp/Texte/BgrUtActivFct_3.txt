@@ -1,0 +1,7 @@
+TESTER LA GYROSTABILISATION
+
+La Gyrostablisation double-étage est activée, la led jaune "Fonctions" est allumée et la fenêtre "Visualisation cinématique" est affichée (voir diapo suivante).
+
+Vous pouvez maintenant tester la gyrostabilisation en inclinant (perturbation) le BGR-300 à l'aide de la commande manuelle.
+
+- Cliquez sur l'interrupteur "Laser" pour activer le faisceau laser.

@@ -1,0 +1,5 @@
+BARRE MOTEUR
+
+cette pièce usinée est un élement de la structure qui relie entres-elles les platines de la nacelle et supporte le plateau.
+
+C'est sur cette barre qu'est bridé l'axe de sortie du moteur Maxon (Axe 1 "Boule").

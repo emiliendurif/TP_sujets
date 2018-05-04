@@ -1,0 +1,7 @@
+ACTIVER LA COMMANDE CASQUE
+
+- 1 - Cochez "Module AHRS" dans l'onglet "Casque" pour activer la commande Casque avec le Module AHRS ;
+
+- 2 - Si vous le souhaitez, avant d'activer la commande Casque, vous pouvez réinitialiser le Module AHRS (alignement de ses capteurs) ;
+
+- 3 - Cliquez sur l'icône "Quitter" pour quitter les paramètres BGR-300, la commande casque à l'aide du Module AHRS est sélectionnée.

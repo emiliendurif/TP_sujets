@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/22/16||10:44:23" using="SimMechanics Link Version 4.7" from="SolidWorks 22.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Domoticc3D_2_vantaux" uid="Domoticc3D_2_vantaux" version="3008">
+<AssemblyFile name="Domoticc3D_2_vantaux.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Actionneur_simplifie_2_vantaux-1" uid="Actionneur_simplifie_2_vantaux-1" grounded="true" entityUid="Actionneur_simplifie_2_vantaux" rigid="true">
+<Transform>
+<Rotation>1 -1.0266033448347102e-014 -1.2651839952029425e-016 1.2651839952029743e-016 3.3306690738754593e-016 1 -1.0266033448347104e-014 -1 3.3306690738754696e-016</Rotation>
+<Translation>0.055000000000001312 0.23299999999999851 0.35999999999999999</Translation>
+</Transform>
+<Instance name="couronne-2" uid="couronne-2" entityUid="couronne*:*Défaut">
+<Transform>
+<Rotation>0.36793659677894697 0.92985088092162738 -1.2651839952029536e-016 0.92985088092162738 -0.36793659677894702 -1.2651839952029482e-016 -1.6419399459615694e-016 0 -0.99999999999999989</Rotation>
+<Translation>1.9099999999999997 0.067499999999980687 0.21200000000000133</Translation>
+</Transform>
+</Instance>
+<Instance name="fond-2" uid="fond-2" entityUid="fond*:*Défaut">
+<Transform>
+<Rotation>1.2613814998223344e-014 1.0000000000000002 -1.2651839952029538e-016 1.0000000000000002 -1.2558303846992083e-014 -1.2651839952029484e-016 -1.2651839952029605e-016 -1.2651839952029432e-016 -1</Rotation>
+<Translation>1.9099999999999997 0.067499999999980631 1.2212453270876722e-015</Translation>
+</Transform>
+</Instance>
+<Instance name="fond-1" uid="fond-1" entityUid="fond*:*Défaut">
+<Transform>
+<Rotation>-1 7.8270723236073552e-015 0 7.827072323607352e-015 1 0 0 0 -1</Rotation>
+<Translation>-0.020000000000000843 0.067500000000000338 1.4710455076283324e-015</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0" b="1" a="1"/>
+<Diffuse r="1" g="0" b="1" a="1"/>
+<Specular r="1" g="0" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="fut-2" uid="fut-2" entityUid="fut*:*Défaut">
+<Transform>
+<Rotation>-5.6749210943161137e-015 1 1.2651839952029538e-016 -1 -5.6749210943161106e-015 1.2651839952029484e-016 1.2651839952029504e-016 -1.2651839952029516e-016 1</Rotation>
+<Translation>1.9099999999999997 0.067499999999980631 1.2212453270876722e-015</Translation>
+</Transform>
+</Instance>
+<Instance name="fut-1" uid="fut-1" entityUid="fut*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.020000000000000843 0.067500000000000338 1.4710455076283324e-015</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0" b="1" a="1"/>
+<Diffuse r="1" g="0" b="1" a="1"/>
+<Specular r="1" g="0" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="couronne-1" uid="couronne-1" entityUid="couronne*:*1:4coupe">
+<Transform>
+<Rotation>-0.36793659677894686 -0.92985088092162727 0 -0.92985088092162727 0.36793659677894686 -1.0823859651330512e-016 1.3618632787072989e-016 0 -1</Rotation>
+<Translation>-0.020000000000000843 0.067500000000000282 0.21200000000000144</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0" b="1" a="1"/>
+<Diffuse r="1" g="0" b="1" a="1"/>
+<Specular r="1" g="0" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="pilier_2_vantaux-1" uid="pilier_2_vantaux-1" grounded="true" entityUid="pilier_2_vantaux*:*Défaut">
+<Transform>
+<Rotation>-1 -1.0266033448347106e-014 1.2651839952029718e-016 1.0266033448347101e-014 -1 3.3306690738754617e-016 1.265183995202945e-016 3.3306690738754672e-016 1</Rotation>
+<Translation>-0.054999999999997641 0.36000000000000049 -0.23299999999999862</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="bras poussee-1" uid="bras poussee-1" entityUid="bras poussee*:*Défaut">
+<Transform>
+<Rotation>-0.55971530241896128 -0.82868497044296074 0 0 0 -0.99999999999999978 0.82868497044296074 -0.55971530241896128 0</Rotation>
+<Translation>0.4235363603209879 0.50569999999999993 0.095366510061555915</Translation>
+</Transform>
+</Instance>
+<Instance name="Bras moteur-1" uid="Bras moteur-1" entityUid="Bras moteur" rigid="true">
+<Transform>
+<Rotation>0.99283067176168782 0.11952931527134172 0 0 0 -0.99999999999999989 -0.11952931527134172 0.99283067176168782 -1.0259743065633208e-016</Rotation>
+<Translation>0.034999999999982281 0.52969999999999995 0.29250000000000209</Translation>
+</Transform>
+<Instance name="bras moteur-1" uid="bras moteur-1" grounded="true" entityUid="bras moteur*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="axe bras-1" uid="axe bras-1" entityUid="axe bras*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.27999999999999997 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="anneauext10-1" uid="anneauext10-1" entityUid="anneauext10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.27999999999999997 0 0.038199999999999956</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Bras moteur-2" uid="Bras moteur-2" entityUid="Bras moteur" rigid="true">
+<Transform>
+<Rotation>-0.99283067176184825 0.11952931527000775 -1.3666631504465003e-016 1.4625889588967771e-016 0 -0.99999999999999989 -0.11952931527000775 -0.99283067176184825 0</Rotation>
+<Translation>1.9650000000000005 0.53599999999999992 0.29249999999999976</Translation>
+</Transform>
+<Instance name="bras moteur-1" uid="bras moteur-1" grounded="true" entityUid="bras moteur*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="axe bras-1" uid="axe bras-1" entityUid="axe bras*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.28000000000000003 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="anneauext10-1" uid="anneauext10-1" entityUid="anneauext10*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.28000000000000003 0 0.038199999999999901</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Chape_petit_vantail-1" uid="Chape_petit_vantail-1" entityUid="Chape_petit_vantail" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>1.5252871272294479 0.50014630026614182 0.0050000000017656806</Translation>
+</Transform>
+<Instance name="axe chape-1" uid="axe chape-1" entityUid="axe chape*:*Défaut">
+<Transform>
+<Rotation>0.58808045494732608 -0.80880243478178648 0 0 0 0.99999999999999989 -0.80880243478178637 -0.58808045494732608 0</Rotation>
+<Translation>0.0050000000000001155 0.016499999999996295 0.021999999999998972</Translation>
+</Transform>
+</Instance>
+<Instance name="petit_Vantail-1" uid="petit_Vantail-1" grounded="true" entityUid="petit_Vantail*:*Défaut">
+<Transform>
+<Rotation>-1 -1.0092936587501621e-016 0 -1.0092936587501609e-016 1 0 0 0 -1</Rotation>
+<Translation>0.31250000000000022 0.29485369973385811 -0.0050000000000010522</Translation>
+</Transform>
+</Instance>
+<Instance name="anneauext10-1" uid="anneauext10-1" entityUid="anneauext10*:*Défaut">
+<Transform>
+<Rotation>0.99252751533883588 0.12202102808662299 0 0 1.9949319973733282e-016 0.99999999999999989 0.12202102808662303 -0.99252751533883621 1.9428902930940239e-016</Rotation>
+<Translation>0.0050000000000001155 -0.014000000000003676 0.021999999999998972</Translation>
+</Transform>
+</Instance>
+<Instance name="chape-1" uid="chape-1" entityUid="chape*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0050000000000001155 -3.6637359812630166e-015 -1.0312931064682118e-015</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Chape-1" uid="Chape-1" entityUid="Chape" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.47500000000000736 0.50019999999999865 0.0050000000000177654</Translation>
+</Transform>
+<Instance name="anneauext10-1" uid="anneauext10-1" entityUid="anneauext10*:*Défaut">
+<Transform>
+<Rotation>0.99252751533883588 0.12202102808662299 0 0 1.9949319973733282e-016 0.99999999999999989 0.12202102808662303 -0.99252751533883621 1.9428902930940239e-016</Rotation>
+<Translation>-0.0052871272294556237 -0.014153699733860492 0.022000000000000776</Translation>
+</Transform>
+</Instance>
+<Instance name="Vantail-1" uid="Vantail-1" grounded="true" entityUid="Vantail*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.31278712722945556 0.29480000000000128 -0.0049999999999991926</Translation>
+</Transform>
+</Instance>
+<Instance name="chape-1" uid="chape-1" entityUid="chape*:*Défaut">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.0052871272294556237 -0.00015369973386047953 7.7368667028565596e-016</Translation>
+</Transform>
+</Instance>
+<Instance name="axe chape-1" uid="axe chape-1" entityUid="axe chape*:*Défaut">
+<Transform>
+<Rotation>0.58808045494732608 -0.80880243478178648 0 0 0 0.99999999999999989 -0.80880243478178637 -0.58808045494732608 0</Rotation>
+<Translation>-0.0052871272294556237 0.01634630026613948 0.022000000000000776</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="bras poussee-2" uid="bras poussee-2" entityUid="bras poussee*:*Défaut">
+<Transform>
+<Rotation>0.55971530241860346 -0.82868497044320244 -1.295517381220516e-016 -2.4734333698475711e-016 0 -1 0.82868497044320244 0.55971530241860346 -2.109743182737017e-016</Rotation>
+<Translation>1.5764636396790088 0.5119999999999999 0.095366510061865153</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Coaxial2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>couronne-1</Uid>
+</InstancePath>
+<Position>0 0 -0.075000000000000011</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras moteur-1</Uid>
+<Uid>bras moteur-1</Uid>
+</InstancePath>
+<Position>0 0 -0.020000000000000018</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>couronne-1</Uid>
+</InstancePath>
+<Position>0 0 -0.075000000000000011</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras moteur-1</Uid>
+<Uid>bras moteur-1</Uid>
+</InstancePath>
+<Position>0.00070710678118654502 0.016207106781186587 0.0097000000000000419</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxial3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>bras poussee-1</Uid>
+</InstancePath>
+<Position>0.19750000000000001 0 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras moteur-1</Uid>
+<Uid>axe bras-1</Uid>
+</InstancePath>
+<Position>0 0 0.037999999999999923</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bras poussee-1</Uid>
+</InstancePath>
+<Position>0.19750000000000001 0 0.0020000000000000018</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras moteur-1</Uid>
+<Uid>axe bras-1</Uid>
+</InstancePath>
+<Position>-2.6668675893015692e-005 0.016856638766713949 0.026000000000000023</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxial4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>bras poussee-1</Uid>
+</InstancePath>
+<Position>-0.08249999999999999 0 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chape-1</Uid>
+<Uid>axe chape-1</Uid>
+</InstancePath>
+<Position>0 0 -0.02949999999999986</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>pilier_2_vantaux-1</Uid>
+</InstancePath>
+<Position>-0.15500000000000003 0 0.81999999999999995</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chape-1</Uid>
+<Uid>Vantail-1</Uid>
+</InstancePath>
+<Position>-0.0072128727705518259 0.04500000000000004 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>pilier_2_vantaux-1</Uid>
+</InstancePath>
+<Position>-0.099999999999999992 -0.10000000000000002 0.83999999999999997</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Chape-1</Uid>
+<Uid>Vantail-1</Uid>
+</InstancePath>
+<Position>-0.0072128727705518259 0.04500000000000004 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>bras poussee-2</Uid>
+</InstancePath>
+<Position>0.1974999999999999 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras moteur-2</Uid>
+<Uid>axe bras-1</Uid>
+</InstancePath>
+<Position>0 0 0.037999999999999923</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente12">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bras poussee-2</Uid>
+</InstancePath>
+<Position>0.1974999999999999 0 0.0020000000000000018</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras moteur-2</Uid>
+<Uid>axe bras-1</Uid>
+</InstancePath>
+<Position>-2.6668675892960181e-005 0.016856638766713894 0.026000000000000023</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>bras poussee-2</Uid>
+</InstancePath>
+<Position>-0.082500000000000129 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chape_petit_vantail-1</Uid>
+<Uid>axe chape-1</Uid>
+</InstancePath>
+<Position>0 0 -0.029499999999999915</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Coaxiale7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>couronne-2</Uid>
+</InstancePath>
+<Position>0 0 -0.074999999999999956</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Bras moteur-2</Uid>
+<Uid>bras moteur-1</Uid>
+</InstancePath>
+<Position>0 0 0.0040000000000000036</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente16">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>couronne-2</Uid>
+</InstancePath>
+<Position>0 0 -0.074999999999999956</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Bras moteur-2</Uid>
+<Uid>bras moteur-1</Uid>
+</InstancePath>
+<Position>0.28000000000000003 0 0.015999999999999903</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Coaxiale9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>pilier_2_vantaux-1</Uid>
+</InstancePath>
+<Position>-1.845 -1.1726730697603851e-016 0.81999999999999995</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Chape_petit_vantail-1</Uid>
+<Uid>petit_Vantail-1</Uid>
+</InstancePath>
+<Position>-0.0072128727705518259 0.04500000000000004 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coïncidente19">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>pilier_2_vantaux-1</Uid>
+</InstancePath>
+<Position>-2 -1.3877787807815145e-016 0.83999999999999997</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Chape_petit_vantail-1</Uid>
+<Uid>petit_Vantail-1</Uid>
+</InstancePath>
+<Position>-0.0072128727705518259 0.04500000000000004 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coïncidente22">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Actionneur_simplifie_2_vantaux-1</Uid>
+<Uid>pilier_2_vantaux-1</Uid>
+</InstancePath>
+<Position>-1.845 -1.1726730697603851e-016 0.81999999999999995</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Chape_petit_vantail-1</Uid>
+<Uid>petit_Vantail-1</Uid>
+</InstancePath>
+<Position>0.74142135623730954 0.025000000000000022 0.015999999999999941</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="Actionneur_simplifie_2_vantaux" uid="Actionneur_simplifie_2_vantaux" version="266">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Actionneur_simplifie_2_vantaux.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Bras moteur" uid="Bras moteur" version="182">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Bras moteur.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Chape_petit_vantail" uid="Chape_petit_vantail" version="146">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Chape_petit_vantail.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Chape" uid="Chape" version="149">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Chape.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="Vantail" uid="Vantail*:*Défaut" version="173">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Vantail.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.3421200273947176</Mass>
+<CenterOfMass>0.49392082095782175 -0.35876876517730683 7.8903240804090057e-006</CenterOfMass>
+<Inertia>0.19384499683348869 0.32944150693041291 0.52198214113301578 3.0103284598138574e-006 -4.0234454626016706e-006 -0.00018728494054196472</Inertia>
+</MassProperties>
+<GeometryFile name="Vantail_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="1" b="0.25098039215686274" a="1"/>
+<Diffuse r="0" g="0.95999999999999996" b="0.24094117647058821" a="1"/>
+<Specular r="0" g="0.59999999999999998" b="0.15058823529411763" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.02</Shininess>
+</VisualProperties>
+</Part>
+<Part name="anneauext10" uid="anneauext10*:*Défaut" version="136">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="anneauext10.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.3863346841744475e-005</Mass>
+<CenterOfMass>0 -0.00015983629904469149 0.00050000000000000001</CenterOfMass>
+<Inertia>1.5897418993102254e-009 1.2535198868733906e-009 2.8326178950433256e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="anneauext10_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="axe bras" uid="axe bras*:*Défaut" version="151">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="axe bras.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0053647623266535136</Mass>
+<CenterOfMass>-1.2025547238830224e-005 6.4645027372352379e-005 0.021918942409664351</CenterOfMass>
+<Inertia>6.2042223300810451e-007 6.2039587850775422e-007 1.3956889984469037e-007 3.1869401302071397e-010 -5.9284836964152094e-011 5.0783132706826971e-012</Inertia>
+</MassProperties>
+<GeometryFile name="axe bras_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="axe chape" uid="axe chape*:*Défaut" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="axe chape.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0038889251860012458</Mass>
+<CenterOfMass>0 0 -0.01544233671724584</CenterOfMass>
+<Inertia>4.0504898954999192e-007 4.0504898954999192e-007 7.5655186330264603e-008 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="axe chape_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="bras moteur" uid="bras moteur*:*Défaut" version="725">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="bras moteur.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.1611014237247832</Mass>
+<CenterOfMass>0.11151789256826436 1.3060493501402514e-006 0.0055838343855467111</CenterOfMass>
+<Inertia>5.077582466051439e-005 0.0015901020110864581 0.0016277051819858248 -8.3042762277532236e-011 -2.6803723385023785e-005 -2.0829929825658593e-008</Inertia>
+</MassProperties>
+<GeometryFile name="bras moteur_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="1" b="1" a="1"/>
+<Diffuse r="0" g="1" b="1" a="1"/>
+<Specular r="0" g="0.29999999999999999" b="0.29999999999999999" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="bras poussee" uid="bras poussee*:*Défaut" version="203">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="bras poussee.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.081379024762102917</Mass>
+<CenterOfMass>0.056200188101840798 0 0.0050654418541952687</CenterOfMass>
+<Inertia>1.0509593922896729e-005 0.00069761289871421905 0.00070609070679261698 0 -4.3003196938631965e-007 0</Inertia>
+</MassProperties>
+<GeometryFile name="bras poussee_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="0" a="1"/>
+<Diffuse r="1" g="1" b="0" a="1"/>
+<Specular r="0.29999999999999999" g="0.29999999999999999" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="chape" uid="chape*:*Défaut" version="145">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="chape.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.024922428841940965</Mass>
+<CenterOfMass>0 0 0.010992031623980134</CenterOfMass>
+<Inertia>6.1306396832824663e-006 8.5610937700301299e-006 8.5344639859551426e-006 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="chape_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0" b="0" a="1"/>
+<Diffuse r="1" g="0" b="0" a="1"/>
+<Specular r="0.29999999999999999" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="couronne" uid="couronne*:*1:4coupe" version="1089">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="couronne.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.33024902854486798</Mass>
+<CenterOfMass>0.0011368969669277832 0.0028722055264605879 -0.010606744649186695</CenterOfMass>
+<Inertia>0.00072319349171512642 0.0007207186207747547 0.00043738396193124566 2.6624547531579512e-005 1.0534066514751217e-005 -1.1558397292299784e-006</Inertia>
+</MassProperties>
+<GeometryFile name="couronne_1:4coupe_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="couronne" uid="couronne*:*Défaut" version="2596">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="couronne.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.33024902854486815</Mass>
+<CenterOfMass>0.0011368969669277853 0.0028722055264605896 -0.01060674464918668</CenterOfMass>
+<Inertia>0.00072319349171512609 0.0007207186207747547 0.00043738396193124544 2.6624547531579522e-005 1.0534066514751211e-005 -1.1558397292299724e-006</Inertia>
+</MassProperties>
+<GeometryFile name="couronne_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="fond" uid="fond*:*Défaut" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="fond.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.11301586786249695</Mass>
+<CenterOfMass>-4.3581687073647354e-005 -0.00043432635212347585 0.0054988487073872041</CenterOfMass>
+<Inertia>7.8492507251325735e-005 8.0828670109259023e-005 0.00013114113665840349 -1.375511152090389e-006 -6.1351651249667927e-007 1.0812704056994756e-006</Inertia>
+</MassProperties>
+<GeometryFile name="fond_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="fut" uid="fut*:*Défaut" version="112">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="fut.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.17242144117208905</Mass>
+<CenterOfMass>3.8439331114665374e-006 -1.4806040936746787e-006 0.10599999999999997</CenterOfMass>
+<Inertia>0.00080937175713550818 0.00080939347459574708 0.00032721368972485527 0 0 9.8287162561909535e-009</Inertia>
+</MassProperties>
+<GeometryFile name="fut_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="petit_Vantail" uid="petit_Vantail*:*Défaut" version="191">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="petit_Vantail.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.0898191964252724</Mass>
+<CenterOfMass>0.35400322672465584 -0.36886294566875139 -0.0052777724264799096</CenterOfMass>
+<Inertia>0.14064942327909224 0.13528291576471568 0.27437484290187875 -0.00034154340295484108 0.0030461928021176649 0.0037655947130797317</Inertia>
+</MassProperties>
+<GeometryFile name="petit_Vantail_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="1" b="0.25098039215686274" a="1"/>
+<Diffuse r="0" g="0.95999999999999996" b="0.24094117647058821" a="1"/>
+<Specular r="0" g="0.59999999999999998" b="0.15058823529411763" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.02</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pilier_2_vantaux" uid="pilier_2_vantaux*:*Défaut" version="222">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pilier_2_vantaux.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>89.920548667764791</Mass>
+<CenterOfMass>-1.0000000000000004 0.01334511430122296 0.33601474733097031</CenterOfMass>
+<Inertia>7.3951389500601143 86.833506449722293 80.643875490748442 -0.14878230320283575 -9.9205529753745473e-015 -2.7196091304763957e-015</Inertia>
+</MassProperties>
+<GeometryFile name="pilier_2_vantaux_Défaut_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.72282352941176464" g="0.72282352941176464" b="0.72282352941176464" a="1"/>
+<Specular r="0.4517647058823529" g="0.4517647058823529" b="0.4517647058823529" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.02</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

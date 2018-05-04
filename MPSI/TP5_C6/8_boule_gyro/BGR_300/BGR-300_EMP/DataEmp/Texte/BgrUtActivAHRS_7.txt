@@ -1,0 +1,5 @@
+TESTER LA COMMANDE CASQUE
+
+La Gyrostablisation avec commande Casque est activée, la led jaune "Fonctions"  est allumée et la fenêtre "Visualisation cinématique" ci-contre est affichée.
+
+Vous pouvez maintenant tester la Commande Casque en inclinant les lunettes (inclinaison casque Pilote) à l'aide de votre visage et vérifier sur la fenêtre "Visualisation cinématique" la position angulaire par rapport au repère Galiléen de l'axe optique "op" (axe de visée réel) et de l'axe du casque "u" (lunettes, axe de visée souhaité).

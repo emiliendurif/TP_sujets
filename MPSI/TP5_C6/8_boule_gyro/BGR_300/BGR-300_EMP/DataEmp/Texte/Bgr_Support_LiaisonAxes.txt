@@ -1,0 +1,7 @@
+LIAISON AXES SUPPORT
+
+Cette pièce mécanosoudée permet de rigidifier la liaison entre les axes et l'embase.
+
+Elle évite les déformations du support et de l'embase lors du serrage des écrous sur chaque axe.
+
+Cette pièce est fixée à l'aide de deux écrous M8 avec rondelles.

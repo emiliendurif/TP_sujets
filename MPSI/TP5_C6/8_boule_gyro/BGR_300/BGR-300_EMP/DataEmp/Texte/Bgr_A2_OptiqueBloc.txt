@@ -1,0 +1,5 @@
+OPTIQUE BLOC
+
+Cette pièce usinée constitue le corps de l'ensemble optique.
+
+C'est le bloc optique qui est entrainé en rotation par le motoréducteur de l'Axe 2 "Optique".

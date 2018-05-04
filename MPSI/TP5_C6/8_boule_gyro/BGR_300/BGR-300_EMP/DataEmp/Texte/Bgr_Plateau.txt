@@ -1,0 +1,9 @@
+PLATEAU
+
+Cette pièce mécano-soudée supporte :
+- les masses d'équilibrage additionnelles ;
+- la carte de commande de l'Axe 2 "Optique" ;
+- les deux demi boules thermoformées formant la "boule" du BGR-300 ;
+- etc.
+
+Ce plateau est fixé sur les barres de l'ensemble nacelle (Axe 1 "Boule").
