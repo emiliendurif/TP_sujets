@@ -1,0 +1,73 @@
+*****************************************************************
+              SolidWorks Corporation - IGES Report
+*****************************************************************
+=================================================================
+General Information
+=================================================================
+Sending System Product I.D.  : PIÈCE1.SLDPRT
+Receiving System Product I.D.: PIÈCE1.SLDPRT
+Sending File Name            : F:\kholle info assemblage\piece1.IGS
+System I.D.                  : SolidWorks 2004 by SolidWorks Corporation
+Preprocessor Version         : Version 5.3
+File Creation Date           : 050228.103230
+Model Creation Date          : 
+Units                        : MM
+Model Space Scale            : 1.000000
+Author                       : LEGRE
+Organization                 : 
+
+
+=================================================================
+Entity Processing Information
+=================================================================
+
+
+=================================================================
+Analyse de précision d'un fichier IGES:
+=================================================================
+  Nombre le plus répandu de chiffres significatifs:               1
+  Nombre le plus grand de chiffres significatifs:                      4
+  Nombre moyen de chiffres significatifs :                      2
+  Distance maximale jusqu'à l'origine:                          1354.68
+  Distance minimale jusqu'à l'origine:                                0
+  Nombre effectif de chiffres significatifs:                    4
+
+
+=================================================================
+Entity Summary
+=================================================================
+-----------------------------------------------------------------
+Type Name                                         Count Converted
+---- ----                                         ----- ---------
+100  Arc                                             16        16
+102  Composite curve                                 20        20
+110  Line                                            28        28
+120  Surface of revolution                            6         6
+124  Transformation matrix                            6         6
+126  Rational B-spline curve                         48        48
+128  Rational B-spline surface                        3         3
+142  Curve on a parametric surface                   10        10
+144  Trimmed parametric surface                       9         9
+_________________________________________________________________
+
+
+=================================================================
+Import Options
+=================================================================
+Include surface/solid entities: YES
+-Try forming solid(s): YES
+Include free point/curve entities: NO
+
+
+=================================================================
+Result Summary
+=================================================================
+SolidWorks Feature Type                Count
+-----------------------                -----
+Solid Feature(s)                           1
+Surface Feature(s)                         0
+Curve/Sketch Feature(s)                    0
+--------------------------------------------
+Start Time: lundi, février 28, 2005 10:35:38
+Finish Time: lundi, février 28, 2005 10:35:38
+Total Processing Time: 0 days, 00 hours, 00 mins, 00 secs

@@ -1,0 +1,111 @@
+%ENTETE / INCLUDES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+\newcommand{\pathpackage}{../../../../latex}
+\input{\pathpackage/notations/notations_math.tex}
+\input{\pathpackage/packages.tex}	%Liste des packages
+\input{\pathpackage/notations/notations_unites.tex}
+\input{\pathpackage/notations/notations_AF.tex}
+\input{\pathpackage/notations/notations_asservissement.tex}
+\input{\pathpackage/notations/notations_vecteurs.tex}
+\input{\pathpackage/notations/notations_torseurs.tex}
+\input{\pathpackage/notations/notations_cinematique.tex}
+\input{\pathpackage/notations/notations_cotation.tex}
+\input{\pathpackage/notations/notations_fab.tex}
+\input{\pathpackage/notations/notations_statique.tex}
+\input{\pathpackage/notations/boites.tex}
+\input{\pathpackage/style.tex}		%Style, mise en page
+
+% Commandes générales
+%===============================
+
+
+%Lettres grecques oubliees
+\newcommand{\Mu}{M} %mu majuscule
+
+%Mise en forme
+\newcommand{\gras}[1]	{\textbf{#1}}
+\newcommand{\bouton}[1]	{\fbox{\footnotesize{\textsc{#1}}}}
+\newcommand{\toutpetit}[1]	{{\tiny{1}}}
+\newcommand{\PETIT}[1]		{{\scriptsize{#1}}}
+\newcommand{\Petit}[1]		{\footnotesize{#1}}
+\newcommand{\petit}[1]		{{\small{#1}}}
+\newcommand{\normal}[1]		{{\normalsize{#1}}}
+\newcommand{\grand}[1]		{{\large{#1}}}
+\newcommand{\Grand}[1]		{{\Large{#1}}}
+\newcommand{\GRAND}[1]		{{\LARGE{#1}}}
+\newcommand{\enorme}[1]		{{\huge{#1}}}
+\newcommand{\Enorme}[1]		{{\Huge{#1}}}
+
+\newcommand{\oeuvre}		{\oe uvre}
+\newcommand{\oeuvres}		{\oe uvres}
+
+\newcommand{\fig}[1]		{(fig.\ref{#1})}
+
+\newcommand{\miniCentre}[2][\linewidth]	{\begin{minipage}{#1}\begin{center}#2\end{center}\end{minipage}}
+
+
+\renewcommand	{\cycle}		{C7 : Modélisation multiphysique des systèmes pluritechniques}
+\renewcommand	{\cycleresume}		{C7}
+\renewcommand	{\titre}		{Modélisation et simulation des systèmes acausaux avec Matlab Simulink}
+\renewcommand	{\titreresume}		{Modélisation et simulation des systèmes acausaux}
+\renewcommand	{\numero}		{C7}
+\renewcommand	{\numerotd}		{6}
+\renewcommand	{\auteur}		{Emilien DURIF}
+\renewcommand	{\etablissement}	{Lycée La Martinière Monplaisir Lyon}
+\renewcommand	{\discipline}		{Sciences Industrielles pour l'Ingénieur}
+\renewcommand	{\classe}		{Classe préparatoire M.P.S.I.}
+\renewcommand	{\annee}		{2017 - 2018}
+\renewcommand	{\icone}		{\pathpackage/images/logo_martiniere.jpg}
+\renewcommand	{\competences}		{}
+
+%\setTexteATrouOn				%Active le texte à trou
+\setboolean{corrige}{true}	%Petite condition pour mettre ou non la figure corrigée
+
+
+\begin{document}
+
+%	\begin{center}
+%		\huge {\textsc{\titre}}
+%	\end{center}
+
+\input{\pathpackage/page_de_garde_tp.tex}
+
+\subsection*{Compétences}
+	\begin{itemize}
+	\item \textbf{Analyser} :
+\begin{itemize}
+\item Apprécier la pertinence et la validité des résultats : grandeurs utilisées ;
+\item Appréhender les analyses fonctionnelles et structurelles : Architectures fonctionnelle et structurelle : chaîne directe, système asservi, commande
+\item Caractériser les écarts
+\end{itemize}			
+\item \textbf{Modéliser} :
+\begin{itemize}
+\item Identifier et caractériser les grandeurs physiques : caractéristiques fréquentielles
+\item Systèmes linéaires continus et invariants
+\item Signaux canoniques d'entrée : signaux sinusoïdaux
+\item Schémas blocs, fonctions de transferts
+\end{itemize}
+\item \textbf{Résoudre : } Procéder à la mise en oeuvre d'une démarche de résolution numérique
+\begin{itemize}
+\item Réponse fréquentielle : systèmes du 1\up{er} et 2\up{ème} ordre, intégrateur.
+\item Paramètre de résolution numérique
+\item Grandeurs simulées
+\end{itemize}	
+\item \textbf{Communiquer : } Rechercher et traiter des informations techniques
+\item \textbf{Expérimenter : } 
+\begin{itemize}
+\item S'approprier le fonctionnement d'un système pluritechnologique : paramètres influents
+\item Proposer et justifier un protocole expérimental : modèles de comportements d'un systèmes
+\item Mettre en oeuvre un protocole expérimental : Identification temporelle et fréquentielle d'un modèle de comportement.
+\end{itemize}
+ paramètres influents
+\end{itemize}
+
+\input{../../../../sujets/TP_sujets/TP_simulation/ericc3/ericc3_acausal.tex}
+%
+%\FloatBarrier
+%\setcounter{thequestion}{0}
+%\input{../../../../../sujets/automatique/ericc3/ericc3_acausal_corrige.tex}
+
+\end{document}

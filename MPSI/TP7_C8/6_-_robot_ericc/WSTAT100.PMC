@@ -1,0 +1,18 @@
+;--------------------------------------------------
+;Programme........... : 
+;Auteur ............. : 
+;Fonction ........... : 
+;Derniere mise a jour : 
+;--------------------------------------------------
+CLOSE
+DELETE GATHER
+OPEN PROG 100 CLEAR
+
+f2				;vitesse 2° par seconde
+G00 b0.0g0.0x752.5y0.0z512.0	;position origine
+M314=1 				;ouverture pince
+dwell1000			;attente
+G00 b-5.0g0.0x749.6y0.0z577.6	;rotation de 5 degrés
+G00 b0.0g0.0x752.5y0.0z512.0	;retour en  position initiale
+
+CLOSE
