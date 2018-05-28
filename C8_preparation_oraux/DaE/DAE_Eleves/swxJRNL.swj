@@ -1,0 +1,98 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 03/07/04 by Michel B
+' *****************************************************************************
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long
+Dim Annotation As Object
+Dim Gtol As Object
+Dim DatumTag As Object
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Set Part = swApp.OpenDoc4 ("D:\Actia\DAE\TP CPGE\DAE étude dynamique\Modèle Méca3D\DAE_étude_dynamique.SLDASM", 2, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("DAE_étude_dynamique.SLDASM")
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_cremaillere-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité crémaillère corps", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_cremaillere-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité crémaillère corps", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_cremaillere-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité crémaillère corps", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_pignon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité pignon / corps", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-2@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_transmission-2@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon inférieur / inter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourche_cardan_3-2@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon supérieur / inter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon supérieur / récepteur", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité récpteur / carter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité récpteur / carter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_pignon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-2@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon inférieur / pignon", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("fourche_cardan_3-2@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon supérieur / inter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon supérieur / récepteur", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité récpteur / carter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité récpteur / carter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité récpteur / carter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_cremaillere-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité crémaillère corps", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_cremaillere-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité crémaillère corps", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_croisillon-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité croisillon supérieur / récepteur", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+boolstatus = Part.Extension.SelectByID("ensemble_carter-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("ensemble_recepteur-1@DAE_étude_dynamique", "COMPONENT", 0, 0, 0, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Coaxialité récpteur / carter", "MATE", 0, 0, 0, True, 0, Nothing)
+Part.ClearSelection
+Part.Save2 FALSE
+swApp.ExitApp
+End Sub

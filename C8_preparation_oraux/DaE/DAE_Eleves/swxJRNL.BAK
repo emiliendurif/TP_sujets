@@ -1,0 +1,21 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 03/07/04 by Michel B
+' *****************************************************************************
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long
+Dim Annotation As Object
+Dim Gtol As Object
+Dim DatumTag As Object
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Set Part = swApp.OpenDoc4 ("D:\Actia\DAE\TP CPGE\DAE étude dynamique\Modèle Méca3D\DAE_étude_dynamique.SLDASM", 2, 0, "", longstatus)
+Set Part = swApp.ActivateDoc ("DAE_étude_dynamique.SLDASM")
+swApp.ExitApp
+End Sub

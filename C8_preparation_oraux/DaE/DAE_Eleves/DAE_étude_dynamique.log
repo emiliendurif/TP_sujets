@@ -1,0 +1,80 @@
+
+===============Init Logging================
+
+05/03/2013 - 14:24:07 	===== Ouverture de session =====
+05/03/2013 - 14:30:57 	Début du calcul
+05/03/2013 - 14:30:57 	Nombre de positions : 200
+05/03/2013 - 14:30:57 	Simulation inactivée
+05/03/2013 - 14:30:57 	Lecture des conditions initiales
+05/03/2013 - 14:31:00 	Fin du calcul
+05/03/2013 - 14:31:03 	Début du calcul
+05/03/2013 - 14:31:03 	Nombre de positions : 50
+05/03/2013 - 14:31:03 	Simulation inactivée
+05/03/2013 - 14:31:03 	Lecture des conditions initiales
+05/03/2013 - 14:31:04 	Fin du calcul
+05/03/2013 - 14:35:37 	Début du calcul
+05/03/2013 - 14:35:37 	Nombre de positions : 50
+05/03/2013 - 14:35:37 	Simulation inactivée
+05/03/2013 - 14:35:37 	Lecture des conditions initiales
+05/03/2013 - 14:35:38 	Fin du calcul
+05/03/2013 - 14:36:51 	Début du calcul
+05/03/2013 - 14:36:51 	Nombre de positions : 50
+05/03/2013 - 14:36:51 	Simulation inactivée
+05/03/2013 - 14:36:51 	Lecture des conditions initiales
+05/03/2013 - 14:36:51 	Fin du calcul
+05/03/2013 - 14:40:24 	Début du calcul
+05/03/2013 - 14:40:24 	Nombre de positions : 50
+05/03/2013 - 14:40:24 	Simulation inactivée
+05/03/2013 - 14:40:24 	Lecture des conditions initiales
+05/03/2013 - 14:40:24 	Fin du calcul
+05/03/2013 - 14:51:05 	Début du calcul
+05/03/2013 - 14:51:05 	Nombre de positions : 50
+05/03/2013 - 14:51:05 	Simulation inactivée
+05/03/2013 - 14:51:05 	Lecture des conditions initiales
+05/03/2013 - 14:51:09 	Analyse du système incorrecte
+05/03/2013 - 14:51:09 	Abandon du calcul
+05/03/2013 - 14:52:15 	Début du calcul
+05/03/2013 - 14:52:15 	Nombre de positions : 50
+05/03/2013 - 14:52:15 	Simulation inactivée
+05/03/2013 - 14:52:15 	Lecture des conditions initiales
+05/03/2013 - 14:52:16 	Fin du calcul
+05/03/2013 - 14:59:14 	Début du calcul
+05/03/2013 - 14:59:14 	Nombre de positions : 50
+05/03/2013 - 14:59:14 	Simulation inactivée
+05/03/2013 - 14:59:14 	Lecture des conditions initiales
+05/03/2013 - 14:59:15 	Fin du calcul
+05/03/2013 - 15:46:51 	Début du calcul
+05/03/2013 - 15:46:51 	Nombre de positions : 50
+05/03/2013 - 15:46:51 	Simulation inactivée
+05/03/2013 - 15:46:51 	Lecture des conditions initiales
+05/03/2013 - 15:46:52 	Fin du calcul
+05/03/2013 - 15:55:39 	Début du calcul
+05/03/2013 - 15:55:39 	Nombre de positions : 50
+05/03/2013 - 15:55:39 	Simulation inactivée
+05/03/2013 - 15:55:39 	Lecture des conditions initiales
+05/03/2013 - 15:55:40 	Fin du calcul
+05/03/2013 - 16:03:56 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+19/06/2013 - 09:51:06 	===== Ouverture de session =====
+19/06/2013 - 09:51:37 	Début du calcul
+19/06/2013 - 09:51:37 	Nombre de positions : 50
+19/06/2013 - 09:51:37 	Simulation inactivée
+19/06/2013 - 09:51:37 	Lecture des conditions initiales
+19/06/2013 - 09:51:37 	Fin du calcul
+19/06/2013 - 09:52:38 	===== Fermeture de session =====
+
+===============Finish Logging================
+
+
+===============Init Logging================
+
+19/06/2013 - 09:58:41 	===== Ouverture de session =====
+19/06/2013 - 09:59:11 	===== Fermeture de session =====
+
+===============Finish Logging================
+
