@@ -1,4 +1,4 @@
-% Simscape(TM) Multibody(TM) version: 4.9
+% Simscape(TM) Multibody(TM) version: 5.2
 
 % This is a model data file derived from a Simscape Multibody Import XML file using the smimport function.
 % The data in this file sets the block parameter values in an imported Simscape Multibody model.
@@ -97,7 +97,7 @@ smiData.RigidTransform(11).ID = 'AssemblyGround[balancier-complet-1:rondelle-10-
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
 smiData.RigidTransform(12).translation = [124.4174064787518 -6.6808314797610349 41.999999999972225];  % mm
-smiData.RigidTransform(12).angle = 1.5707963267949003;  % rad
+smiData.RigidTransform(12).angle = 1.5707963267949001;  % rad
 smiData.RigidTransform(12).axis = [1 0 0];
 smiData.RigidTransform(12).ID = 'AssemblyGround[balancier-complet-1:rondelle-10-3]';
 
@@ -132,7 +132,7 @@ smiData.RigidTransform(16).ID = 'AssemblyGround[balancier-complet-1:moteur-1300-
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
 smiData.RigidTransform(17).translation = [-15.582593521248192 26.319168520239288 9.9999999999723634];  % mm
-smiData.RigidTransform(17).angle = 1.5707963267949003;  % rad
+smiData.RigidTransform(17).angle = 1.5707963267949001;  % rad
 smiData.RigidTransform(17).axis = [-1 2.2204460492503049e-16 2.2204460492503049e-16];
 smiData.RigidTransform(17).ID = 'AssemblyGround[balancier-complet-1:Contre-poids-1]';
 
@@ -188,7 +188,7 @@ smiData.RigidTransform(24).ID = 'AssemblyGround[balancier-complet-1:hex nut grad
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
 smiData.RigidTransform(25).translation = [-155.58259352124816 -5.6808314797610198 41.999999999972225];  % mm
-smiData.RigidTransform(25).angle = 1.5707963267949003;  % rad
+smiData.RigidTransform(25).angle = 1.5707963267949001;  % rad
 smiData.RigidTransform(25).axis = [1 1.196361017915041e-16 -1.8488927466117399e-31];
 smiData.RigidTransform(25).ID = 'AssemblyGround[balancier-complet-1:hex nut gradec_iso-2]';
 
@@ -272,7 +272,7 @@ smiData.RigidTransform(36).ID = 'AssemblyGround[Assemblagehelice-2:hex thin nut 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
 smiData.RigidTransform(37).translation = [-23.158374883416087 101.18062628162106 385.1275127724611];  % mm
-smiData.RigidTransform(37).angle = 1.5707963267949003;  % rad
+smiData.RigidTransform(37).angle = 1.5707963267949001;  % rad
 smiData.RigidTransform(37).axis = [1 1.0141390007752208e-16 8.0118685686508727e-32];
 smiData.RigidTransform(37).ID = 'RootGround[axe_pivot-1]';
 
@@ -297,7 +297,7 @@ smiData.Solid(1).MoI = [227.9768609373649 1397.5499788711081 1207.3698871439781]
 smiData.Solid(1).PoI = [29.360911913842855 1.4311202511345154 -8.3097770581161274];  % kg*mm^2
 smiData.Solid(1).color = [0.89803921568627454 0.91764705882352937 0.92941176470588238];
 smiData.Solid(1).opacity = 1;
-smiData.Solid(1).ID = 'Balancier*:*Défaut';
+smiData.Solid(1).ID = 'Balancier*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -307,7 +307,7 @@ smiData.Solid(2).MoI = [12.519427167381043 12.49464040962355 13.815023858615735]
 smiData.Solid(2).PoI = [0.22897566486791907 0.37498506140654309 -0.78323268664278167];  % kg*mm^2
 smiData.Solid(2).color = [0.52941176470588236 0.5490196078431373 0.5490196078431373];
 smiData.Solid(2).opacity = 1;
-smiData.Solid(2).ID = 'moteur-1300*:*Défaut';
+smiData.Solid(2).ID = 'moteur-1300*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -317,7 +317,7 @@ smiData.Solid(3).MoI = [1.3626239073135527 1.3626239073135527 0.0405797441789373
 smiData.Solid(3).PoI = [0 0 0];  % kg*mm^2
 smiData.Solid(3).color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
 smiData.Solid(3).opacity = 1;
-smiData.Solid(3).ID = 'entretoise*:*Défaut';
+smiData.Solid(3).ID = 'entretoise*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -327,7 +327,7 @@ smiData.Solid(4).MoI = [0.019961227331567424 0.019961227331567414 0.039629306369
 smiData.Solid(4).PoI = [0 0 0];  % kg*mm^2
 smiData.Solid(4).color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
 smiData.Solid(4).opacity = 1;
-smiData.Solid(4).ID = 'rondelle-10*:*Défaut';
+smiData.Solid(4).ID = 'rondelle-10*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -337,7 +337,7 @@ smiData.Solid(5).MoI = [114.11081952807889 336.44067800450938 387.41472136152697
 smiData.Solid(5).PoI = [28.594616656305053 0 0];  % kg*mm^2
 smiData.Solid(5).color = [0.65098039215686276 0.61960784313725492 0.58823529411764708];
 smiData.Solid(5).opacity = 1;
-smiData.Solid(5).ID = 'Contre-poids*:*Défaut';
+smiData.Solid(5).ID = 'Contre-poids*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -347,7 +347,7 @@ smiData.Solid(6).MoI = [0.12121099115944117 0.32797331261480606 0.40157922834207
 smiData.Solid(6).PoI = [-6.6796507342159153e-09 -2.3850036425650679e-08 -0.0065224223138422082];  % kg*mm^2
 smiData.Solid(6).color = [0.79607843137254897 0.82352941176470584 0.93725490196078431];
 smiData.Solid(6).opacity = 1;
-smiData.Solid(6).ID = 'Capteur IR*:*Défaut';
+smiData.Solid(6).ID = 'Capteur IR*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -377,7 +377,7 @@ smiData.Solid(9).MoI = [11.869820028135653 11.869820028135653 1.5406020330037162
 smiData.Solid(9).PoI = [0 0 0];  % kg*mm^2
 smiData.Solid(9).color = [0.79607843137254897 0.82352941176470584 0.93725490196078431];
 smiData.Solid(9).opacity = 1;
-smiData.Solid(9).ID = 'axe_pivot*:*Défaut';
+smiData.Solid(9).ID = 'axe_pivot*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -387,7 +387,7 @@ smiData.Solid(10).MoI = [0.11949788484746419 0.43442971074557496 0.4344297107455
 smiData.Solid(10).PoI = [0 0 0];  % kg*mm^2
 smiData.Solid(10).color = [0.52941176470588236 0.5490196078431373 0.5490196078431373];
 smiData.Solid(10).opacity = 1;
-smiData.Solid(10).ID = 'porte-helice*:*Défaut';
+smiData.Solid(10).ID = 'porte-helice*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -397,7 +397,7 @@ smiData.Solid(11).MoI = [0.018320101459332407 1.0876320403660795 1.0965064198894
 smiData.Solid(11).PoI = [0 9.2376324696145823e-09 0.0042598378519778232];  % kg*mm^2
 smiData.Solid(11).color = [1 1 1];
 smiData.Solid(11).opacity = 0.31999999999999995;
-smiData.Solid(11).ID = 'Helice nouveau pas*:*Défaut';
+smiData.Solid(11).ID = 'Helice nouveau pas*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
@@ -407,7 +407,7 @@ smiData.Solid(12).MoI = [0.015654403040196083 0.0080082691896624716 0.0080082691
 smiData.Solid(12).PoI = [0 0 0];  % kg*mm^2
 smiData.Solid(12).color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
 smiData.Solid(12).opacity = 1;
-smiData.Solid(12).ID = 'rondelle-d_helice*:*Défaut';
+smiData.Solid(12).ID = 'rondelle-d_helice*:*Defaut';
 
 %Inertia Type - Custom
 %Visual Properties - Simple

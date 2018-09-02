@@ -11,79 +11,79 @@
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>-0.0075757813621678965 0.074861457761381991 0.37512751277248874</Translation>
 </Transform>
-<Instance name="Balancier-1" uid="Balancier-1" grounded="true" entityUid="Balancier*:*Défaut">
+<Instance name="Balancier-1" uid="Balancier-1" grounded="true" entityUid="Balancier*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>-0.16558259352124821 0.0098191685202391188 -2.7755575615628914e-014</Translation>
 </Transform>
 </Instance>
-<Instance name="moteur-1300-2" uid="moteur-1300-2" entityUid="moteur-1300*:*Défaut">
+<Instance name="moteur-1300-2" uid="moteur-1300-2" entityUid="moteur-1300*:*Defaut">
 <Transform>
 <Rotation>-1.0000000000000002 0 2.0983215165415459e-014 -2.0872192862952943e-014 0 -1.0000000000000002 0 -1 0</Rotation>
 <Translation>-0.1555825935212482 0.009819168520239327 0.030499999999972272</Translation>
 </Transform>
 </Instance>
-<Instance name="entretoise-2" uid="entretoise-2" entityUid="entretoise*:*Défaut">
+<Instance name="entretoise-2" uid="entretoise-2" entityUid="entretoise*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 3.4694469519536146e-015 -1 0 1 3.4694469519536146e-015</Rotation>
 <Translation>0.021917406478751816 0.061319168520239095 0.0099999999999722533</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-10-1" uid="rondelle-10-1" entityUid="rondelle-10*:*Défaut">
+<Instance name="rondelle-10-1" uid="rondelle-10-1" entityUid="rondelle-10*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>0.03941740647875179 0.008319168520238937 -0.046800000000027653</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-10-2" uid="rondelle-10-2" entityUid="rondelle-10*:*Défaut">
+<Instance name="rondelle-10-2" uid="rondelle-10-2" entityUid="rondelle-10*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>0.03941740647875179 0.008319168520238937 -0.04000000000002768</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-10-3" uid="rondelle-10-3" entityUid="rondelle-10*:*Défaut">
+<Instance name="rondelle-10-3" uid="rondelle-10-3" entityUid="rondelle-10*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 -3.5850951836854019e-015 -1 0 1 -3.5850951836854019e-015</Rotation>
 <Translation>0.1244174064787518 -0.0066808314797610346 0.041999999999972226</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-10-4" uid="rondelle-10-4" entityUid="rondelle-10*:*Défaut">
+<Instance name="rondelle-10-4" uid="rondelle-10-4" entityUid="rondelle-10*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>-0.07058259352124821 0.008319168520238937 -0.046800000000027597</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-10-5" uid="rondelle-10-5" entityUid="rondelle-10*:*Défaut">
+<Instance name="rondelle-10-5" uid="rondelle-10-5" entityUid="rondelle-10*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>-0.070582593521248224 0.008319168520238937 -0.040000000000027625</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-10-6" uid="rondelle-10-6" entityUid="rondelle-10*:*Défaut">
+<Instance name="rondelle-10-6" uid="rondelle-10-6" entityUid="rondelle-10*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 3.5850951836854019e-015 1 0 -1 3.5850951836854019e-015</Rotation>
 <Translation>-0.15558259352124815 -0.0084808314797610307 0.041999999999972282</Translation>
 </Transform>
 </Instance>
-<Instance name="moteur-1300-3" uid="moteur-1300-3" entityUid="moteur-1300*:*Défaut">
+<Instance name="moteur-1300-3" uid="moteur-1300-3" entityUid="moteur-1300*:*Defaut">
 <Transform>
 <Rotation>-1.0000000000000002 0 1.404432126150823e-014 -1.3933298959045715e-014 0 -1.0000000000000002 0 -1 0</Rotation>
 <Translation>0.12441740647875182 0.0098191685202390633 0.030499999999972272</Translation>
 </Transform>
 </Instance>
-<Instance name="Contre-poids-1" uid="Contre-poids-1" entityUid="Contre-poids*:*Défaut">
+<Instance name="Contre-poids-1" uid="Contre-poids-1" entityUid="Contre-poids*:*Defaut">
 <Transform>
 <Rotation>1.0000000000000002 -4.4408920985006262e-016 0 0 -3.4694469519535325e-015 1 -4.4408920985006262e-016 -1.0000000000000002 -3.4694469519535318e-015</Rotation>
 <Translation>-0.015582593521248193 0.026319168520239286 0.0099999999999723643</Translation>
 </Transform>
 </Instance>
-<Instance name="Capteur IR-1" uid="Capteur IR-1" entityUid="Capteur IR*:*Défaut">
+<Instance name="Capteur IR-1" uid="Capteur IR-1" entityUid="Capteur IR*:*Defaut">
 <Transform>
 <Rotation>-1 0 0 0 0.34202014332567249 0.93969262078590687 0 0.9396926207859071 -0.34202014332567254</Rotation>
 <Translation>-0.18258259352124817 0.021007015713678065 0.0014535856091063559</Translation>
 </Transform>
 </Instance>
-<Instance name="Capteur IR-2" uid="Capteur IR-2" entityUid="Capteur IR*:*Défaut">
+<Instance name="Capteur IR-2" uid="Capteur IR-2" entityUid="Capteur IR*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 -0.34202014332567254 -0.93969262078590698 0 0.93969262078590698 -0.34202014332567254</Rotation>
 <Translation>0.15141740647875185 -0.001368678673199869 0.0014535856091063559</Translation>
@@ -137,14 +137,14 @@
 <Translation>0.039417406478751783 0.008319168520238937 -0.056300000000027661</Translation>
 </Transform>
 </Instance>
-<Instance name="entretoise-1" uid="entretoise-1" entityUid="entretoise*:*Défaut">
+<Instance name="entretoise-1" uid="entretoise-1" entityUid="entretoise*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 3.4694469519536146e-015 -1 0 1 3.4694469519536146e-015</Rotation>
 <Translation>-0.053082593521248195 0.061319168520239095 0.0099999999999722533</Translation>
 </Transform>
 </Instance>
 </Instance>
-<Instance name="axe_pivot-1" uid="axe_pivot-1" grounded="true" entityUid="axe_pivot*:*Défaut">
+<Instance name="axe_pivot-1" uid="axe_pivot-1" grounded="true" entityUid="axe_pivot*:*Defaut">
 <Transform>
 <Rotation>1 1.0141390007752237e-016 1.0141390007752217e-016 1.0141390007752253e-016 -3.4914833611093817e-015 -1 -1.0141390007752201e-016 1 -3.4914833611093817e-015</Rotation>
 <Translation>-0.023158374883416086 0.10118062628162106 0.3851275127724611</Translation>
@@ -155,19 +155,19 @@
 <Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
 <Translation>0.090841625116583904 0.084137254251045568 0.35958488537249944</Translation>
 </Transform>
-<Instance name="porte-helice-1" uid="porte-helice-1" grounded="true" entityUid="porte-helice*:*Défaut">
+<Instance name="porte-helice-1" uid="porte-helice-1" grounded="true" entityUid="porte-helice*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>-0.011942627399961547 0.00054337203057548689 0.025999999999999995</Translation>
 </Transform>
 </Instance>
-<Instance name="Helice nouveau pas-1" uid="Helice nouveau pas-1" entityUid="Helice nouveau pas*:*Défaut">
+<Instance name="Helice nouveau pas-1" uid="Helice nouveau pas-1" entityUid="Helice nouveau pas*:*Defaut">
 <Transform>
 <Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
 <Translation>5.7372600038463339e-005 0.00054337203057548689 0.025999999999999995</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-d_helice-1" uid="rondelle-d_helice-1" entityUid="rondelle-d_helice*:*Défaut">
+<Instance name="rondelle-d_helice-1" uid="rondelle-d_helice-1" entityUid="rondelle-d_helice*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>0.0045573726000384118 0.00054337203057548689 0.025999999999999995</Translation>
@@ -185,19 +185,19 @@
 <Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
 <Translation>-0.18915837488341614 0.084137254251045832 0.35958488537249944</Translation>
 </Transform>
-<Instance name="porte-helice-1" uid="porte-helice-1" grounded="true" entityUid="porte-helice*:*Défaut">
+<Instance name="porte-helice-1" uid="porte-helice-1" grounded="true" entityUid="porte-helice*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>-0.011942627399961547 0.00054337203057548689 0.025999999999999995</Translation>
 </Transform>
 </Instance>
-<Instance name="Helice nouveau pas-1" uid="Helice nouveau pas-1" entityUid="Helice nouveau pas*:*Défaut">
+<Instance name="Helice nouveau pas-1" uid="Helice nouveau pas-1" entityUid="Helice nouveau pas*:*Defaut">
 <Transform>
 <Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
 <Translation>5.7372600038463339e-005 0.00054337203057548689 0.025999999999999995</Translation>
 </Transform>
 </Instance>
-<Instance name="rondelle-d_helice-1" uid="rondelle-d_helice-1" entityUid="rondelle-d_helice*:*Défaut">
+<Instance name="rondelle-d_helice-1" uid="rondelle-d_helice-1" entityUid="rondelle-d_helice*:*Defaut">
 <Transform>
 <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
 <Translation>0.0045573726000384118 0.00054337203057548689 0.025999999999999995</Translation>
@@ -331,7 +331,7 @@
 </Assembly>
 </Assemblies>
 <Parts>
-<Part name="Balancier" uid="Balancier*:*Défaut" version="5835">
+<Part name="Balancier" uid="Balancier*:*Defaut" version="5835">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="Balancier.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -339,7 +339,7 @@
 <CenterOfMass>0.15092595815126242 -0.0055954417516134326 0.03321206596628435</CenterOfMass>
 <Inertia>0.0002279768609373649 0.0013975499788711082 0.0012073698871439781 2.9360911913842856e-005 1.4311202511345154e-006 -8.3097770581161266e-006</Inertia>
 </MassProperties>
-<GeometryFile name="Balancier_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="Balancier_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
 <Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
@@ -348,7 +348,7 @@
 <Shininess>0.3125</Shininess>
 </VisualProperties>
 </Part>
-<Part name="Capteur IR" uid="Capteur IR*:*Défaut" version="134">
+<Part name="Capteur IR" uid="Capteur IR*:*Defaut" version="134">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="Capteur IR.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -356,7 +356,7 @@
 <CenterOfMass>0.013552071640850297 0.0082085193245774526 -1.2778545501351636e-010</CenterOfMass>
 <Inertia>1.2121099115944117e-007 3.2797331261480604e-007 4.0157922834207926e-007 -6.6796507342159151e-015 -2.385003642565068e-014 -6.5224223138422085e-009</Inertia>
 </MassProperties>
-<GeometryFile name="Capteur IR_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="Capteur IR_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
 <Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
@@ -365,7 +365,7 @@
 <Shininess>0.40000000596046448</Shininess>
 </VisualProperties>
 </Part>
-<Part name="Contre-poids" uid="Contre-poids*:*Défaut" version="203">
+<Part name="Contre-poids" uid="Contre-poids*:*Defaut" version="203">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="Contre-poids.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -373,7 +373,7 @@
 <CenterOfMass>0 0.041191392478717892 -0.0068728012680818107</CenterOfMass>
 <Inertia>0.00011411081952807889 0.00033644067800450939 0.00038741472136152698 2.8594616656305054e-005 0 0</Inertia>
 </MassProperties>
-<GeometryFile name="Contre-poids_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="Contre-poids_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.65098039215686276" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
 <Diffuse r="0.65098039215686276" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
@@ -382,7 +382,7 @@
 <Shininess>0.10000000149011612</Shininess>
 </VisualProperties>
 </Part>
-<Part name="Helice nouveau pas" uid="Helice nouveau pas*:*Défaut" version="360">
+<Part name="Helice nouveau pas" uid="Helice nouveau pas*:*Defaut" version="360">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="Helice nouveau pas.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -390,7 +390,7 @@
 <CenterOfMass>-8.425195880187842e-009 -3.3201875582240012e-010 0.00012243394664900433</CenterOfMass>
 <Inertia>1.8320101459332409e-008 1.0876320403660795e-006 1.0965064198894597e-006 0 9.237632469614582e-015 4.2598378519778229e-009</Inertia>
 </MassProperties>
-<GeometryFile name="Helice nouveau pas_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="Helice nouveau pas_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="1" g="1" b="1" a="0.31999999999999995"/>
 <Diffuse r="1" g="1" b="1" a="0.31999999999999995"/>
@@ -399,7 +399,7 @@
 <Shininess>0.10000000149011612</Shininess>
 </VisualProperties>
 </Part>
-<Part name="axe_pivot" uid="axe_pivot*:*Défaut" version="118">
+<Part name="axe_pivot" uid="axe_pivot*:*Defaut" version="118">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="axe_pivot.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -407,7 +407,7 @@
 <CenterOfMass>0 0 0.050929483181181019</CenterOfMass>
 <Inertia>1.1869820028135652e-005 1.1869820028135652e-005 1.5406020330037163e-006 0 0 0</Inertia>
 </MassProperties>
-<GeometryFile name="axe_pivot_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="axe_pivot_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
 <Diffuse r="0.79607843137254897" g="0.82352941176470584" b="0.93725490196078431" a="1"/>
@@ -416,7 +416,7 @@
 <Shininess>0.55000000000000004</Shininess>
 </VisualProperties>
 </Part>
-<Part name="entretoise" uid="entretoise*:*Défaut" version="114">
+<Part name="entretoise" uid="entretoise*:*Defaut" version="114">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="entretoise.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -424,7 +424,7 @@
 <CenterOfMass>0 0 0.015000000000000001</CenterOfMass>
 <Inertia>1.3626239073135526e-006 1.3626239073135526e-006 4.0579744178937346e-008 0 0 0</Inertia>
 </MassProperties>
-<GeometryFile name="entretoise_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="entretoise_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
 <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
@@ -467,7 +467,7 @@
 <Shininess>0.3125</Shininess>
 </VisualProperties>
 </Part>
-<Part name="moteur-1300" uid="moteur-1300*:*Défaut" version="149">
+<Part name="moteur-1300" uid="moteur-1300*:*Defaut" version="149">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="moteur-1300.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -475,7 +475,7 @@
 <CenterOfMass>0.00046073508801771555 0.01720837579120283 -0.00013519281673983244</CenterOfMass>
 <Inertia>1.2519427167381042e-005 1.2494640409623549e-005 1.3815023858615735e-005 2.2897566486791906e-007 3.7498506140654307e-007 -7.8323268664278171e-007</Inertia>
 </MassProperties>
-<GeometryFile name="moteur-1300_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="moteur-1300_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
 <Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
@@ -484,7 +484,7 @@
 <Shininess>0.3125</Shininess>
 </VisualProperties>
 </Part>
-<Part name="porte-helice" uid="porte-helice*:*Défaut" version="110">
+<Part name="porte-helice" uid="porte-helice*:*Defaut" version="110">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="porte-helice.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -492,7 +492,7 @@
 <CenterOfMass>0.0082703743792181383 0 0</CenterOfMass>
 <Inertia>1.194978848474642e-007 4.3442971074557498e-007 4.3442971074557498e-007 0 0 0</Inertia>
 </MassProperties>
-<GeometryFile name="porte-helice_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="porte-helice_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
 <Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
@@ -501,7 +501,7 @@
 <Shininess>0.3125</Shininess>
 </VisualProperties>
 </Part>
-<Part name="rondelle-10" uid="rondelle-10*:*Défaut" version="105">
+<Part name="rondelle-10" uid="rondelle-10*:*Defaut" version="105">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="rondelle-10.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -509,7 +509,7 @@
 <CenterOfMass>0 0 0.00089999999999999998</CenterOfMass>
 <Inertia>1.9961227331567423e-008 1.9961227331567413e-008 3.9629306369443064e-008 0 0 0</Inertia>
 </MassProperties>
-<GeometryFile name="rondelle-10_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="rondelle-10_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
 <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
@@ -518,7 +518,7 @@
 <Shininess>0.40000000596046448</Shininess>
 </VisualProperties>
 </Part>
-<Part name="rondelle-d_helice" uid="rondelle-d_helice*:*Défaut" version="106">
+<Part name="rondelle-d_helice" uid="rondelle-d_helice*:*Defaut" version="106">
 <ModelUnits mass="kilogram" length="millimeter"/>
 <PartFile name="rondelle-d_helice.SLDPRT" type="SolidWorks Part"/>
 <MassProperties>
@@ -526,7 +526,7 @@
 <CenterOfMass>0.00088558352402746043 0 0</CenterOfMass>
 <Inertia>1.5654403040196083e-008 8.0082691896624719e-009 8.0082691896624702e-009 0 0 0</Inertia>
 </MassProperties>
-<GeometryFile name="rondelle-d_helice_Défaut_sldprt.STEP" type="STEP"/>
+<GeometryFile name="rondelle-d_helice_Defaut_sldprt.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
 <Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
