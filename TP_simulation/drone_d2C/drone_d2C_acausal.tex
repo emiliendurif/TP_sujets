@@ -1,34 +1,27 @@
-\graphicspath{{/Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/ericc3/}}
+\graphicspath{{/Users/emiliendurif/Documents/prepa/sujets/TP_sujets/TP_simulation/drone_d2C/}}
 
-\subsection{Présentation du système réel}
-\subsubsection{Le robot Ericc3}
+\subsection{Drone D2C}
+\subsubsection{Présentation}
 
-Le Robot Ericc3 est un robot qui présente un caractère anthropomorphique. Il est constitué de 5 axes asservis en position.
+Le Drone D2C est une maquette de drone quadricoptère permettant de simuler les mouvement de tangage seul et d'en étudier les différentes performances.
 
-On s'intéresse ici uniquement à l'asservissement autour de l'axe de lacet.
+On s'intéresse ici uniquement à l'asservissement autour de l'axe de tangage.
 
-On considérera deux configurations
 
-\begin{minipage}{0.5\textwidth}
-\begin{center}
-\textbf{Configuration 1 : bras replié}
-\includegraphics[width=1.0\textwidth]{images/conf1.png}
-$Epaule=-39^{\circ}$ ; $Lacet=0^{\circ}$ ; $Coude=00^{\circ}$, $Poignet=-51^{\circ}$
-\end{center}
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\begin{center}
-\textbf{Configuration 2 : bras déplié}
-\includegraphics[width=1.0\textwidth]{images/conf2.png}
-$Epaule=0^{\circ}$ ; $Lacet=0^{\circ}$ ; $Coude=-90^{\circ}$, $Poignet=0^{\circ}$
-\end{center}
-\end{minipage}
+\begin{figure}[!htb]
+\begin{tabular}{cc}
+\includegraphics[width=0.7\textwidth]{images/drone_cao}
+&
+\includegraphics[width=0.3\textwidth]{images/drone_maquette}
+\\
+\end{tabular}
+\end{figure}
 
 
 
-\subsubsection{Analyse structurelle du robot}
+\subsubsection{Analyse structurelle du drone D2C}
 
-\question{Compléter la chaine fonctionnelle décrivant la chaine cinématique "axe de lacet".}
+\question{Compléter la chaine fonctionnelle décrivant la chaine cinématique du drone D2C à l'aide de la documentation technique fourni sur le serveur.}
 
 \begin{center}
 \includegraphics[width=1.0\textwidth]{images/chaine_fonctionnelle.png}
@@ -36,198 +29,46 @@ $Epaule=0^{\circ}$ ; $Lacet=0^{\circ}$ ; $Coude=-90^{\circ}$, $Poignet=0^{\circ}
 
 
 
-\subsection{Analyse du modèle Simmechanics}
+\subsubsection{Analyse du modèle Simmechanics}
 
 \question{
 \begin{enumerate}
-\item Copier le dossier "modele$\_$simscape" sur votre espace perso.
+\item Copier le dossier "modele$\_$acausal" sur votre espace perso.
 \item Placer le chemin d'accès de ce dossier dans la barre d'adresse Matlab.
-\item Dans Matlab ouvrir le fichier "ericc3$\_$DataFile.m" et l'exécuter. On note dans le workspace la création d'un objet appelé smiData qui contient l'ensemble des variables mécaniques nécessaires au calcul.
-\item Lancer Simulink et ouvrir le fichier ericc3$\_$simmechanics.slx.
+\item Lancer Simulink et ouvrir le fichier d2C$\_$simmechanics.slx.
 \item Exécuter le programme et observer le résultat de la simulation. 
 \end{enumerate}
 }
 
 
-\textit{On observe que le robot s'anime selon toutes ses mobilités. Il va falloir maintenant imposer des commandes asservies aux niveaux des axes et pour cela modéliser les moteurs.}
+\question{A l'aide du modèle Simmechanics, construire le graphe de liaison du système et vérifier sur le système réel sa cohérence.}
 
-On peut alors bloquer des rotations en modifiant les blocs intitulés "Revolute". En double-cliquant dans chacun des blocs "Revolute", le menu ci-dessous apparaît.
+\subsubsection{Prise en compte des effets aérodynamiques}
 
+\begin{figure}[!htb]
+\begin{minipage}{0.5\textwidth}
+On donne sur la courbe ci-contre la relation caractérisant une hélice d'un point de vue aérodynamique. On trace alors l'effort de portance en fonction de la vitesse de rotation de l'hélice.
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
 \begin{center}
-\includegraphics[width=0.5\textwidth]{images/menu_liaison.png}
+\includegraphics[width=1.0\textwidth]{images/Fp_Ne.jpg}
 \end{center}
-\begin{itemize}
-\item l'onglet "Actuation" permet de préciser les grandeurs imposées \footnote{Torque signifie couple en Anglais},
-\item l'onglet " Sensing" permet de préciser les grandeurs mesurées.
-\end{itemize}
+\end{minipage}
+\end{figure}
 
-\question{Modifier alors le fichier ericc3$\_$simmechanics.slx pour obtenir le bras dans sa configuration 2 tout en laissant la possibilité de commander la liaison entre la chaise et le bâti.}
+\FloatBarrier
+\question{Proposer un modèle de comportement permettant de relier l'effort de portance (Poussée) en fonction de la vitesse de rotation des hélices.}
 
-\subsection{Construction du modèle du moteur à courant continu}
+\subsubsection{Modélisation de l'asservissement du système}
 
-Le moteur à courant continu du robot est caractérisé par les paramètres suivants :
-\begin{itemize}
-\item $K_t$ : la constante de couple ;
-\item $K_e$ : la constante de force contre électromotrice (fcem) ;
-\item $R$ : la résistance de l'induit ;
-\item $L$ : l'inductance de l'induit ;
-\item $J_m$ : Inertie de l'arbre moteur ;
-\end{itemize}
-On note :
-\begin{itemize}
-\item $u_m(t)$ : la tension appliquée aux bornes de l'induit ;
-\item $e(t)$ : tension de force contre-électromotrice ;
-\item $i_m(t)$ : le courant absorbé par l'induit ;
-\item $\omega_m(t)$ : la vitesse angulaire de l'arbre ;
-\item $C_m(t)$: le couple moteur ;
-\end{itemize}
+\question{Ouvrir le fichier D2C$\_$boucle$\_$vitesse$\_$modelisation.slx et analyser l'asservissement en vitesse.}
 
-Les équations temporelles décrivant le fonctionnement d'un moteur à courant continu seul sont données ci-dessous :
+\question{Proposer une méthode pour implémenter le modèle Simmechanics dans ce modèle.}
 
-\begin{align}
-C_m(t)-f_v\cdot \omega_m(t)=J_m\cdot\frac{d\omega_m(t)}{dt}\label{eq_meca}\\
-\nonumber\\
-u_m(t)=e(t)+L\frac{di_m(t)}{dt}+R\cdot i(t)\label{eq_elec}\\
-\nonumber\\
-e(t)=K_e\cdot \omega_m(t)\label{eq_elec_meca1}\\
-\nonumber\\
-C_m(t)=K_c\cdot i_m(t)\label{eq_elec_meca2}.
-\end{align}
+\question{A l'aide de la fichier 8 de la documentation technique du système drone D2C, proposer une méthode expérimentale pour identifier les constantes des blocs correspondant aux deux motorisations.}
 
-\begin{center}
-\includegraphics[width=0.9\textwidth]{images/schema_mcc.pdf}
-\end{center}
+\question{Mettre en oeuvre ces expérimentation et identifier les blocs correspondants.}
 
-Les données numériques nécessaires à la réalisation du modèle sont déclarées dans le fichier : "data$\_$modele$\_$ericc.m".
-
-\subsubsection{Construction du modèle électrique}
-\begin{itemize}
-\item On modélisera ici le comportement donné par l'équation \ref{eq_elec} en utilisant ici les blocs situés dans la bibliothèque : "Simscape$\to$Foundation Library$\to$Electrical" :
-\begin{itemize}
-\item La tension $U_m(t)$ sera  imposé par un bloc \textbf{"Controlled Voltage Source"} (catégorie : "Electrical Sources").
-\item L'intensité pourra être mesurée par un bloc \textbf{"Current sensor"} (catégorie : "Electrical Sensors").
-\item Les autres composants se trouveront dans la catérgorie "Electrical Elements".
-\end{itemize}
-\item Pour imposer la tension $u_m(t)$ (échelon) et pour visualiser l'intensité $i_m(t)$ (scope), il faut utiliser des blocs qui permettent de passer de grandeurs {causales} à \textbf{acausales} ("Simulink - PS converter") et inversement ("PS- Simulink Converter") situés dans la catégorie "Simscape$\to$Utilities".
-\end{itemize}
-
-
-\question{Dans Simulink, réaliser le schéma électrique de la motorisation du robot sans la conversion électromécanique.}
-
-
-\subsubsection{Construction du modèle mécanique}
-
-\begin{itemize}
-\item On modélisera ici le comportement donné par l'équation \ref{eq_meca} en utilisant ici les blocs situés dans la bibliothèque : "Simscape$\to$Foundation Library$\to$Mechanical" :
-\begin{itemize}
-\item On modélisera une inertie en rotation par rapport à une référence de mouvement de rotation à l'aide de blocs situé dans "Rotational Elements".
-\item Pour visualiser la rotation du moteur il faut utiliser un bloc "Ideal Rotational Motion Sensor" (catégorie "Mechanical sensor")couplé à un bloc qui permet de passer de grandeurs {acausales} à \textbf{causales} ("PS- Simulink Converter") situés dans la catégorie "Simscape$\to$Utilities" qu'on raccordera au port noté "W".
-\end{itemize}
-\end{itemize}
-
-\question{Dans Simulink, réaliser le schéma mécanique de la motorisation du robot sans la conversion électromécanique.}
-
-
-\subsubsection{Construction complète de la modélisation électromécanique du moteur (acausal)}
-
-\begin{itemize}
-\item On modélisera ici le comportement donné par les équations \ref{eq_elec_meca1} et \ref{eq_elec_meca2}.
-\begin{itemize}
-\item Le convertisseur électromécanique d'un moteur à courant continu se modélise à l'aide du bloc "Rotational
-Electromechanical
-Converter" situé dans la catégorie "Simsape$\to$Power Systems$\to$Simscape Components$\&$ Machines$\to$ Rotational
-Electromechanical
-Converter.
-\end{itemize}
-\end{itemize}
-
-\question{Raccorder les deux schémas électrique et mécanique définis précédemment à l'aide du bloc de conversion électromécanique. Il faudra utiliser un bloc "Solver Configuration" présent dans Simscape$\to$Utilities à connecter au flux électrique.}
-
-\question{Réaliser la simulation consistant à imposer un échelon de tension au moteur ($5V$) et à visualiser la réponse en vitesse de rotation du moteur.}
-
-\subsubsection{Comparaison avec un modèle causal (sous forme de schéma bloc).}
-
-
-\question{A l'aide des équations \ref{eq_meca}, \ref{eq_elec}, \ref{eq_elec_meca1} et \ref{eq_elec_meca2}, construire le schéma bloc décrivant la modélisation causale du moteur. (On prendra en entrée $u_m(t)$ et en sortie $\omega_m(t)$)}
-
-\question{Réaliser la simulation sur $0,1s$ et comparer les résultats donnés pour la vitesse de rotation du moteur ainsi que le courant.}
-
-
-\subsection{Construction du modèle du robot Ericc3}
-
-On donne le schéma bloc global du système : 
-
-\begin{center}
-\includegraphics[width=1.0\textwidth]{images/schema_bloc_ericc_acausal.pdf}
-\end{center}
-
-\begin{itemize}
-\item L'angle de consigne de lacet se note : \textbf{$\theta_c(p)$}.
-\item La  vitesse de rotation à la sortie du moteur se note \textbf{$\theta_m(p)$}.
-\item La vitesse de rotation à la sortie du réducteur se note \textbf{$\theta_r(p)$}.
-\item Le système comporte un correcteur PID (Proportionnel Intégral Dérivé). Ici n'est représenté que le correcteur Proportionnel (de gain \textbf{$K_p$}) et Intégrale (de gain \textbf{$K_i$}). Dans l'étude on n'étudiera que l'influence de $K_p$. Ainsi on prendra $K_i=0$.
-\item Après une conversion numérique analogique, on modélise le moteur avec un \textbf{variateur} (de constante \textbf{$K_v$}) qui permet d'imposer au moteur un courant $I_m(p)$ 
-\item On note $C_m(p)$ le couple délivré par le moteur.
-\item Le frottement visqueux est modélisé par le coefficient \textbf{$f_v$}.
-\item Le \textbf{système de réduction} de vitesse de fonction de transfert \textbf{$K_r$} est composé 
-\begin{itemize}
-\item d'un réducteur poulie-courroie ;
-\item d'un réducteur Harmonic Drive de rapport de réduction $1/100$
-\end{itemize}
-\end{itemize}
-
-\begin{center}
-\begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{images/poulie_courroie.png}
-&
-\includegraphics[width=0.45\textwidth]{images/harmonic_drive.png}
-\end{tabular}
-\end{center}
-
-\question{Déterminer le rapport de réduction $K_r$ du système.}
-
-La chaine retour est composé d'un \textbf{capteur de position} qui mesure directement l'angle à la sortie du moteur. C'est un codeur incrémental et on prendra comme gain $1$.
-
-\question{Compléter le schéma bloc "modele$\_$ericc$\_$complet$\_$eleve.slx" pour modéliser le système asservi en boucle fermée. 
-}
-
-\question{Lancer la simulation et analyser les résultats.}
-
-\question{Conclure quant aux avantages et inconvénients des deux méthodes de modélisation employées.}
-
-\subsection{Analyse temporelle des performances du robot}
-
-\subsubsection{Comparaison des performances simulées entre les modèles causal et acausal}
-
-L'étude portera sur les \textbf{configurations 1 et 2} (bras en partie replié et déplié).
-
-\question{Modifier le programme pour tenir compte des configurations 1 et 2.}
-
-
-\question{Exécuter la simulation sur une durée de $2.5s$ et observer le résultat en double cliquant sur le Scope.}
-
-\subsubsection{Comparaison des performances simulées et expérimentales}
-
-le schéma bloc "modele$\_$ericc$\_$complet$\_$eleve.slx" comporte une partie permettant de tracer le résultat expérimental.
-
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline 
-$K_p$ & Configuration & Nom du fichier de donnée \\ 
-\hline 
-$10^6$ & $1$ &  conf1$\_$1e6.csv\\ 
- \hline 
-$10^6$ & $2$ &  conf2$\_$1e6.csv\\ 
- \hline 
-$10^5$ & $1$ &  conf1$\_$1e5.csv\\ 
- \hline 
-$10^5$ & $2$ &  conf2$\_$1e5.csv\\ 
-\hline 
-\end{tabular} 
-\end{center}
-
-
-\question{Mettre en place des simulations pour comparer les essais expérimentaux et numériques.}
-
+\question{Mettre en oeuvre la simulation et conclure.}
 
 
